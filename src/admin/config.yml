@@ -1,0 +1,149 @@
+backend:
+  name: github
+  repo: jacknyagam/privacy-dynamics
+  branch: main
+
+media_folder: "static/uploads"
+public_folder: "/uploads"
+
+collections:
+  - label: "Pages"
+    name: "pages"
+    files:
+      - label: "Home Page"
+        name: "Home"
+        file: "site/pages/home.md"
+        fields:
+          - label: "Hero Section"
+            name: "hero_section"
+            widget: "object"
+            fields:
+              - label: "Header"
+                name: "header"
+                widget: "markdown"
+              - label: "Sub Header"
+                name: "sub_header" 
+                widget: "string"
+              - label: "Button" 
+                name: "button"
+                widget: "object"
+                fields:
+                - label: "Text"
+                  name: "text"
+                - label: "Link"
+                  name: "link"
+              - label: "Image" 
+                name: "image" 
+                widget: "image"
+          - label: "Features"
+            name: 'features'
+            widget: "list"
+            fields:
+              - label: "Tag"
+                name: "tag"
+                widget: "string"
+              - label: "Icon"
+                name: "icon"
+                widget: "image"
+              - label: "Title"
+                name: "title"
+                widget: "string"
+              - label: "Description"
+                name: "description"
+                widget: "markdown"
+          - label: "Distortion Section"
+            name: "distortion_section"
+            widget: "object"
+            fields:
+              - label: "Title" 
+                name: "title"
+                widget: "string"
+              - label: "Sub Title"
+                name: "sub_title" 
+                widget: "markdown"
+              - label: "Chart Image"
+                name: "chart_image" 
+                widget: "image"
+          - label: "Stats Section"
+            name: "stats_section"
+            widget: "object"
+            fields:
+              - label: "CTA Text"
+                name: "cta_text" 
+                widget: "string"
+              - label: Title 
+                name: "title"
+                widget: "markdown"
+              - label: "Icon"
+                name: "icon" 
+                widget: "image"
+              - label: "Stats"
+                name: "stats"
+                widget: "list"
+                fields: 
+                  - label: "Stat"
+                    name: "stat"
+                    widget: "string"
+                  - label: "Description"
+                    name: "description"
+                    widget: "string"
+          - label: "In Action Section"
+            name: 'in_action_section'
+            widget: "object"
+            fields:
+              - label: "Title"
+                name: "title" 
+                widget: "markdown"
+              - label: "Icon"
+                name: "icon" 
+                widget: "image"
+              - label: Button
+                name: "button"
+                widget: object
+                fields:
+                - label: Text
+                  name: "text"
+                - label: Link
+                  name: "link"
+
+
+  - name: "posts"
+    label: "Posts"
+    folder: "posts"
+    create: true
+    slug: "{{slug}}"
+    fields:
+      - label: "Title" 
+        name: "title"
+        widget: "string"
+      - label: "Excerpt"
+        name: "excerpt" 
+        widget: "string"
+      - label: "Publish Date" 
+        name: "date" 
+        widget: "date"
+      - label: "Body" 
+        name: "body" 
+        widget: "markdown"
+  - label: "Settings"
+    name: "settings"
+    files:
+      - label: "Settings"
+        name: "Settings"
+        collapsed: false
+        delete: false
+        editor:
+          preview: false
+        file: "site/settings.md"
+        fields:
+          - label: "Site Logo"
+            name: "logo"
+            widget: "image"
+          - label: "Site Footer Logo"
+            name: "footer_logo"
+            widget: "image"
+          - label: "Site Title"
+            name: "site_title"
+            widget: "markdown"
+
+  
