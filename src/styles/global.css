@@ -20,11 +20,11 @@ p a {
 
 .feature-item {
     border-color: #a6afbc;
-    @apply border-b;
+    @apply md:border-b;
 }
 
 .feature-item:nth-child(2) {
-    @apply border-l border-r;
+    @apply md:border-l md:border-r;
 }
 
 .title-has-highlight h3 strong {
@@ -33,5 +33,22 @@ p a {
     @apply text-brand-lime font-light;
 }
 .title-has-highlight h4 strong {
-    @apply text-brand-lime font-light;
+    @apply text-brand-lime font-normal;
+}
+
+.content p,
+.content h1,
+.content h2,
+.content h3 {
+    font-size: inherit;
+}
+
+.content p:not(:last-child) {
+    @apply mb-4;
+}
+
+@media (max-width: 640px) {
+    .title-has-highlight h3 strong {
+        font-size: 60px;
+    }
 }

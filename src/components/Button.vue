@@ -1,5 +1,5 @@
 <template>
-    <g-link class="btn inline-flex items-center px-8 py-4 mx-1 text-[1ppx] font-display font-medium  text-brand-gray bg-brand-lime w-auto" :to="link">
+    <g-link class="btn inline-flex items-center px-8 py-4 mx-1 text-[1ppx] font-display font-medium  text-brand-gray bg-brand-lime w-auto hover:bg-brand-gray hover:text-brand-lime cursor-pointer hover:fill-brand-lime" :to="link">
         <span>
             <svg xmlns="http://www.w3.org/2000/svg" width="19.192" height="19.192" viewBox="0 0 19.192 19.192">
             <g id="Group_41" data-name="Group 41" transform="translate(6.101 -5.42) rotate(45)">
