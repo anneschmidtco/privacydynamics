@@ -17,8 +17,8 @@
         <g-image :src="$page.pages.distortion_section.chart_image" width="1199" />
       </div>
     </div>
-    <div class="w-full flex flex-col bg-brand-gray text-white border-none md:border-b border-brand-gray-light">
-      <div class="container py-14 md:pt-24 md:pb-28 flex flex-col border-none md:border-l border-brand-gray-light md:pl-24 relative items-center justify-center">
+    <div class="w-full flex flex-col bg-brand-gray text-white md:border-b border-brand-gray-light">
+      <div class="container py-14 md:pt-28 md:pb-32 flex flex-col md:border-l border-brand-gray-light md:pl-24 relative items-center justify-center">
         <p class="md:absolute md:rotate-[-90deg] mb-8 md:mb-auto md:left-[-126px] tracking-[2.4px] font-display">{{$page.pages.stats_section.cta_text}}</p>
         <div class="w-full flex flex-col md:flex-row justify-between mb-24">
           <div class="stats-title-wrapper title-has-highlight text-4xl md:text-[50px] leading-[60px] text-white font-light tracking-[-2px] max-w-[710px]" v-html="get_stats_title($page.pages.stats_section.title)"></div>

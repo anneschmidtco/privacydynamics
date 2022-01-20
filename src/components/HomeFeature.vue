@@ -1,7 +1,7 @@
 <template>
   <div class="w-full flex flex-col px-4 md:px-8 pt-8 md:pt-14 pb-8 md:pb-20 bg-brand-gray-lighter items-start">
       <div class="w-full flex justify-between">
-          <span class="text-sm font-display font-semibold">{{feature.tag}}</span>
+          <span class="text-sm font-display font-semibold tracking-[2.1px]">{{feature.tag}}</span>
           <span class="text-sm font-display font-semibold">0{{index}}</span>
       </div>
       <div class="mt-14 mb-12 h-[68px]">

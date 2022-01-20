@@ -1,6 +1,6 @@
 backend:
   name: github
-  repo: jacknyagam/privacy-dynamics
+  repo: anneschmidtco/privacy-dynamics
   branch: main
 
 media_folder: "static/uploads"
@@ -105,7 +105,31 @@ collections:
                   name: "text"
                 - label: Link
                   name: "link"
-
+      - label: "Product Page"
+        name: "Product"
+        file: "site/pages/product.md"
+        fields:
+          - label: "Hero Section"
+            name: "hero_section"
+            widget: "object"
+            fields:
+              - label: "Header"
+                name: "header"
+                widget: "markdown"
+              - label: "Sub Header"
+                name: "sub_header" 
+                widget: "string"
+              - label: "Button" 
+                name: "button"
+                widget: "object"
+                fields:
+                - label: "Text"
+                  name: "text"
+                - label: "Link"
+                  name: "link"
+              - label: "Image" 
+                name: "image" 
+                widget: "image"
 
   - name: "posts"
     label: "Posts"

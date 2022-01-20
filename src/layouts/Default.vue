@@ -7,11 +7,11 @@
           </g-link>
         </strong>
         <nav class="flex flex-col md:flex-row items-center justify-start">
-          <g-link class="px-4 py-5 mx-1 text-sm text-brand-gray hover:text-brand-lime" to="/">Product</g-link>
-          <g-link class="px-4 py-5 mx-1 text-sm text-brand-gray hover:text-brand-lime" to="/resources/">Resources</g-link>
-          <g-link class="px-4 py-5 mx-1 text-sm text-brand-gray hover:text-brand-lime" to="/our-team/">Our Team</g-link>
-          <g-link class="px-4 py-5 mx-1 text-sm text-brand-gray hover:text-brand-lime" to="/careers/">Careers</g-link>
-          <g-link class="px-9 py-3 mx-1 text-sm text-white bg-brand-gray hover:bg-brand-lime hover:text-brand-gray" to="/">Get started</g-link>
+          <g-link class="px-4 py-5 mx-1 text-sm font-display text-brand-gray hover:text-brand-lime" to="/">Product</g-link>
+          <g-link class="px-4 py-5 mx-1 text-sm font-display text-brand-gray hover:text-brand-lime" to="/resources/">Resources</g-link>
+          <g-link class="px-4 py-5 mx-1 text-sm font-display text-brand-gray hover:text-brand-lime" to="/our-team/">Our Team</g-link>
+          <g-link class="px-4 py-5 mx-1 text-sm font-display text-brand-gray hover:text-brand-lime" to="/careers/">Careers</g-link>
+          <g-link class="px-9 py-3 mx-1 text-sm font-display text-white bg-brand-gray hover:bg-brand-lime hover:text-brand-gray" to="/">Get started</g-link>
         </nav>
       </header>
     <slot/>
@@ -22,7 +22,7 @@
             <g-image :src="'/uploads/logo-icon.svg'" class="mb-8"/>
             <h4 class="text-[38px] leading-[48px] tracking-[-0.76px] max-w-[415px]">Empowering <strong class="text-brand-lime font-light">innovative</strong> and ethical data teams</h4>
           </div>
-          <div class="w-full flex flex-col md:flex-row md:items-end mt-8 md:mt-auto">
+          <div class="w-full md:w-auto flex flex-col md:flex-row md:items-end mt-8 md:mt-auto">
             <ul class="grid grid-cols-2">
               <li class="flex"><g-link :href="'/'" class="text-[17px] leading-[31px] tracking-normal py-2 text-center md:text-left">Home</g-link></li>
               <li class="flex"><g-link :href="'/'" class="text-[17px] leading-[31px] tracking-normal py-2 text-center md:text-left">About</g-link></li>
