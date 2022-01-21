@@ -58,8 +58,8 @@
                 </div>
             </div>
 
-            <div class="w-full max-w-[994px] mx-auto flex flex-col md:flex-row justify-between bg-brand-gray rounded-t-2xl py-8 md:py-14 px-12 md:px-16 mt-12">
-                <div class="mx-auto">
+            <div class="w-full max-w-[994px] mx-auto flex flex-col md:flex-row justify-between items-center bg-brand-gray rounded-t-2xl py-8 md:py-14 px-12 md:px-16 mt-12">
+                <div class="mx-auto md:mx-0">
                     <svg id="Group_1049" class="rotate-90 md:rotate-0" data-name="Group 1049" xmlns="http://www.w3.org/2000/svg" width="34.013" height="22.741" viewBox="0 0 34.013 22.741">
                         <path id="Path_2" data-name="Path 2" d="M175.539,443.179l-.95-.95,10.421-10.421L174.59,421.388l.95-.95,11.37,11.37Z" transform="translate(-152.897 -420.438)" fill="#ccf74f"/>
                         <rect id="Rectangle_5" data-name="Rectangle 5" width="33.063" height="1.344" transform="translate(0 10.699)" fill="#ccf74f"/>
