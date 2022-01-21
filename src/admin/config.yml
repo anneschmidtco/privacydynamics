@@ -1,6 +1,6 @@
 backend:
   name: github
-  repo: anneschmidtco/privacy-dynamics
+  repo: anneschmidtco/privacydynamics
   branch: main
 
 media_folder: "static/uploads"
@@ -105,6 +105,7 @@ collections:
                   name: "text"
                 - label: Link
                   name: "link"
+
       - label: "Product Page"
         name: "Product"
         file: "site/pages/product.md"
@@ -130,6 +131,101 @@ collections:
               - label: "Image" 
                 name: "image" 
                 widget: "image"
+          - label: "Experts Section"
+            name: "experts_section"
+            widget: "object"
+            fields:
+              - label: "Header"
+                name: "header"
+                widget: "string"
+              - label: "Image" 
+                name: "image" 
+                widget: "image"
+          - label: "Features"
+            name: 'features'
+            widget: "list"
+            fields:
+              - label: "Title"
+                name: "title"
+                widget: "markdown"
+              - label: "Description"
+                name: "description"
+                widget: "markdown"
+              - label: "Image"
+                name: "image"
+                widget: "image"
+                required: false
+          - label: "How It Works"
+            name: 'hiw'
+            widget: "object"
+            fields:
+              - label: "Header"
+                name: "header"
+                widget: "string"
+              - label: "Sub Header"
+                name: "sub_header" 
+                widget: "string"
+      - label: "Pricing Page"
+        name: "Pricing"
+        file: "site/pages/pricing.md"
+        fields:
+          - label: "Pricing Section"
+            name: "pricing_section"
+            widget: "object"
+            fields:
+              - label: "Header"
+                name: "header"
+                widget: "markdown"
+              - label: "Sub Header"
+                name: "sub_header" 
+                widget: "string"
+              - label: "Plans"
+                name: 'plans'
+                widget: "list"
+                fields:
+                  - label: "Name"
+                    name: "name"
+                    widget: "string"
+                  - label: "Pricing"
+                    name: "pricing"
+                    widget: "string"
+                  - label: "Plan Features"
+                    name: "plan_features"
+                    widget: "list"
+                    fields:
+                      - label: "Icon"
+                        name: "icon"
+                        widget: "select"
+                        options: ["Yes", "No"]
+                      - label: "Description"
+                        name: "description"
+                        widget: "markdown"
+                  - label: "CTA Button"
+                    name: "cta_button"
+                    widget: "object"
+                    fields: 
+                      - label: "Text"
+                        name: "text"
+                      - label: "Link"
+                        name: "link"
+              - label: "Footer CTA"
+                name: "footer_cta"
+                widget: "object"
+                fields:
+                  - label: "Title"
+                    name: "title"
+                    widget: "string"
+                  - label: "CTA Button"
+                    name: "cta_button"
+                    widget: "object"
+                    fields: 
+                      - label: "Text"
+                        name: "text"
+                      - label: "Link"
+                        name: "link"
+              - label: "Background Image"
+                name: "background_image"
+                widget: "image"
 
   - name: "posts"
     label: "Posts"
@@ -149,6 +245,7 @@ collections:
       - label: "Body" 
         name: "body" 
         widget: "markdown"
+
   - label: "Settings"
     name: "settings"
     files:

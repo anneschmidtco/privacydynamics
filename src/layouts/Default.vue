@@ -1,6 +1,6 @@
 <template>
   <div class="w-full">
-    <header class="container max-w-screen-xl flex justify-between items-center py-2">
+    <header class="container flex justify-between items-center py-2">
         <strong>
           <g-link to="/">
             <g-image :src="$static.settings.logo" width="500"/>
