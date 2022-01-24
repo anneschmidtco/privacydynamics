@@ -10,9 +10,11 @@ module.exports = {
           gray: {
             DEFAULT: '#172330',
             light: '#454F59',
-            lighter: '#CACFD7'
+            lighter: '#CACFD7',
+            fade: '#E9ECEF'
           },
-          lime: '#CCF74F'
+          lime: '#CCF74F',
+          teal: '#7BD6CB'
         }
       }
     },
@@ -26,5 +28,7 @@ module.exports = {
       padding: '2rem',
     },
   },
-  plugins: [],
+  plugins: [
+    require('@vueform/slider/tailwind'),
+  ],
 }

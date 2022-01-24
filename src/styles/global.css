@@ -2,6 +2,10 @@
 @tailwind components;
 @tailwind utilities;
 
+body {
+    padding-top: 76px;
+}
+
 h1 {
     line-height: inherit;
     letter-spacing: inherit;
@@ -9,6 +13,10 @@ h1 {
 
 p a {
     @apply underline;
+}
+
+a:hover {
+    @apply text-brand-lime;
 }
 
 svg {
@@ -59,4 +67,21 @@ svg {
     .title-has-highlight h3 strong {
         font-size: 60px;
     }
+}
+
+.slider-horizontal .slider-handle {
+    right: calc(var(--slider-handle-width, 16px) / 2 * -1) !important;
+}
+
+:root {
+    --slider-height: 36px;
+    --slider-handle-width: 46px;
+    --slider-handle-height: 46px;
+    --slider-bg: #323b44;
+    --slider-connect-bg: #ccf74f;
+}
+
+input:checked[type="checkbox"] {
+    background-size: 9px auto;
+    background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='10.004' height='7.75' viewBox='0 0 10.004 7.75'%3E%3Cpath id='Path_1171' data-name='Path 1171' d='M661.825,99.464l-6.159,6.159-2.784-2.784' transform='translate(-652.352 -98.934)' fill='none' stroke='%23142331' stroke-miterlimit='10' stroke-width='1.5'/%3E%3C/svg%3E%0A");
 }

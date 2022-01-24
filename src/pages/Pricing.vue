@@ -53,7 +53,7 @@
                         </li>
                     </ul>
                     <div class="mt-auto">
-                        <Button :href="plan.cta_button.link" :text="plan.cta_button.text" :isFullWidth="true" :icon="false"/>
+                        <Button :link="plan.cta_button.link" :text="plan.cta_button.text" :isFullWidth="true" :icon="false"/>
                     </div>
                 </div>
             </div>
@@ -69,7 +69,7 @@
                     <h3 class="text-[38px] leading-[44px] tracking-[-0.38px]">{{$page.pages.pricing_section.footer_cta.title}}</h3>
                 </div>
                 <div class="mt-6 md:mt-0">
-                    <Button :href="$page.pages.pricing_section.footer_cta.cta_button.link" :text="$page.pages.pricing_section.footer_cta.cta_button.text" />
+                    <Button :link="$page.pages.pricing_section.footer_cta.cta_button.link" :text="$page.pages.pricing_section.footer_cta.cta_button.text" />
                 </div>
             </div>
         </div>

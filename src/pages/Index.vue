@@ -44,7 +44,7 @@
             <div class="title-has-highlight text-[50px] leading-[50px] md:leading-[36px] tracking-[-1.5px] ml-12" v-html="parse_markdown($page.pages.in_action_section.title)"></div>  
           </div>
           <div class="mt-8 md:mt-auto">
-            <Button :text="$page.pages.in_action_section.button.text" :href="$page.pages.in_action_section.link" />
+            <Button :text="$page.pages.in_action_section.button.text" :link="$page.pages.in_action_section.link" />
           </div>
         </div>
       </div>
