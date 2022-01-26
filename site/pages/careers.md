@@ -43,4 +43,34 @@ openings_section:
             location: Remote
 benefits_section:
   header: BENEFITS
+  benefits:
+    - title: Parental Leave
+      body: "We are proud to provide up to 12 weeks of paid time off for all new
+        parents. Take all the time at once, or build a hybrid plan that allows
+        your family to adjust gradually as you return to work. "
+    - title: Retirement Plan
+      body: "We contribute 3% of every employee’s salary to a 401k plan, whether you
+        choose to participate or not. "
+    - title: Health Benefits
+      body: "Comprehensive medical, dental, and vision benefits for employees and
+        their dependents. Privacy Dynamics also covers a majority of the
+        premiums. "
+    - title: Flexibility
+      body: >
+        We trust our employees to manage the commitments and agreements they
+        make to their families and colleagues. We take a holistic approach to
+        management, and believe that happy, healthy, and balanced employees
+        deliver heroic results. 
+    - title: Growth + Wellness
+      body: We believe in investing in the health and development of our team. In
+        addition to coaching and mentorship opportunities, we provide up to $500
+        per year to each employee to use on health & wellness, however they see
+        fit.
+    - title: Unlimited Vacation
+      body: This isn’t the unlimited vacation = no vacation policy you’ve seen with
+        other companies. While we trust employees will take the time off that
+        they need, three weeks per year is the minimum amount of time we require
+        you to spend fully unplugged from your work. Unlimited vacation simply
+        means that you can stop budgeting your PTO and take time away when
+        needed.
 ---
