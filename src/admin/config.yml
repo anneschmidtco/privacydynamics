@@ -1,7 +1,7 @@
 backend:
   name: github
   repo: anneschmidtco/privacydynamics
-  branch: dev
+  branch: main
 
 media_folder: "static/uploads"
 public_folder: "/uploads"
@@ -21,6 +21,9 @@ collections:
               - label: "Header"
                 name: "header"
                 widget: "markdown"
+              - label: "Animated Heading Strings"
+                name: "animated_headings"
+                widget: "string"
               - label: "Sub Header"
                 name: "sub_header" 
                 widget: "string"
@@ -373,7 +376,116 @@ collections:
                 widget: "markdown"
               - label: "Sub Header"
                 name: "sub_header"
-                widget: "markdown"     
+                widget: "markdown"  
+
+      - label: "Careers Page"
+        name: "Careers"
+        file: "site/pages/careers.md"
+        fields:
+          - label: "Hero Section"
+            name: "hero_section"
+            widget: "object"
+            fields:
+              - label: "Header"
+                name: "header"
+                widget: "string"
+              - label: "Sub Header"
+                name: "sub_header" 
+                widget: "string"
+              - label: "Body"
+                name: "body" 
+                widget: "text"
+          - label: "Job Openings Section"
+            name: "openings_section"
+            widget: "object"
+            fields:
+              - label: "Header"
+                name: "header"
+                widget: "string"
+              - label: "Job Openings"
+                name: "openings" 
+                widget: "object"
+                fields:
+                  - label: "Categories"
+                    name: "categories"
+                    widget: "list"
+                    fields:
+                    - label: "Title"
+                      name: "title"
+                      widget: "string"
+                    - label: "Jobs"
+                      name: "jobs"
+                      widget: "list"
+                      fields:
+                      - label: "Title"
+                        name: "title"
+                        widget: "string"
+                      - label: "Link"
+                        name: "link"
+                        widget: "string"
+                      - label: "Location"
+                        name: "location"
+                        widget: "string"
+              - label: "All Jobs Link"
+                name: "all_jobs_link" 
+                widget: "object"
+                fields: 
+                  - label: "Text"
+                    name: "text"
+                  - label: "Link"
+                    name: "link"
+              - label: "Sub Header"
+                name: "sub_header" 
+                widget: "string"
+              - label: "Body"
+                name: "body" 
+                widget: "text"
+          - label: "Benefits Section"
+            name: "benefits_section"
+            widget: "object"
+            fields:
+              - label: "Header"
+                name: "header"
+                widget: "string"
+              - label: "Benefits"
+                name: "benefits" 
+                widget: "list"
+                fields:
+                  - label: "Title"
+                    name: "title"
+                    widget: "string"
+                  - label: "Body"
+                    name: "body"
+                    widget: "text"
+      
+      - label: "Resources Page"
+        name: "Resources"
+        file: "site/pages/resources.md"
+        fields:
+          - label: "Hero Section"
+            name: "hero_section"
+            widget: "object"
+            fields:
+              - label: "Header"
+                name: "header"
+                widget: "string"
+              - label: "Background Image"
+                name: "background_image" 
+                widget: "image"
+          - label: "Categories"
+            name: "categories"
+            widget: "list"
+            fields:
+              - label: "Name"
+                name: "name"
+                widget: "string"
+              - label: "Sub Categories"
+                name: sub_categories
+                widget: list
+                fields:
+                  - label: "Name"
+                    name: "name"
+                    widget: "string"
 
   - name: "posts"
     label: "Posts"

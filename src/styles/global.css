@@ -2,6 +2,85 @@
 @tailwind components;
 @tailwind utilities;
 
+:root {
+    --animate-duration: 0.5s;
+    --animate-delay: 0.5s;
+    --animate-repeat: 0;
+}
+
+.animated {
+    -webkit-animation-duration: 1s;
+    animation-duration: 1s;
+    -webkit-animation-duration: var(--animate-duration);
+    animation-duration: var(--animate-duration);
+    -webkit-animation-fill-mode: both;
+    animation-fill-mode: both;
+}
+
+@-webkit-keyframes rotateIn {
+    0% {
+        opacity: 0;
+        -webkit-transform: rotate(-200deg);
+        transform: rotate(-200deg);
+    }
+
+    to {
+        opacity: 1;
+        -webkit-transform: translateZ(0);
+        transform: translateZ(0);
+    }
+}
+
+@keyframes rotateIn {
+    0% {
+        opacity: 0;
+        -webkit-transform: rotate(-200deg);
+        transform: rotate(-200deg);
+    }
+
+    to {
+        opacity: 1;
+        -webkit-transform: translateZ(0);
+        transform: translateZ(0);
+    }
+}
+
+.rotateIn {
+    -webkit-animation-name: rotateIn;
+    animation-name: rotateIn;
+    -webkit-transform-origin: center;
+    transform-origin: center;
+}
+
+@-webkit-keyframes zoomIn {
+    0% {
+        opacity: 0;
+        -webkit-transform: scale3d(0.3, 0.3, 0.3);
+        transform: scale3d(0.3, 0.3, 0.3);
+    }
+
+    50% {
+        opacity: 1;
+    }
+}
+
+@keyframes zoomIn {
+    0% {
+        opacity: 0;
+        -webkit-transform: scale3d(0.3, 0.3, 0.3);
+        transform: scale3d(0.3, 0.3, 0.3);
+    }
+
+    50% {
+        opacity: 1;
+    }
+}
+
+.zoomIn {
+    -webkit-animation-name: zoomIn;
+    animation-name: zoomIn;
+}
+
 body {
     padding-top: 76px;
 }
@@ -20,7 +99,7 @@ a:hover {
 }
 
 svg {
-    @apply max-w-full;
+    @apply max-w-full max-h-full;
 }
 
 .container {
@@ -84,4 +163,8 @@ svg {
 input:checked[type="checkbox"] {
     background-size: 9px auto;
     background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='10.004' height='7.75' viewBox='0 0 10.004 7.75'%3E%3Cpath id='Path_1171' data-name='Path 1171' d='M661.825,99.464l-6.159,6.159-2.784-2.784' transform='translate(-652.352 -98.934)' fill='none' stroke='%23142331' stroke-miterlimit='10' stroke-width='1.5'/%3E%3C/svg%3E%0A");
+}
+
+.vue-typer .custom.char.selected {
+    @apply bg-brand-lime/10;
 }

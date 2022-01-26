@@ -2,14 +2,7 @@
   <Layout>
     <Hero :section_data="$page.pages.hero_section" :page="'product'"></Hero>
     <div
-      class="
-        experts-section
-        w-full
-        bg-brand-lime bg-no-repeat bg-bottom
-        md:bg-right
-        pb-60
-        md:pb-0
-      "
+      class="experts-section w-full bg-brand-lime bg-no-repeat bg-bottom md:bg-right pb-60 md:pb-0"
       :style="{
         backgroundImage: 'url(' + $page.pages.experts_section.image + ')',
       }"
@@ -17,37 +10,10 @@
       <div class="container relative">
         <div class="w-full md:w-1/2 flex flex-col pb-14">
           <div class="mt-8 md:mt-[60px] mb-8 md:mb-[123px]">
-            <svg
-              xmlns="http://www.w3.org/2000/svg"
-              width="497.494"
-              height="109.227"
-              viewBox="0 0 497.494 109.227"
-            >
-              <g
-                id="Group_24"
-                data-name="Group 24"
-                transform="translate(0.707 0.707)"
-              >
-                <path
-                  id="Path_26"
-                  data-name="Path 26"
-                  d="M885.768,451.15l79.958-79.958h414.327"
-                  transform="translate(-885.768 -343.337)"
-                  fill="none"
-                  stroke="#172330"
-                  stroke-miterlimit="10"
-                  stroke-width="2"
-                />
-                <path
-                  id="Path_27"
-                  data-name="Path 27"
-                  d="M1240.579,350.053l27.855,27.855-27.855,27.855"
-                  transform="translate(-773.061 -350.053)"
-                  fill="none"
-                  stroke="#172330"
-                  stroke-miterlimit="10"
-                  stroke-width="2"
-                />
+            <svg xmlns="http://www.w3.org/2000/svg" width="497.494" height="109.227" viewBox="0 0 497.494 109.227">
+              <g id="Group_24" data-name="Group 24" transform="translate(0.707 0.707)">
+                <path id="Path_26" data-name="Path 26" d="M885.768,451.15l79.958-79.958h414.327" transform="translate(-885.768 -343.337)" fill="none" stroke="#172330" stroke-miterlimit="10" stroke-width="2" />
+                <path id="Path_27" data-name="Path 27" d="M1240.579,350.053l27.855,27.855-27.855,27.855" transform="translate(-773.061 -350.053)" fill="none" stroke="#172330" stroke-miterlimit="10" stroke-width="2" />
               </g>
             </svg>
           </div>
@@ -59,64 +25,16 @@
     </div>
     <div class="w-full bg-brand-gray border-b border-brand-gray-light">
       <div class="container flex flex-col md:flex-row">
-        <div
-          class="
-            w-full
-            flex flex-col
-            md:w-1/3
-            product-feature-item
-            pt-16
-            pb-14
-            md:px-6
-          "
-          v-for="(feature, index) in get_top_features($page.pages.features)"
-          :key="index"
-        >
-          <div
-            class="
-              index-item
-              relative
-              w-[104px]
-              h-[104px]
-              text-center text-white
-              flex
-              justify-center
-              items-center
-            "
-          >
+        <div class="w-full flex flex-col md:w-1/3 product-feature-item pt-16 pb-14 md:px-6" v-for="(feature, index) in get_top_features($page.pages.features)" :key="index">
+          <div class="index-item relative w-[104px] h-[104px] text-center text-white flex justify-center items-center">
             <span>
-              <svg
-                xmlns="http://www.w3.org/2000/svg"
-                width="8.218"
-                height="12.361"
-                viewBox="0 0 8.218 12.361"
-              >
-                <path
-                  id="Path_73"
-                  data-name="Path 73"
-                  d="M51.271,65.7c0-3.9,1.25-6.181,4.11-6.181s4.109,2.277,4.109,6.181-1.25,6.181-4.109,6.181S51.271,69.6,51.271,65.7Zm1.558,2.054,4.794-5.342a2.248,2.248,0,0,0-2.243-1.644c-1.866,0-2.6,1.644-2.6,3.954v1.952Q52.778,67.236,52.829,67.75Zm5.153-1.078V64.719a7.246,7.246,0,0,0-.068-1.078L53.12,69a2.289,2.289,0,0,0,2.261,1.626C57.247,70.626,57.982,68.983,57.982,66.672Z"
-                  transform="translate(-51.271 -59.515)"
-                  fill="#fff"
-                />
+              <svg xmlns="http://www.w3.org/2000/svg" width="8.218" height="12.361" viewBox="0 0 8.218 12.361">
+                <path id="Path_73" data-name="Path 73" d="M51.271,65.7c0-3.9,1.25-6.181,4.11-6.181s4.109,2.277,4.109,6.181-1.25,6.181-4.109,6.181S51.271,69.6,51.271,65.7Zm1.558,2.054,4.794-5.342a2.248,2.248,0,0,0-2.243-1.644c-1.866,0-2.6,1.644-2.6,3.954v1.952Q52.778,67.236,52.829,67.75Zm5.153-1.078V64.719a7.246,7.246,0,0,0-.068-1.078L53.12,69a2.289,2.289,0,0,0,2.261,1.626C57.247,70.626,57.982,68.983,57.982,66.672Z" transform="translate(-51.271 -59.515)" fill="#fff" />
               </svg>
             </span>
-            <span class="ml-[2px] font-display text-[18px] leading-none">
-              {{ index + 1 }}.
-            </span>
+            <span class="ml-[2px] font-display text-[18px] leading-none"> {{ index + 1 }}. </span>
           </div>
-          <div
-            class="
-              feat-title
-              max-w-full
-              bg-no-repeat bg-bottom
-              text-white
-              mb-12
-              md:mb-14
-              mt-12
-              md:mt-32
-            "
-            v-html="parse_markdown(feature.title)"
-          ></div>
+          <div class="feat-title max-w-full bg-no-repeat bg-bottom text-white mb-12 md:mb-14 mt-12 md:mt-32" v-html="parseMarkdown(feature.title)"></div>
           <p class="text-white text-[17px] leading-[28px] tracking-[-0.17px]">
             {{ feature.description }}
           </p>
@@ -125,66 +43,18 @@
     </div>
     <div class="w-full bg-brand-gray py-20">
       <div class="container flex flex-col">
-        <div
-          class="
-            w-full
-            product-feature-item
-            flex flex-col
-            md:flex-row
-            items-start
-          "
-        >
-          <div
-            class="
-              index-item
-              relative
-              w-[104px]
-              h-[104px]
-              text-center text-white
-              flex
-              justify-center
-              items-center
-            "
-          >
+        <div class="w-full product-feature-item flex flex-col md:flex-row items-start">
+          <div class="index-item relative w-[104px] h-[104px] text-center text-white flex justify-center items-center">
             <span>
-              <svg
-                xmlns="http://www.w3.org/2000/svg"
-                width="8.218"
-                height="12.361"
-                viewBox="0 0 8.218 12.361"
-              >
-                <path
-                  id="Path_73"
-                  data-name="Path 73"
-                  d="M51.271,65.7c0-3.9,1.25-6.181,4.11-6.181s4.109,2.277,4.109,6.181-1.25,6.181-4.109,6.181S51.271,69.6,51.271,65.7Zm1.558,2.054,4.794-5.342a2.248,2.248,0,0,0-2.243-1.644c-1.866,0-2.6,1.644-2.6,3.954v1.952Q52.778,67.236,52.829,67.75Zm5.153-1.078V64.719a7.246,7.246,0,0,0-.068-1.078L53.12,69a2.289,2.289,0,0,0,2.261,1.626C57.247,70.626,57.982,68.983,57.982,66.672Z"
-                  transform="translate(-51.271 -59.515)"
-                  fill="#fff"
-                />
+              <svg xmlns="http://www.w3.org/2000/svg" width="8.218" height="12.361" viewBox="0 0 8.218 12.361">
+                <path id="Path_73" data-name="Path 73" d="M51.271,65.7c0-3.9,1.25-6.181,4.11-6.181s4.109,2.277,4.109,6.181-1.25,6.181-4.109,6.181S51.271,69.6,51.271,65.7Zm1.558,2.054,4.794-5.342a2.248,2.248,0,0,0-2.243-1.644c-1.866,0-2.6,1.644-2.6,3.954v1.952Q52.778,67.236,52.829,67.75Zm5.153-1.078V64.719a7.246,7.246,0,0,0-.068-1.078L53.12,69a2.289,2.289,0,0,0,2.261,1.626C57.247,70.626,57.982,68.983,57.982,66.672Z" transform="translate(-51.271 -59.515)" fill="#fff" />
               </svg>
             </span>
-            <span class="ml-[2px] font-display text-[18px] leading-none">
-              4.
-            </span>
+            <span class="ml-[2px] font-display text-[18px] leading-none"> 4. </span>
           </div>
           <div class="md:ml-12 mt-8 md:mt-0">
-            <div
-              class="
-                text-[38px]
-                leading-[48px]
-                tracking-[-0.76px]
-                text-white
-                mb-5
-              "
-              v-html="parse_markdown($page.pages.features[3].title)"
-            ></div>
-            <p
-              class="
-                text-white text-[17px]
-                leading-[28px]
-                tracking-[-0.17px]
-                max-w-[688px]
-              "
-            >
+            <div class="text-[38px] leading-[48px] tracking-[-0.76px] text-white mb-5" v-html="parseMarkdown($page.pages.features[3].title)"></div>
+            <p class="text-white text-[17px] leading-[28px] tracking-[-0.17px] max-w-[688px]">
               {{ $page.pages.features[3].description }}
             </p>
           </div>
@@ -200,56 +70,17 @@
           <h3 class="text-[50px] leading-[63px] tracking-[-1px]">
             {{ $page.pages.hiw.header }}
           </h3>
-          <p
-            class="
-              text-[25px]
-              leading-[34px]
-              tracking-[-0.25px]
-              text-brand-gray-light
-              mt-7
-              mb-16
-              max-w-[666px]
-              mx-auto
-            "
-          >
+          <p class="text-[25px] leading-[34px] tracking-[-0.25px] text-brand-gray-light mt-7 mb-16 max-w-[666px] mx-auto">
             {{ $page.pages.hiw.sub_header }}
           </p>
         </div>
-        <div
-          class="
-            w-full
-            treat-data
-            min-h-[619px]
-            max-w-[1137px]
-            bg-no-repeat bg-cover
-            px-8
-            mb-3
-            pt-16
-            pb-8
-          "
-        >
+        <div class="w-full treat-data min-h-[619px] max-w-[1137px] bg-no-repeat bg-cover px-8 mb-3 pt-16 pb-8">
           <div class="w-full bg-brand-gray rounded-md py-7 px-8">
             <div class="w-full flex">
               <div class="w-1/2 pr-6 flex flex-col">
                 <p class="text-white text-[19px]">Privacy Target:</p>
                 <div class="w-full mt-8 flex flex-col">
-                  <div
-                    class="
-                      w-full
-                      px-4
-                      bg-[#323b44]
-                      rounded-full
-                      relative
-                      after:bg-brand-lime
-                      after:w-10
-                      after:h-full
-                      after:absolute
-                      after:left-0
-                      after:top-0
-                      after:z-1
-                      after:rounded-l-full
-                    "
-                  >
+                  <div class="w-full px-4 bg-[#323b44] rounded-full relative after:bg-brand-lime after:w-10 after:h-full after:absolute after:left-0 after:top-0 after:z-1 after:rounded-l-full">
                     <Slider
                       v-model="value"
                       :min="1"
@@ -263,18 +94,10 @@
                   </div>
                   <ul class="flex w-full justify-between mt-3 text-white pl-3">
                     <li class="opacity-0">K <sup>1</sup></li>
-                    <li class="text-sm leading-4 tracking-normal">
-                      K <sup>2</sup>
-                    </li>
-                    <li class="text-sm leading-4 tracking-normal">
-                      K <sup>3</sup>
-                    </li>
-                    <li class="text-sm leading-4 tracking-normal">
-                      K <sup>4</sup>
-                    </li>
-                    <li class="text-sm leading-4 tracking-normal">
-                      K <sup>5</sup>
-                    </li>
+                    <li class="text-sm leading-4 tracking-normal">K <sup>2</sup></li>
+                    <li class="text-sm leading-4 tracking-normal">K <sup>3</sup></li>
+                    <li class="text-sm leading-4 tracking-normal">K <sup>4</sup></li>
+                    <li class="text-sm leading-4 tracking-normal">K <sup>5</sup></li>
                   </ul>
                 </div>
               </div>
@@ -283,67 +106,28 @@
                 <div class="w-full flex justify-between">
                   <div>
                     <div class="mb-3">
-                      <CheckBox
-                        :name="'name'"
-                        :label="'Name'"
-                        :onInput="handleInput"
-                        :value="true"
-                        :checked="formData.name"
-                      />
+                      <CheckBox :name="'name'" :label="'Name'" :onInput="handleInput" :value="true" :checked="formData.name" />
                     </div>
                     <div class="mb-3">
-                      <CheckBox
-                        :name="'gender'"
-                        :label="'Gender'"
-                        :onInput="handleInput"
-                        :value="true"
-                        :checked="formData.gender"
-                      />
+                      <CheckBox :name="'gender'" :label="'Gender'" :onInput="handleInput" :value="true" :checked="formData.gender" />
                     </div>
                     <div class="mb-3">
-                      <CheckBox
-                        :name="'age'"
-                        :label="'Age'"
-                        :onInput="handleInput"
-                        :value="true"
-                        :checked="formData.age"
-                      />
+                      <CheckBox :name="'age'" :label="'Age'" :onInput="handleInput" :value="true" :checked="formData.age" />
                     </div>
                   </div>
                   <div class="">
                     <div class="mb-3">
-                      <CheckBox
-                        :name="'city'"
-                        :label="'City'"
-                        :onInput="handleInput"
-                        :value="true"
-                        :checked="formData.city"
-                      />
+                      <CheckBox :name="'city'" :label="'City'" :onInput="handleInput" :value="true" :checked="formData.city" />
                     </div>
                     <div class="mb-3">
-                      <CheckBox
-                        :name="'state'"
-                        :label="'State'"
-                        :onInput="handleInput"
-                        :value="true"
-                        :checked="formData.state"
-                      />
+                      <CheckBox :name="'state'" :label="'State'" :onInput="handleInput" :value="true" :checked="formData.state" />
                     </div>
                     <div class="mb-3">
-                      <CheckBox
-                        :name="'zip'"
-                        :label="'Zip'"
-                        :onInput="handleInput"
-                        :value="formData.zip"
-                      />
+                      <CheckBox :name="'zip'" :label="'Zip'" :onInput="handleInput" :value="formData.zip" />
                     </div>
                   </div>
                   <div class="">
-                    <Button
-                      :isButton="true"
-                      :onClick="handleTreatData"
-                      :text="'Treat Data'"
-                    />
+                    <Button :isButton="true" :onClick="handleTreatData" :text="'Treat Data'" />
                   </div>
                 </div>
               </div>
@@ -353,149 +137,43 @@
             <table class="table-auto w-full border-collapse bg-white text-left">
               <thead class="border-b-4 border-brand-gray-lighter w-full">
                 <tr class="table w-full">
-                  <th
-                    class="
-                      bg-transparent
-                      px-2
-                      py-2
-                      uppercase
-                      text-brand-light text-[18px]
-                      leading-[21px]
-                      font-semibold
-                    "
-                  >
-                    Name
-                  </th>
-                  <th
-                    class="
-                      bg-transparent
-                      px-2
-                      py-2
-                      uppercase
-                      text-brand-light text-[18px]
-                      leading-[21px]
-                      font-semibold
-                    "
-                  >
-                    Gender
-                  </th>
-                  <th
-                    class="
-                      bg-transparent
-                      px-2
-                      py-2
-                      uppercase
-                      text-brand-light text-[18px]
-                      leading-[21px]
-                      font-semibold
-                    "
-                  >
-                    Age
-                  </th>
-                  <th
-                    class="
-                      bg-transparent
-                      px-2
-                      py-2
-                      uppercase
-                      text-brand-light text-[18px]
-                      leading-[21px]
-                      font-semibold
-                    "
-                  >
-                    City
-                  </th>
-                  <th
-                    class="
-                      bg-transparent
-                      px-2
-                      py-2
-                      uppercase
-                      text-brand-light text-[18px]
-                      leading-[21px]
-                      font-semibold
-                    "
-                  >
-                    State
-                  </th>
-                  <th
-                    class="
-                      bg-transparent
-                      px-2
-                      py-2
-                      uppercase
-                      text-brand-light text-[18px]
-                      leading-[21px]
-                      font-semibold
-                    "
-                  >
-                    Zip
-                  </th>
+                  <th class="bg-transparent px-2 py-2 uppercase text-brand-light text-[18px] leading-[21px] font-semibold">Name</th>
+                  <th class="bg-transparent px-2 py-2 uppercase text-brand-light text-[18px] leading-[21px] font-semibold">Gender</th>
+                  <th class="bg-transparent px-2 py-2 uppercase text-brand-light text-[18px] leading-[21px] font-semibold">Age</th>
+                  <th class="bg-transparent px-2 py-2 uppercase text-brand-light text-[18px] leading-[21px] font-semibold">City</th>
+                  <th class="bg-transparent px-2 py-2 uppercase text-brand-light text-[18px] leading-[21px] font-semibold">State</th>
+                  <th class="bg-transparent px-2 py-2 uppercase text-brand-light text-[18px] leading-[21px] font-semibold">Zip</th>
                 </tr>
               </thead>
               <tbody class="block w-full h-[240px] overflow-scroll">
-                <tr
-                  v-for="(row, index) in parsedData"
-                  :key="index"
-                  class="w-full table table-fixed"
-                >
+                <tr v-for="(row, index) in parsedData" :key="index" class="w-full table table-fixed">
                   <td class="border-4 bg-brand-gray-fade whitespace-nowrap">
-                    <div
-                      class="px-3 py-2 text-[21px] leading-[25px]"
-                      :class="
-                        isChanged(row, 'name') ? 'bg-brand-lime' : 'bg-white'
-                      "
-                    >
+                    <div class="px-3 py-2 text-[21px] leading-[25px]" :class="isChanged(row, 'name') ? 'bg-brand-lime' : 'bg-white'">
                       {{ row.name }}
                     </div>
                   </td>
                   <td class="border-4 bg-brand-gray-fade">
-                    <div
-                      class="px-3 py-2 text-[21px] leading-[25px]"
-                      :class="
-                        isChanged(row, 'gender') ? 'bg-brand-lime' : 'bg-white'
-                      "
-                    >
+                    <div class="px-3 py-2 text-[21px] leading-[25px]" :class="isChanged(row, 'gender') ? 'bg-brand-lime' : 'bg-white'">
                       {{ row.gender }}
                     </div>
                   </td>
                   <td class="border-4 bg-brand-gray-fade">
-                    <div
-                      class="px-3 py-2 text-[21px] leading-[25px]"
-                      :class="
-                        isChanged(row, 'age') ? 'bg-brand-lime' : 'bg-white'
-                      "
-                    >
+                    <div class="px-3 py-2 text-[21px] leading-[25px]" :class="isChanged(row, 'age') ? 'bg-brand-lime' : 'bg-white'">
                       {{ row.age }}
                     </div>
                   </td>
                   <td class="border-4 bg-brand-gray-fade">
-                    <div
-                      class="px-3 py-2 text-[21px] leading-[25px]"
-                      :class="
-                        isChanged(row, 'city') ? 'bg-brand-lime' : 'bg-white'
-                      "
-                    >
+                    <div class="px-3 py-2 text-[21px] leading-[25px]" :class="isChanged(row, 'city') ? 'bg-brand-lime' : 'bg-white'">
                       {{ row.city }}
                     </div>
                   </td>
                   <td class="border-4 bg-brand-gray-fade">
-                    <div
-                      class="px-3 py-2 text-[21px] leading-[25px]"
-                      :class="
-                        isChanged(row, 'state') ? 'bg-brand-lime' : 'bg-white'
-                      "
-                    >
+                    <div class="px-3 py-2 text-[21px] leading-[25px]" :class="isChanged(row, 'state') ? 'bg-brand-lime' : 'bg-white'">
                       {{ row.state }}
                     </div>
                   </td>
                   <td class="border-4 bg-brand-gray-fade">
-                    <div
-                      class="px-3 py-2 text-[21px] leading-[25px]"
-                      :class="
-                        isChanged(row, 'zip') ? 'bg-brand-lime' : 'bg-white'
-                      "
-                    >
+                    <div class="px-3 py-2 text-[21px] leading-[25px]" :class="isChanged(row, 'zip') ? 'bg-brand-lime' : 'bg-white'">
                       {{ row.zip }}
                     </div>
                   </td>
@@ -542,9 +220,9 @@
 import Hero from "~/components/Hero.vue";
 import CheckBox from "~/components/CheckBox.vue";
 import Button from "~/components/Button.vue";
-import MarkdownIt from "markdown-it";
 import Slider from "@vueform/slider/dist/slider.vue2.js";
 import getData from "~/helpers/data.js";
+import { parseMarkdown } from "~/helpers";
 
 export default {
   components: {
@@ -568,18 +246,11 @@ export default {
     };
   },
   methods: {
-    parse_markdown(value) {
-      const md = new MarkdownIt();
-      return md.render(value);
-    },
     get_top_features(feats) {
       return feats.slice(0, 3);
     },
     handleTreatData() {
       this.parsedData = getData(this.value, this.formData);
-      console.log("submitted");
-      console.log(this.value);
-      console.log(this.formData);
     },
     handleInput($event) {
       this.formData[$event.target.name] = $event.target.checked;
@@ -587,6 +258,7 @@ export default {
     isChanged(row, column) {
       return row.changed && row.changed.indexOf(column) >= 0;
     },
+    parseMarkdown,
   },
   mounted() {
     this.parsedData = getData();
