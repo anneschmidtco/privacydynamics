@@ -1,12 +1,13 @@
 ---
 hero_section:
-  header: "Don’t let privacy be the enemy of"
+  header: Don’t let privacy be the enemy of
   subheader: "We make privacy our job so you don’t have to. "
   image: /uploads/hero.svg
   sub_header: "We make privacy our job so you don’t have to. "
   button:
     text: "Get Started "
     link: /
+  animated_headings: Productivity, Insights, Progress, Collaboration
 features:
   - tag: PRECISE
     title: 90% Reduced Data Distortion
