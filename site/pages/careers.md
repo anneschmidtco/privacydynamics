@@ -36,6 +36,11 @@ openings_section:
           - title: Software Engineer
             link: /careers
             location: Remote
+      - title: Other
+        jobs:
+          - title: Lorem Ipsum
+            link: /careers
+            location: Remote
 benefits_section:
   header: BENEFITS
 ---
