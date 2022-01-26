@@ -454,6 +454,35 @@ collections:
                   - label: "Body"
                     name: "body"
                     widget: "text"
+      
+      - label: "Resources Page"
+        name: "Resources"
+        file: "site/pages/resources.md"
+        fields:
+          - label: "Hero Section"
+            name: "hero_section"
+            widget: "object"
+            fields:
+              - label: "Header"
+                name: "header"
+                widget: "string"
+              - label: "Background Image"
+                name: "background_image" 
+                widget: "image"
+          - label: "Categories"
+            name: "categories"
+            widget: "list"
+            fields:
+              - label: "Name"
+                name: "name"
+                widget: "string"
+              - label: "Sub Categories"
+                name: sub_categories
+                widget: list
+                fields:
+                  - label: "Name"
+                    name: "name"
+                    widget: "string"
 
   - name: "posts"
     label: "Posts"

@@ -278,7 +278,6 @@ export default {
   },
   methods: {
     isActive(index) {
-      console.log(index);
       return this.activeIndex === index;
     },
     activate(index) {
