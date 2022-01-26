@@ -2,9 +2,9 @@
   <div class="w-full hero" :class="page">
     <div class="container flex flex-col md:flex-row items-center py-20 md:py-44">
       <div class="w-full md:w-7/12 pr-0 md:pr-6">
-        <div v-if="!animated || !headings" class="text-5xl md:text-[65px] font-light text-brand-gray leading-[75px] tracking-[-1.3px]" v-html="header(section_data.header)"></div>
-        <div class="" v-if="animated && headings">
-          <h1 class="text-5xl md:text-[65px] font-light text-brand-gray leading-[75px] tracking-[-1.3px]">{{ section_data.header }} <vue-typer :text="headings"></vue-typer></h1>
+        <div v-if="!animated || !section_data.animated_headings" class="text-4xl md:text-[60px] font-light text-brand-gray leading-[75px] tracking-[-1.3px]" v-html="parseMarkdown(section_data.header)"></div>
+        <div class="" v-if="animated && section_data.animated_headings">
+          <h1 class="text-4xl md:text-[60px] font-light text-brand-gray leading-[75px] tracking-[-1.3px]">{{ section_data.header }} <vue-typer :text="parseAnimatedHeadings(section_data.animated_headings)"></vue-typer></h1>
         </div>
         <p class="text-2xl text-brand-gray-light ml-3 mt-8 mb-14 leading-[32px] tracking-[-0.5px]">{{ section_data.subheader }}</p>
         <Button :link="'/'" :text="'Get Started'" />
@@ -17,15 +17,9 @@
 </template>
 
 <script>
-import MarkdownIt from "markdown-it";
 import Button from "~/components/Button.vue";
-
+import { parseMarkdown } from "~/helpers";
 export default {
-  data() {
-    return {
-      headings: ["Productivity", "Insights", "Progress", "Collaboration"],
-    };
-  },
   props: {
     section_data: Object,
     page: Object,
@@ -39,9 +33,9 @@ export default {
     Button,
   },
   methods: {
-    header(value) {
-      const md = new MarkdownIt();
-      return md.render(value);
+    parseMarkdown,
+    parseAnimatedHeadings(str = "") {
+      return str.split(",");
     },
   },
 };

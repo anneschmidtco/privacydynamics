@@ -153,7 +153,6 @@
 
 <script>
 import { format } from "date-fns";
-import MarkdownIt from "markdown-it";
 import Button from "~/components/Button.vue";
 
 export default {
@@ -178,13 +177,6 @@ export default {
     },
     tags(tags) {
       return tags.split(",");
-    },
-    parseDate(date) {
-      return format(new Date(date), "MM.dd.yy");
-    },
-    parse_markdown(value) {
-      const md = new MarkdownIt();
-      return md.render(value);
     },
   },
   metaInfo: {

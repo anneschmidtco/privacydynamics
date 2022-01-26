@@ -196,8 +196,8 @@
     <div class="w-full bg-brand-gray py-16 text-white">
       <div class="container">
         <div class="w-full flex flex-col py-16 text-center px-8 md:px-[109px] bg-brand-gray-light rounded-2xl md:rounded-[20px]">
-          <div class="title-has-highlight text-[50px] leading-[50px] tracking-[-1px] mb-3" v-html="parse_markdown($page.pages.cta_section.header)"></div>
-          <div class="text-[35px] leading-[33px] tracking-[-0.7px]" v-html="parse_markdown($page.pages.cta_section.sub_header)"></div>
+          <div class="title-has-highlight text-[50px] leading-[50px] tracking-[-1px] mb-3" v-html="parseMarkdown($page.pages.cta_section.header)"></div>
+          <div class="text-[35px] leading-[33px] tracking-[-0.7px]" v-html="parseMarkdown($page.pages.cta_section.sub_header)"></div>
         </div>
       </div>
     </div>
@@ -269,8 +269,7 @@
 </page-query>
 
 <script>
-import { format } from "date-fns";
-import MarkdownIt from "markdown-it";
+import { parseMarkdown, parseDate } from "~/helpers";
 
 export default {
   data: function () {
@@ -286,13 +285,8 @@ export default {
     tags(tags) {
       return tags.split(",");
     },
-    parseDate(date) {
-      return format(new Date(date), "MM.dd.yy");
-    },
-    parse_markdown(value) {
-      const md = new MarkdownIt();
-      return md.render(value);
-    },
+    parseMarkdown,
+    parseDate,
   },
   metaInfo: {
     title: "Privacy Dynamics",
