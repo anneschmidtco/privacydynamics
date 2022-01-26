@@ -1,6 +1,6 @@
 ---
 hero_section:
-  header: "# Don’t let privacy be the enemy of  **progress**"
+  header: "Don’t let privacy be the enemy of"
   subheader: "We make privacy our job so you don’t have to. "
   image: /uploads/hero.svg
   sub_header: "We make privacy our job so you don’t have to. "

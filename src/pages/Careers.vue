@@ -32,8 +32,8 @@
     <div class="w-full bg-brand-gray-fade border-b border-brand-gray-lighter">
       <div class="container">
         <div class="w-full flex flex-col md:flex-row md:items-stretch relative">
-          <div class="w-full md:w-4/12 py-20 md:pt-[74px] flex flex-col pr-20">
-            <h4 class="text-[50px] leading-[60px] tracking-[-1px] font-normal mt-16 relative flex items-start before:bg-brand-lime before:w-[24px] before:h-[24px] before:inline before:top-0 before:mr-6 before:flex-shrink-0">
+          <div class="w-full md:w-4/12 pt-20 pb-14 md:pt-[74px] flex flex-col md:pr-20">
+            <h4 class="text-[50px] leading-tight md:leading-[60px] tracking-[-1px] font-normal mt-16 relative flex items-start before:bg-brand-lime before:w-[24px] before:h-[24px] before:inline before:top-0 before:mr-6 before:flex-shrink-0">
               {{ $page.pages.openings_section.header }}
             </h4>
           </div>
@@ -67,12 +67,12 @@
           </div>
         </div>
         <div class="w-full flex flex-col md:flex-row md:items-stretch relative">
-          <div class="w-full md:w-4/12 py-20 md:pt-[74px] flex flex-col">
-            <h4 class="text-[50px] leading-normal tracking-[-1px] font-normal">
+          <div class="w-full md:w-4/12 pt-16 pb-4 md:py-20 md:pt-[74px] flex flex-col">
+            <h4 class="text-[50px] leading-tight tracking-[-1px] font-normal">
               {{ $page.pages.openings_section.sub_header }}
             </h4>
           </div>
-          <div class="w-full md:w-8/12 flex flex-col md:pt-[74px] md:pb-32 md:border-l border-brand-gray-lighter md:pl-[60px]">
+          <div class="w-full md:w-8/12 flex flex-col md:pt-[74px] pb-14 md:pb-32 md:border-l border-brand-gray-lighter md:pl-[60px]">
             <p class="text-[25px] leading-[37px] tracking-[-0.5px] md:max-w-[644px]">{{ $page.pages.openings_section.body }}</p>
           </div>
         </div>
@@ -103,7 +103,7 @@
             </ul>
           </div>
         </div>
-        <div class="w-full md:w-1/2 py-14 px-4 md:px-0 md:pt-32 md:pl-12 md:pb-14 flex flex-col">
+        <div class="w-full md:w-1/2 py-14 px-4 md:px-0 md:pt-32 md:pl-12 pb-14 flex flex-col">
           <p class="text-[25px] leading-[37px] tracking-[-0.5px]">
             {{ $page.pages.benefits_section.benefits[activeIndex].body }}
           </p>

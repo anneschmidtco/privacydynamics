@@ -28,33 +28,33 @@
           <div class="w-full md:w-auto flex flex-col md:flex-row md:items-end mt-8 md:mt-auto">
             <ul class="grid grid-cols-2">
               <li class="flex">
-                <g-link :to="'/'" class="text-[17px] leading-[31px] tracking-normal py-2 text-center md:text-left">Home</g-link>
+                <g-link :to="'/'" class="text-[17px] leading-tight tracking-normal py-2 text-center md:text-left">Home</g-link>
               </li>
               <li class="flex">
-                <g-link :to="'/about'" class="text-[17px] leading-[31px] tracking-normal py-2 text-center md:text-left">About</g-link>
+                <g-link :to="'/about'" class="text-[17px] leading-tight tracking-normal py-2 text-center md:text-left">About</g-link>
               </li>
               <li class="flex">
-                <g-link :to="'/careers'" class="text-[17px] leading-[31px] tracking-normal py-2 text-center md:text-left">Careers</g-link>
+                <g-link :to="'/careers'" class="text-[17px] leading-tight tracking-normal py-2 text-center md:text-left">Careers</g-link>
               </li>
               <li class="flex">
-                <g-link :to="'/resources'" class="text-[17px] leading-[31px] tracking-normal py-2 text-center md:text-left">Resources</g-link>
+                <g-link :to="'/resources'" class="text-[17px] leading-tight tracking-normal py-2 text-center md:text-left">Resources</g-link>
               </li>
               <li class="flex">
-                <g-link :to="'/pricing'" class="text-[17px] leading-[31px] tracking-normal py-2 text-center md:text-left">Pricing</g-link>
+                <g-link :to="'/pricing'" class="text-[17px] leading-tight tracking-normal py-2 text-center md:text-left">Pricing</g-link>
               </li>
               <li class="flex">
-                <g-link :to="'/product'" class="text-[17px] leading-[31px] tracking-normal py-2 text-center md:text-left">Product</g-link>
+                <g-link :to="'/product'" class="text-[17px] leading-tight tracking-normal py-2 text-center md:text-left">Product</g-link>
               </li>
             </ul>
             <ul class="flex mx-auto mt-8 md:mt-auto md:ml-14">
               <li class="flex">
-                <g-link :to="'/'" class="px-2">
+                <g-link :to="'https://www.linkedin.com/company/privacydynamics/'" class="px-2">
                   <g-image :src="'/uploads/linkedin-icon.svg'" />
                 </g-link>
               </li>
               <li class="flex">
-                <g-link :to="'/'" class="px-2">
-                  <g-image :src="'/uploads/fb-icon.svg'" />
+                <g-link :to="'https://twitter.com/privacydynamics'" class="px-2">
+                  <g-image :src="'/uploads/twitter-icon.svg'" />
                 </g-link>
               </li>
             </ul>
