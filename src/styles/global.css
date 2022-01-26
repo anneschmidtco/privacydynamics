@@ -20,7 +20,7 @@ a:hover {
 }
 
 svg {
-    @apply max-w-full;
+    @apply max-w-full max-h-full;
 }
 
 .container {

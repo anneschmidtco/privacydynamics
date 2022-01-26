@@ -21,7 +21,6 @@ openings_section:
     intersect right now more than they ever have before, but we stand behind our
     words when we say we encourage you to have full and complete lives outside
     of your jobs.
-  openings: []
 benefits_section:
   header: BENEFITS
 ---
