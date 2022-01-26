@@ -17,7 +17,7 @@
               </g>
             </svg>
           </div>
-          <h2 class="text-[50px] leading-[60px] tracking-[-1px] max-w-[525px]">
+          <h2 class="text-[50px] leading-[60px] tracking-[-1px] max-w-[525px] pb-14 md:pb-0">
             {{ $page.pages.experts_section.header }}
           </h2>
         </div>
@@ -65,7 +65,7 @@
       </div>
     </div>
     <div class="w-full hit-section py-4">
-      <div class="container mb-8">
+      <div class="container px-4 md:px-8 mb-8">
         <div class="w-full text-center">
           <h3 class="text-[50px] leading-[63px] tracking-[-1px]">
             {{ $page.pages.hiw.header }}
@@ -74,10 +74,10 @@
             {{ $page.pages.hiw.sub_header }}
           </p>
         </div>
-        <div class="w-full treat-data min-h-[619px] max-w-[1137px] bg-no-repeat bg-cover px-8 mb-3 pt-16 pb-8">
-          <div class="w-full bg-brand-gray rounded-md py-7 px-8">
-            <div class="w-full flex">
-              <div class="w-1/2 pr-6 flex flex-col">
+        <div class="w-full treat-data min-h-[619px] max-w-[1137px] bg-no-repeat bg-cover bg-right md:bg-center bg-brand-gray-fade md:bg-transparent rounded-xl md:rounded-none px-0 md:px-8 mb-3 md:pt-16 md:pb-8">
+          <div class="w-full bg-brand-gray rounded-t-md md:rounded-md py-7 px-8">
+            <div class="w-full flex flex-col md:flex-row">
+              <div class="w-full md:w-1/2 pr-6 flex flex-col">
                 <p class="text-white text-[19px]">Privacy Target:</p>
                 <div class="w-full mt-8 flex flex-col">
                   <div class="w-full px-4 bg-[#323b44] rounded-full relative after:bg-brand-lime after:w-10 after:h-full after:absolute after:left-0 after:top-0 after:z-1 after:rounded-l-full">
@@ -101,9 +101,9 @@
                   </ul>
                 </div>
               </div>
-              <div class="w-1/2 pl-6 flex flex-col">
+              <div class="w-full md:w-1/2 md:pl-6 mt-6 md:mt-0 flex flex-col">
                 <p class="text-white text-[19px] mb-6">Treat:</p>
-                <div class="w-full flex justify-between">
+                <div class="w-full flex flex-wrap justify-between">
                   <div>
                     <div class="mb-3">
                       <CheckBox :name="'name'" :label="'Name'" :onInput="handleInput" :value="true" :checked="formData.name" />
@@ -126,15 +126,15 @@
                       <CheckBox :name="'zip'" :label="'Zip'" :onInput="handleInput" :value="formData.zip" />
                     </div>
                   </div>
-                  <div class="">
-                    <Button :isButton="true" :onClick="handleTreatData" :text="'Treat Data'" />
+                  <div class="flex mt-6 md:mt-0 w-full md:w-auto flex-shrink-0 md:flex-shrink justify-end md:justify-center">
+                    <Button :isButton="true" :onClick="handleTreatData" :text="'Treat Data'" :isFullWidth="true" />
                   </div>
                 </div>
               </div>
             </div>
           </div>
-          <div class="w-full mt-8">
-            <table class="table-auto w-full border-collapse bg-white text-left">
+          <div class="w-full md:mt-8 overflow-x-scroll border md:border-none">
+            <table class="table-auto w-[1100px] md:w-full border-collapse bg-white text-left">
               <thead class="border-b-4 border-brand-gray-lighter w-full">
                 <tr class="table w-full">
                   <th class="bg-transparent px-2 py-2 uppercase text-brand-light text-[18px] leading-[21px] font-semibold">Name</th>
@@ -145,7 +145,7 @@
                   <th class="bg-transparent px-2 py-2 uppercase text-brand-light text-[18px] leading-[21px] font-semibold">Zip</th>
                 </tr>
               </thead>
-              <tbody class="block w-full h-[240px] overflow-scroll">
+              <tbody class="block w-full md:h-[240px] overflow-scroll">
                 <tr v-for="(row, index) in parsedData" :key="index" class="w-full table table-fixed">
                   <td class="border-4 bg-brand-gray-fade whitespace-nowrap">
                     <div class="px-3 py-2 text-[21px] leading-[25px]" :class="isChanged(row, 'name') ? 'bg-brand-lime' : 'bg-white'">
@@ -153,27 +153,27 @@
                     </div>
                   </td>
                   <td class="border-4 bg-brand-gray-fade">
-                    <div class="px-3 py-2 text-[21px] leading-[25px]" :class="isChanged(row, 'gender') ? 'bg-brand-lime' : 'bg-white'">
+                    <div class="px-3 py-2 text-[21px] leading-[25px] whitespace-nowrap" :class="isChanged(row, 'gender') ? 'bg-brand-lime' : 'bg-white'">
                       {{ row.gender }}
                     </div>
                   </td>
                   <td class="border-4 bg-brand-gray-fade">
-                    <div class="px-3 py-2 text-[21px] leading-[25px]" :class="isChanged(row, 'age') ? 'bg-brand-lime' : 'bg-white'">
+                    <div class="px-3 py-2 text-[21px] leading-[25px] whitespace-nowrap" :class="isChanged(row, 'age') ? 'bg-brand-lime' : 'bg-white'">
                       {{ row.age }}
                     </div>
                   </td>
                   <td class="border-4 bg-brand-gray-fade">
-                    <div class="px-3 py-2 text-[21px] leading-[25px]" :class="isChanged(row, 'city') ? 'bg-brand-lime' : 'bg-white'">
+                    <div class="px-3 py-2 text-[21px] leading-[25px] whitespace-nowrap" :class="isChanged(row, 'city') ? 'bg-brand-lime' : 'bg-white'">
                       {{ row.city }}
                     </div>
                   </td>
                   <td class="border-4 bg-brand-gray-fade">
-                    <div class="px-3 py-2 text-[21px] leading-[25px]" :class="isChanged(row, 'state') ? 'bg-brand-lime' : 'bg-white'">
+                    <div class="px-3 py-2 text-[21px] leading-[25px] whitespace-nowrap" :class="isChanged(row, 'state') ? 'bg-brand-lime' : 'bg-white'">
                       {{ row.state }}
                     </div>
                   </td>
                   <td class="border-4 bg-brand-gray-fade">
-                    <div class="px-3 py-2 text-[21px] leading-[25px]" :class="isChanged(row, 'zip') ? 'bg-brand-lime' : 'bg-white'">
+                    <div class="px-3 py-2 text-[21px] leading-[25px] whitespace-nowrap" :class="isChanged(row, 'zip') ? 'bg-brand-lime' : 'bg-white'">
                       {{ row.zip }}
                     </div>
                   </td>
@@ -319,6 +319,9 @@ export default {
   }
   .product-feature-item:nth-child(2) {
     @apply border-none;
+  }
+  .treat-data {
+    background-image: none;
   }
 }
 </style>
