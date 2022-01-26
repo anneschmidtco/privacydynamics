@@ -1,4 +1,5 @@
 ---
 logo: /uploads/logo.svg
-site_title: some **markdown**
+footer_logo: /uploads/logo-icon.svg
+site_title: Privacy Dynamics
 ---
