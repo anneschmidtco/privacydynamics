@@ -21,6 +21,21 @@ openings_section:
     intersect right now more than they ever have before, but we stand behind our
     words when we say we encourage you to have full and complete lives outside
     of your jobs.
+  openings:
+    categories:
+      - title: Non-technical
+        jobs:
+          - title: "Business Development Representative "
+            link: /careers
+            location: Remote
+          - title: Content Marketer
+            link: /careers
+            location: Remote
+      - title: Technical
+        jobs:
+          - title: Software Engineer
+            link: /careers
+            location: Remote
 benefits_section:
   header: BENEFITS
 ---
