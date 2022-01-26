@@ -166,5 +166,5 @@ input:checked[type="checkbox"] {
 }
 
 .vue-typer .custom.char.selected {
-    @apply bg-brand-lime/10;
+    @apply bg-brand-lime/20;
 }

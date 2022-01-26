@@ -4,7 +4,9 @@
       <div class="w-full md:w-7/12 pr-0 md:pr-6">
         <div v-if="!animated || !section_data.animated_headings" class="text-4xl md:text-[60px] font-light text-brand-gray leading-[75px] tracking-[-1.3px]" v-html="parseMarkdown(section_data.header)"></div>
         <div class="" v-if="animated && section_data.animated_headings">
-          <h1 class="text-4xl md:text-[60px] font-light text-brand-gray leading-[75px] tracking-[-1.3px]">{{ section_data.header }} <vue-typer :text="parseAnimatedHeadings(section_data.animated_headings)"></vue-typer></h1>
+          <h1 class="text-4xl md:text-[60px] font-light text-brand-gray leading-[75px] tracking-[-1.3px]">
+            {{ section_data.header }} <ClientOnly><vue-typer :text="parseAnimatedHeadings(section_data.animated_headings)"></vue-typer></ClientOnly>
+          </h1>
         </div>
         <p class="text-2xl text-brand-gray-light ml-3 mt-8 mb-14 leading-[32px] tracking-[-0.5px]">{{ section_data.subheader }}</p>
         <Button :link="'/'" :text="'Get Started'" />
@@ -31,6 +33,10 @@ export default {
   },
   components: {
     Button,
+    VueTyper: () =>
+      import("vue-typer")
+        .then((m) => m.VueTyper)
+        .catch(),
   },
   methods: {
     parseMarkdown,
@@ -49,8 +55,7 @@ export default {
 }
 h1 strong,
 h1 .vue-typer {
-  font-weight: 600;
-  position: relative;
+  @apply font-semibold relative text-brand-gray;
 }
 
 @media (max-width: 640px) {
