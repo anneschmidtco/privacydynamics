@@ -14,7 +14,7 @@
         <div class="w-full flex flex-col md:flex-row">
           <div class="w-full md:w-3/12 flex fle-col bg-brand-gray text-white pt-14 pb-10 md:pt-48 px-8 md:px-0 md:pr-8">
             <ul class="list-none w-full">
-              <li class="w-full tab mb-7 cursor-pointer" :class="isOpen(index) ? 'open' : ''" v-for="(category, index) in categories" :key="index">
+              <li class="w-full tab-b mb-7 cursor-pointer" :class="isOpen(index) ? 'open' : ''" v-for="(category, index) in categories" :key="index">
                 <div class="w-full flex justify-between items-center" @click="openTab(index)">
                   <span class="text-[25px] leading-[37px] tracking-[-0.03px]">Category </span>
                   <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="22.216" height="11.473" viewBox="0 0 22.216 11.473">
@@ -117,11 +117,11 @@ export default {
 };
 </script>
 
-<style >
-.tab {
+<style>
+.tab-b {
   @apply h-[37px] overflow-hidden;
 }
-.tab.open {
+.tab-b.open {
   @apply h-auto overflow-visible;
 }
 </style>
