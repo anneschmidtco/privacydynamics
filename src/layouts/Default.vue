@@ -8,7 +8,7 @@
         <nav class="hidden md:flex flex-col fixed w-full bg-white top-[77px] md:top-0 py-2 md:py-0 left-0 md:w-auto md:relative md:flex-row items-center justify-start">
           <g-link class="px-4 py-5 mx-1 text-sm font-display text-brand-gray hover:text-brand-lime" to="/product">Product</g-link>
           <g-link class="px-4 py-5 mx-1 text-sm font-display text-brand-gray hover:text-brand-lime" to="/resources">Resources</g-link>
-          <g-link class="px-4 py-5 mx-1 text-sm font-display text-brand-gray hover:text-brand-lime" to="/our-team">Our Team</g-link>
+          <g-link class="px-4 py-5 mx-1 text-sm font-display text-brand-gray hover:text-brand-lime" to="/about">Our Team</g-link>
           <g-link class="px-4 py-5 mx-1 text-sm font-display text-brand-gray hover:text-brand-lime" to="/careers">Careers</g-link>
           <g-link class="px-9 py-3 mx-1 text-sm font-display text-white bg-brand-gray hover:bg-brand-lime hover:text-brand-gray" to="/pricing">Get started</g-link>
         </nav>

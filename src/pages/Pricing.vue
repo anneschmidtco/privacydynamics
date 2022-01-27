@@ -129,9 +129,7 @@ export default {
 </script>
 <style>
 h1 strong {
-  font-weight: 600;
-  position: relative;
-  z-index: 1;
+  @apply font-semibold relative z-1 text-white;
 }
 h1 strong::after {
   content: "";
