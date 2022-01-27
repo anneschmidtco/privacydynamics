@@ -1,9 +1,9 @@
 <template>
   <Layout>
-    <div class="hero w-full bg-cover bg-no-repeat before:hidden md:before:block before:bg-brand-lime before:w-4/12 before:h-[213px] before:absolute before:bottom-0 before:left-0 before:z-0 relative" :style="{ backgroundImage: 'url(' + $page.pages.hero_section.background_image + ')' }">
-      <div class="container relative">
-        <div class="w-full pt-52">
-          <h1 class="text-[50px] z-10 leading-none tracking-[-1px] py-8 px-8 md:py-[69px] md:px-0 md:pr-[90px] font-light inline-flex bg-brand-lime">
+    <div class="hero w-full bg-cover bg-no-repeat before:hidden md:before:block before:bg-brand-lime before:w-4/12 before:h-[188px] before:absolute before:bottom-0 before:left-0 before:z-0 relative" :style="{ backgroundImage: 'url(' + $page.pages.hero_section.background_image + ')' }">
+      <div class="container relative pt-52 px-0 md:px-8">
+        <div class="w-full md:w-3/12 bg-brand-lime">
+          <h1 class="text-[50px] z-10 leading-none tracking-[-1px] py-8 px-8 md:py-[69px] md:px-0 md:pr-[90px] font-light inline-flex">
             {{ $page.pages.hero_section.header }}
           </h1>
         </div>

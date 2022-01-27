@@ -3,7 +3,6 @@
 require('~/styles/global.css')
 
 import VueCompositionAPI from '@vue/composition-api';
-
 import DefaultLayout from '~/layouts/Default.vue';
 
 export default function (Vue, { router, head, isClient }) {
