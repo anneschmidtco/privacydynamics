@@ -11,6 +11,7 @@ const postcssPlugins = [
 
 module.exports = {
   siteName: 'Privacy Dynamics',
+  icon: './static/uploads/favicon.png',
   plugins: [
     {
       use: `gridsome-plugin-netlify-cms`,

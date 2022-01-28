@@ -19,7 +19,7 @@
     </div>
     <div class="w-full flex flex-col bg-brand-gray text-white md:border-b border-brand-gray-light">
       <div class="container py-14 md:pt-32 md:pb-36 flex flex-col md:border-l border-brand-gray-light md:pl-24 relative items-center justify-center">
-        <p class="md:absolute md:rotate-[-90deg] mb-8 md:mb-auto md:left-[-126px] tracking-[2.4px] font-display">{{ $page.pages.stats_section.cta_text }}</p>
+        <p class="md:absolute md:rotate-[-90deg] mb-8 md:mb-auto md:left-[-116px] tracking-[2.4px] font-display">{{ $page.pages.stats_section.cta_text }}</p>
         <div class="w-full flex flex-col md:flex-row justify-between mb-24">
           <div class="stats-title-wrapper title-has-highlight text-4xl md:text-[50px] leading-[60px] text-white font-light tracking-[-2px] max-w-[710px]" v-animate.repeat="'fade-in'" v-html="parseMarkdown($page.pages.stats_section.title)"></div>
           <div class="hidden md:inline-flex">
