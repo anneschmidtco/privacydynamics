@@ -17,32 +17,32 @@
     <slot />
     <footer class="w-full bg-brand-gray text-white pt-9">
       <div class="container">
-        <div class="w-full flex flex-col md:flex-row justify-between pb-11 border-b border-brand-gray-light">
-          <div>
-            <g-image :src="'/uploads/logo-icon.svg'" class="mb-8" />
+        <div class="w-full flex flex-col md:flex-row justify-center md:justify-between text-center md:text-left pb-11 border-b border-brand-gray-light">
+          <div class="w-full md:w-8/12 flex flex-col justify-center md:justify-start">
+            <g-image :src="'/uploads/logo-icon.svg'" class="mb-8 w-[80px] mx-auto md:ml-0" />
             <h4 class="text-[38px] leading-[48px] tracking-[-0.76px] max-w-[415px]">
               Empowering
               <strong class="text-brand-lime font-light">innovative</strong> and ethical data teams
             </h4>
           </div>
-          <div class="w-full md:w-auto flex flex-col md:flex-row md:items-end mt-8 md:mt-auto">
-            <ul class="grid grid-cols-2">
-              <li class="flex">
+          <div class="w-full md:w-4/12 flex flex-col justify-center md:justify-start md:flex-row md:items-end mt-8 md:mt-auto">
+            <ul class="grid grid-cols-2 text-center md:text-left">
+              <li class="flex justify-center md:justify-start">
                 <g-link :to="'/'" class="text-[17px] leading-tight tracking-normal py-2 text-center md:text-left">Home</g-link>
               </li>
-              <li class="flex">
+              <li class="flex justify-center md:justify-start">
                 <g-link :to="'/about'" class="text-[17px] leading-tight tracking-normal py-2 text-center md:text-left">About</g-link>
               </li>
-              <li class="flex">
+              <li class="flex justify-center md:justify-start">
                 <g-link :to="'/careers'" class="text-[17px] leading-tight tracking-normal py-2 text-center md:text-left">Careers</g-link>
               </li>
-              <li class="flex">
+              <li class="flex justify-center md:justify-start">
                 <g-link :to="'/resources'" class="text-[17px] leading-tight tracking-normal py-2 text-center md:text-left">Resources</g-link>
               </li>
-              <li class="flex">
+              <li class="flex justify-center md:justify-start">
                 <g-link :to="'/pricing'" class="text-[17px] leading-tight tracking-normal py-2 text-center md:text-left">Pricing</g-link>
               </li>
-              <li class="flex">
+              <li class="flex justify-center md:justify-start">
                 <g-link :to="'/product'" class="text-[17px] leading-tight tracking-normal py-2 text-center md:text-left">Product</g-link>
               </li>
             </ul>

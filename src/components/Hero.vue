@@ -1,14 +1,14 @@
 <template>
   <div class="w-full hero" :class="page">
     <div class="container px-4 md:px-8 flex flex-col md:flex-row items-center py-20 md:py-44">
-      <div class="w-full md:w-7/12 pr-0 md:pr-6">
+      <div class="w-full text-center md:text-left md:w-7/12 pr-0 md:pr-6">
         <div v-if="!animated || !section_data.animated_headings" class="text-4xl md:text-[60px] font-light text-brand-gray leading-[75px] tracking-[-1.3px]" v-html="parseMarkdown(section_data.header)"></div>
         <div class="" v-if="animated && section_data.animated_headings">
-          <h1 class="text-4xl md:text-[60px] font-light text-brand-gray leading-[75px] tracking-[-1.3px]">
+          <h1 class="text-4xl md:text-[60px] font-light text-brand-gray md:leading-[75px] tracking-[-1.3px]">
             {{ section_data.header }} <ClientOnly><vue-typer :text="parseAnimatedHeadings(section_data.animated_headings)"></vue-typer></ClientOnly>
           </h1>
         </div>
-        <p class="text-2xl text-brand-gray-light ml-3 mt-8 mb-14 leading-[32px] tracking-[-0.5px]">{{ section_data.subheader }}</p>
+        <p class="text-2xl text-brand-gray-light md:ml-3 mt-8 mb-14 leading-[32px] tracking-[-0.5px]">{{ section_data.subheader }}</p>
         <Button :link="'/'" :text="'Get Started'" :isButton="false" />
       </div>
       <div class="w-full md:w-5/12 pl-0 md:pl-8 mt-10 md:mt-auto">
@@ -64,6 +64,10 @@ export default {
     width: 207px;
     height: 63px;
     z-index: -1;
+  }
+
+  .hero h1 .vue-typer {
+    @apply block;
   }
 }
 </style>

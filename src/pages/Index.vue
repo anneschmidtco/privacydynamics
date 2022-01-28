@@ -13,7 +13,7 @@
         <h2 class="text-[50px] leading-[63px] tracking-[-1.5px] mb-6" v-animate.repeat="'fade-in-down'">{{ $page.pages.distortion_section.title }}</h2>
         <div class="max-w-[622px] mx-auto text-[17px] leading-[28px] tracking-[-0.17px] content" v-animate.repeat="'fade-in-up'" v-html="parseMarkdown($page.pages.distortion_section.sub_title)"></div>
       </div>
-      <div class="w-full" v-animate.repeat="'fade-in'">
+      <div class="w-full mt-6 md:mt-0" v-animate.repeat="'fade-in'">
         <g-image :src="$page.pages.distortion_section.chart_image" width="1199" />
       </div>
     </div>
@@ -36,12 +36,12 @@
     </div>
     <div class="w-full bg-brand-gray pt-14 pb-14 md:pt-[106px] md:pb-14 text-white overflow-hidden">
       <div class="container">
-        <div class="w-full flex flex-col md:flex-row items-center justify-between py-10 md:px-[109px] bg-brand-gray-light rounded-2xl md:rounded-[20px]">
+        <div class="w-full flex flex-col md:flex-row items-center justify-between py-10 px-4 md:px-[109px] bg-brand-gray-light rounded-2xl md:rounded-[20px]">
           <div class="flex flex-col md:flex-row items-center">
             <div class="flex items-center mb-8 md:mb-auto" v-animate.repeat="'fade-in-left'">
               <g-image :src="$page.pages.in_action_section.icon" />
             </div>
-            <div class="title-has-highlight text-[50px] leading-[50px] md:leading-[36px] tracking-[-1.5px] ml-12" v-animate.repeat="'fade-in'" v-html="parseMarkdown($page.pages.in_action_section.title)"></div>
+            <div class="title-has-highlight text-center md:text-left text-[50px] leading-[50px] md:leading-[36px] tracking-[-1.5px] md:ml-12" v-animate.repeat="'fade-in'" v-html="parseMarkdown($page.pages.in_action_section.title)"></div>
           </div>
           <div class="mt-8 md:mt-auto" v-animate.repeat="'fade-in'">
             <Button :text="$page.pages.in_action_section.button.text" :link="$page.pages.in_action_section.button.link" :isButton="false" />
