@@ -4,6 +4,7 @@ require('~/styles/global.css')
 
 import VueCompositionAPI from '@vue/composition-api';
 import DefaultLayout from '~/layouts/Default.vue';
+import VueAnimate from 'vue-animate-scroll'
 
 export default function (Vue, { router, head, isClient }) {
   head.link.push({
@@ -15,5 +16,6 @@ export default function (Vue, { router, head, isClient }) {
 
   // Set default layout as a global component
   Vue.component('Layout', DefaultLayout);
+  Vue.use(VueAnimate);
   Vue.use(VueCompositionAPI);
 }

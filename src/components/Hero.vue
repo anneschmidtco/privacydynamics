@@ -9,10 +9,10 @@
           </h1>
         </div>
         <p class="text-2xl text-brand-gray-light ml-3 mt-8 mb-14 leading-[32px] tracking-[-0.5px]">{{ section_data.subheader }}</p>
-        <Button :link="'/'" :text="'Get Started'" />
+        <Button :link="'/'" :text="'Get Started'" :isButton="false" />
       </div>
       <div class="w-full md:w-5/12 pl-0 md:pl-8 mt-10 md:mt-auto">
-        <g-image :src="section_data.image" width="135" />
+        <g-image :src="section_data.image" width="135" v-animate.repeat="'fade-in'" />
       </div>
     </div>
   </div>
@@ -24,7 +24,7 @@ import { parseMarkdown } from "~/helpers";
 export default {
   props: {
     section_data: Object,
-    page: Object,
+    page: String,
     animated: {
       type: Boolean,
       required: false,
