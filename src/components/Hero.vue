@@ -53,13 +53,14 @@ export default {
   background-size: cover;
   background-position: bottom right;
 }
-h1 strong,
-h1 .vue-typer {
+
+.hero h1 strong,
+.hero h1 .vue-typer {
   @apply font-semibold relative text-brand-gray;
 }
 
 @media (max-width: 640px) {
-  h1 strong::after {
+  .hero h1 strong::after {
     width: 207px;
     height: 63px;
     z-index: -1;

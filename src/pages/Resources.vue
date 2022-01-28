@@ -117,7 +117,7 @@ export default {
 };
 </script>
 
-<style>
+<style scoped>
 .tab-b {
   @apply h-[37px] overflow-hidden;
 }

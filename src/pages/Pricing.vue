@@ -128,10 +128,10 @@ export default {
 };
 </script>
 <style>
-h1 strong {
+.pricing-section h1 strong {
   @apply font-semibold relative z-1 text-white;
 }
-h1 strong::after {
+.pricing-section h1 strong::after {
   content: "";
   width: 236px;
   height: 80px;

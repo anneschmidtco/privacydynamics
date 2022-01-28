@@ -271,7 +271,7 @@ export default {
 
 <style src="@vueform/slider/themes/default.css"></style>
 
-<style>
+<style scoped>
 .product-feature-item:nth-child(2) {
   @apply border-x border-brand-gray-light;
 }
