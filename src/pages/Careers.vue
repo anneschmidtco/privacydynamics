@@ -184,7 +184,7 @@ export default {
   },
 };
 </script>
-<style>
+<style scoped>
 .value-item.active hr {
   @apply inline-flex;
 }
