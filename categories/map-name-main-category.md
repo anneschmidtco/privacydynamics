@@ -1,3 +1,3 @@
 ---
-name: Main Category
+name: Main
 ---
