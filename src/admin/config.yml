@@ -489,7 +489,7 @@ collections:
 
   - name: "categories"
     label: "Categories"
-    folder: "categories"
+    folder: "site/pages/categories"
     create: true
     slug: "{{slug}}"
     fields:
@@ -498,7 +498,7 @@ collections:
         widget: "string"
   - name: "resources"
     label: "Resources"
-    folder: "resources"
+    folder: "site/pages/resources"
     create: true
     slug: "{{slug}}"
     fields:
