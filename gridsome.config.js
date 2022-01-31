@@ -34,9 +34,7 @@ module.exports = {
         path: 'site/resources/**/*.md',
         typeName: 'Resource',
         refs: {
-          category: {
-            typeName: 'Category'
-          }
+          category: 'Category',
         }
       }
     },
