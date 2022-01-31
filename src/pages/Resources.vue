@@ -73,6 +73,20 @@
             header,
             background_image,
         }
+    },
+    allResource {
+      edges {
+        node {
+          heading
+        }
+      }
+    },
+    allCategory {
+      edges {
+        node {
+          name
+        }
+      }
     }
   }
 </page-query>
