@@ -24,15 +24,20 @@ module.exports = {
     {
       use: '@gridsome/source-filesystem',
       options: {
-        path: 'resources/**/*.md',
-        typeName: 'Resource'
+        path: 'categories/**/*.md',
+        typeName: 'Category'
       }
     },
     {
       use: '@gridsome/source-filesystem',
       options: {
-        path: 'categories/**/*.md',
-        typeName: 'Category'
+        path: 'resources/**/*.md',
+        typeName: 'Resource',
+        refs: {
+          category: {
+            typeName: 'Category'
+          }
+        }
       }
     },
     {

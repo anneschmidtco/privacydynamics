@@ -502,6 +502,9 @@ collections:
     create: true
     slug: "{{slug}}"
     fields:
+      - label: "Heading" 
+        name: "heading"
+        widget: "string"
       - label: "Title" 
         name: "title"
         widget: "string"
@@ -521,6 +524,15 @@ collections:
       - label: "Body" 
         name: "body" 
         widget: "markdown"
+      - label: "Download Button"
+        name: "download_button"
+        widget: "object"
+        required: false
+        fields: 
+          - label: "Text"
+            name: "text"
+          - label: "Link"
+            name: "link"
 
   - label: "Settings"
     name: "settings"
