@@ -7,7 +7,7 @@ excerpt: "We are geeks. We are passionate, spirited, individuals that seek
   company and work hard to have a hand in improving the relationship between
   privacy and data. "
 date: 2022-01-31T18:48:33.888Z
-category: map-name-main-category
+category: Data
 download_button:
   text: Download
   link: "#"
