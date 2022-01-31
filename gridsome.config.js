@@ -31,6 +31,13 @@ module.exports = {
     {
       use: '@gridsome/source-filesystem',
       options: {
+        path: 'categories/**/*.md',
+        typeName: 'Category'
+      }
+    },
+    {
+      use: '@gridsome/source-filesystem',
+      options: {
         path: 'site/pages/*.md',
         typeName: 'Pages',
       }
