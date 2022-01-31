@@ -1,13 +1,13 @@
 ---
 heading: SECTION HEADING 3
-title: Title of content
+title: Title of content 3
 excerpt: "We are geeks. We are passionate, spirited, individuals that seek
   fulfillment at work, in an environment that is inclusive and supportive of us
   as whole individuals. We are motivated to do good work by the mission of the
   company and work hard to have a hand in improving the relationship between
   privacy and data. "
 date: 2022-01-31T18:49:36.624Z
-category: map-name-main-category
+category: Data
 download_button:
   text: Download
   link: "#"
