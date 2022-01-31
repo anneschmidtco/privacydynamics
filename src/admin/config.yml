@@ -496,9 +496,9 @@ collections:
       - label: "Name" 
         name: "name"
         widget: "string"
-  - name: "posts"
-    label: "Posts"
-    folder: "posts"
+  - name: "resources"
+    label: "Resources"
+    folder: "resources"
     create: true
     slug: "{{slug}}"
     fields:
