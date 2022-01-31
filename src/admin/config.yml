@@ -493,10 +493,10 @@ collections:
     create: true
     slug: "{{slug}}"
     fields:
+      - {label: "ID", name: "id", widget: "id"}
       - label: "Name" 
         name: "name"
         widget: "string"
-      - {label: "ID", name: "id", widget: "id"}
 
   - name: "resources"
     label: "Resources"
