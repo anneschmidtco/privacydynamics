@@ -1,7 +1,7 @@
 backend:
   name: github
   repo: anneschmidtco/privacydynamics
-  branch: main
+  branch: dev
 
 media_folder: "static/uploads"
 public_folder: "/uploads"
@@ -487,12 +487,26 @@ collections:
                     name: "name"
                     widget: "string"
 
-  - name: "posts"
-    label: "Posts"
-    folder: "posts"
+  - name: "categories"
+    label: "Categories"
+    folder: "site/categories"
     create: true
     slug: "{{slug}}"
     fields:
+      - {label: "ID", name: "id", widget: "id"}
+      - label: "Name" 
+        name: "name"
+        widget: "string"
+
+  - name: "resources"
+    label: "Resources"
+    folder: "site/resources"
+    create: true
+    slug: "{{slug}}"
+    fields:
+      - label: "Heading" 
+        name: "heading"
+        widget: "string"
       - label: "Title" 
         name: "title"
         widget: "string"
@@ -502,14 +516,30 @@ collections:
       - label: "Publish Date" 
         name: "date" 
         widget: "date"
+      - label: "Category"
+        name: "category"
+        widget: "relation"
+        collection: "categories"
+        search_fields: ['name']
+        value_field: "id"
+        display_fields: ["name"]
       - label: "Body" 
         name: "body" 
         widget: "markdown"
+      - label: "Download Button"
+        name: "download_button"
+        widget: "object"
+        required: false
+        fields: 
+          - label: "Text"
+            name: "text"
+          - label: "Link"
+            name: "link"
 
   - label: "Settings"
     name: "settings"
     files:
-      - label: "Settings"
+      - label: "General Settings"
         name: "Settings"
         collapsed: false
         delete: false
