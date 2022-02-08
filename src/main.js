@@ -12,7 +12,12 @@ export default function (Vue, { router, head, isClient }) {
     href: 'https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap'
   })
 
-  head.bodyAttrs = { class: 'antialiased bg-white font-body font-normal text-sm' }
+  head.script.push({
+    src: 'https://unpkg.com/@lottiefiles/lottie-player@latest/dist/lottie-player.js',
+    body: true
+  })
+
+  head.bodyAttrs = { class: 'antialiased font-body font-normal text-sm' }
 
   // Set default layout as a global component
   Vue.component('Layout', DefaultLayout);

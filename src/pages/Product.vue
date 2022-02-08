@@ -60,12 +60,20 @@
           </div>
         </div>
         <div class="w-full px-4 mt-8 md:mt-0">
-          <g-image :src="$page.pages.features[3].image" />
+          <div class="block md:hidden">
+            <lottie-player src="https://assets4.lottiefiles.com/packages/lf20_cnwbtzcp/Data Flow Mobile.json" background="transparent" speed="1" loop autoplay></lottie-player>
+          </div>
+          <div class="hidden md:block">
+            <lottie-player src="https://assets4.lottiefiles.com/packages/lf20_ioidqxga/data flow.json" background="transparent" speed="1" loop autoplay></lottie-player>
+          </div>
         </div>
       </div>
     </div>
-    <div class="w-full hit-section py-4">
-      <div class="container px-4 md:px-8 mb-8">
+    <div class="w-full hit-section py-52 relative">
+      <div class="absolute top-0 z-0" v-animate.repeat="'fade-in-up'">
+        <g-image src="/uploads/hit-pattern-bg.png" height="191" />
+      </div>
+      <div class="container px-4 md:px-8 mb-8 z-10 relative">
         <div class="w-full text-center">
           <h3 class="text-[50px] leading-[63px] tracking-[-1px]">
             {{ $page.pages.hiw.header }}
@@ -183,6 +191,9 @@
           </div>
         </div>
       </div>
+      <div class="absolute bottom-0 z-0" v-animate.repeat="'fade-in-down'">
+        <g-image src="/uploads/hit-pattern-b-bg.png" height="191" />
+      </div>
     </div>
   </Layout>
 </template>
@@ -192,7 +203,7 @@
     pages(path: "/site/pages/product") {
       hero_section {
         header,
-        subheader
+        sub_header
         button {
           text,
           link
@@ -253,7 +264,12 @@ export default {
       this.parsedData = getData(this.value, this.formData);
     },
     handleInput($event) {
-      this.formData[$event.target.name] = $event.target.checked;
+      if ($event.target.name === "city" || $event.target.name === "state") {
+        this.formData["state"] = $event.target.checked;
+        this.formData["city"] = $event.target.checked;
+      } else {
+        this.formData[$event.target.name] = $event.target.checked;
+      }
     },
     isChanged(row, column) {
       return row.changed && row.changed.indexOf(column) >= 0;
@@ -307,14 +323,6 @@ export default {
 }
 .product-feature-item:nth-child(3) .index-item::before {
   transform: rotate(135deg);
-}
-.hit-section::before,
-.hit-section::after {
-  content: "";
-  width: 100%;
-  height: 191px;
-  background-image: url("/uploads/hit-pattern-bg.png");
-  @apply block bg-no-repeat bg-cover;
 }
 .hit-section::after {
   transform: scaleY(-1);

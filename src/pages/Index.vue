@@ -58,7 +58,7 @@
       hero_section {
         header,
         animated_headings,
-        subheader,
+        sub_header,
         button {
           text,
           link

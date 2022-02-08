@@ -11,7 +11,7 @@
         </div>
         <div class="w-full px-4 md:px-0 md:w-1/2 pt-[70px] md:pl-12 pb-14 text-white bg-brand-gray md:bg-transparent flex flex-col">
           <div class="w-full flex justify-between items-center">
-            <h2 class="text-white font-display text-[14px] tracking-[2.1px]">
+            <h2 class="text-white font-display font-medium text-[14px] tracking-[2.1px]">
               {{ $page.pages.hero_section.sub_header }}
             </h2>
             <div>
@@ -33,7 +33,7 @@
       <div class="container px-0 md:px-4 flex flex-col md:flex-row z-10 md:items-stretch">
         <div class="w-full md:w-1/2 relative py-14 md:pt-16 md:pb-28 md:pr-16 bg-brand-lime md:bg-transparent px-4 md:px-0">
           <div class="w-full flex justify-between items-center">
-            <h2 class="text-brand-gray font-display text-[14px] tracking-[2.1px]">
+            <h2 class="text-brand-gray font-display font-medium text-[14px] tracking-[2.1px]">
               {{ $page.pages.values_section.header }}
             </h2>
             <div>
@@ -54,7 +54,7 @@
             </ul>
           </div>
         </div>
-        <div class="w-full md:w-1/2 py-14 px-4 md:px-0 md:pt-32 md:pl-12 md:pb-14 flex flex-col">
+        <div class="w-full md:w-1/2 py-14 px-4 md:px-0 md:pt-[195px] md:pl-12 md:pb-14 flex flex-col">
           <p class="text-[25px] leading-[37px] tracking-[-0.5px]">
             {{ $page.pages.values_section.values[activeIndex].body }}
           </p>
@@ -64,7 +64,7 @@
     <div class="w-full bg-brand-gray-fade border-y border-brand-gray-lighter">
       <div class="container py-20 md:py-32">
         <div class="w-full text-center">
-          <h4 class="text-[17px] leading-[28px] tracking-[1.7px] uppercase font-display font-normal mb-5">
+          <h4 class="text-[17px] leading-[28px] tracking-[1.7px] uppercase font-display font-medium mb-5">
             {{ $page.pages.mission_section.header }}
           </h4>
           <h3 class="text-[50px] leading-[63px] tracking-[-1px] font-normal whitespace-pre-line max-w-[839px] mx-auto">
@@ -86,7 +86,7 @@
           </div>
           <div class="w-full md:w-8/12 flex flex-col md:pt-[74px] md:border-l border-brand-gray-lighter md:pl-[60px]">
             <div class="w-full flex justify-end">
-              <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="99.504" height="99.504" viewBox="0 0 99.504 99.504" class="max-w-[50px] md:max-w-full absolute top-10 right-0 md:relative">
+              <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="99.504" height="99.504" viewBox="0 0 99.504 99.504" class="max-w-[50px] md:max-w-full absolute top-1 right-0 md:relative">
                 <defs>
                   <clipPath id="clip-path">
                     <rect id="Rectangle_454" data-name="Rectangle 454" width="99.504" height="99.504" fill="#454f59" />
@@ -111,12 +111,10 @@
         </div>
         <div class="w-full flex flex-col md:flex-row md:items-stretch">
           <div class="w-full md:w-4/12 py-20 md:pt-40 flex flex-col">
-            <h5 class="text-[50px] leading-[60px] tracking-[-1px] font-normal whitespace-pre-line">
-              {{ $page.pages.leaders_section.header }}
-            </h5>
+            <h5 class="text-[50px] leading-[60px] tracking-[-1px] font-normal whitespace-pre-line">{{ $page.pages.leaders_section.header }}</h5>
           </div>
           <div class="w-full md:w-8/12 grid md:grid-cols-2 gap-16 md:pt-40 md:border-l border-brand-gray-lighter md:pl-[60px]">
-            <div class="flex flex-col" v-for="(leader, index) in $page.pages.leaders_section.leaders" :key="index">
+            <div class="flex flex-col mt-3" v-for="(leader, index) in $page.pages.leaders_section.leaders" :key="index">
               <g-image :src="leader.profile" />
               <hr class="border-brand-gray border-t mt-5 mb-6" />
               <h5 class="text-[38px] leading-[50px] tracking-[-1.14px] font-display">
@@ -130,12 +128,10 @@
         </div>
         <div class="w-full flex flex-col md:flex-row md:items-stretch">
           <div class="w-full md:w-4/12 py-20 md:pt-40 flex flex-col">
-            <h5 class="text-[50px] leading-[60px] tracking-[-1px] font-normal whitespace-pre-line">
-              {{ $page.pages.investors_section.header }}
-            </h5>
+            <h5 class="text-[50px] leading-[60px] tracking-[-1px] font-normal whitespace-pre-line">{{ $page.pages.investors_section.header }}</h5>
           </div>
           <div class="w-full md:w-8/12 pb-20 md:pt-40 md:pb-52 md:border-l border-brand-gray-lighter md:pl-[60px]">
-            <div class="w-full grid grid-cols-3 gap-3 gap-y-5">
+            <div class="w-full grid grid-cols-3 gap-3 gap-y-5 mt-3">
               <div class="" v-for="(comp, index) in $page.pages.investors_section.investors" :key="index">
                 <g-image :src="comp.logo" />
               </div>
@@ -157,7 +153,7 @@
     <div class="container">
       <div class="w-full flex flex-col md:flex-row md:items-stretch py-20 md:py-[138px]">
         <div class="w-full md:w-4/12 flex flex-col">
-          <h5 class="text-[50px] leading-[60px] tracking-[-1px] font-normal mt-16 relative flex items-start before:bg-brand-lime before:w-[24px] before:h-[24px] before:inline before:top-0 before:mr-6">
+          <h5 class="text-[50px] leading-[60px] tracking-[-1px] font-normal mt-[40px] relative flex items-start before:bg-brand-lime before:w-[24px] before:h-[24px] before:inline before:mt-[11px] before:mr-6">
             {{ $page.pages.media_section.header }}
           </h5>
         </div>
@@ -187,7 +183,9 @@
               <h4 class="text-[38px] leading-[44px] tracking-[-0.76px] mb-2">
                 {{ $page.pages.media_section.contact.header }}
               </h4>
-              <a class="text-[17px] leading-[28px] tracking-[1.7px] font-display underline uppercase" :to="'mailto:' + $page.pages.media_section.contact.email">{{ $page.pages.media_section.contact.email }}</a>
+              <div>
+                <a class="text-[17px] leading-[28px] tracking-[1.7px] font-display underline uppercase" :to="'mailto:' + $page.pages.media_section.contact.email">{{ $page.pages.media_section.contact.email }}</a>
+              </div>
             </div>
           </div>
         </div>

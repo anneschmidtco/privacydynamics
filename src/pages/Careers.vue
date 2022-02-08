@@ -33,9 +33,7 @@
       <div class="container">
         <div class="w-full flex flex-col md:flex-row md:items-stretch relative">
           <div class="w-full md:w-4/12 pt-20 pb-14 md:pt-[74px] flex flex-col md:pr-20">
-            <h4 class="text-[50px] leading-tight md:leading-[60px] tracking-[-1px] font-normal mt-16 relative flex items-start before:bg-brand-lime before:w-[24px] before:h-[24px] before:inline before:top-0 before:mr-6 before:flex-shrink-0">
-              {{ $page.pages.openings_section.header }}
-            </h4>
+            <h4 class="text-[50px] leading-tight md:leading-[60px] tracking-[-1px] font-normal mt-[31px] relative flex items-start before:bg-brand-lime before:w-[24px] before:h-[24px] before:inline before:mt-[11px] before:mr-6 before:flex-shrink-0">{{ $page.pages.openings_section.header }}</h4>
           </div>
           <div class="w-full md:w-8/12 flex flex-col md:pt-[74px] md:border-l border-brand-gray-lighter md:pl-[60px]">
             <div class="w-full flex flex-col tab cursor-pointer transition-all" :class="isOpen(index) ? 'open' : ''" v-for="(category, index) in $page.pages.openings_section.openings.categories" :key="index">
@@ -82,7 +80,7 @@
       <div class="container px-0 md:px-4 flex flex-col md:flex-row z-10 md:items-stretch">
         <div class="w-full md:w-1/2 relative py-14 md:pt-16 md:pb-28 md:pr-16 bg-brand-lime md:bg-transparent px-4 md:px-0">
           <div class="w-full flex justify-between items-center">
-            <h2 class="text-brand-gray font-display text-[14px] tracking-[2.1px]">
+            <h2 class="text-brand-gray font-display font-medium text-[14px] tracking-[2.1px]">
               {{ $page.pages.benefits_section.header }}
             </h2>
             <div>
@@ -103,7 +101,7 @@
             </ul>
           </div>
         </div>
-        <div class="w-full md:w-1/2 py-14 px-4 md:px-0 md:pt-32 md:pl-12 pb-14 flex flex-col">
+        <div class="w-full md:w-1/2 py-14 px-4 md:px-0 md:pt-[195px] md:pl-12 pb-14 flex flex-col">
           <p class="text-[25px] leading-[37px] tracking-[-0.5px]">
             {{ $page.pages.benefits_section.benefits[activeIndex].body }}
           </p>

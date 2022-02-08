@@ -6,6 +6,11 @@
     --animate-duration: 1s;
     --animate-delay: 0.5s;
     --animate-repeat: 0;
+    --slider-height: 36px;
+    --slider-handle-width: 46px;
+    --slider-handle-height: 46px;
+    --slider-bg: #323b44;
+    --slider-connect-bg: #ccf74f;
 }
 
 .animated,
@@ -13,10 +18,6 @@
     animation-duration: var(--animate-duration);
     animation-fill-mode: both;
     animation-timing-function: ease-in-out;
-}
-
-.animate {
-    animation-duration: 1s;
 }
 
 @-webkit-keyframes rotateIn {
@@ -313,6 +314,7 @@
 
 body {
     padding-top: 76px;
+    background-color: #f6f7f8;
 }
 
 h1 {
@@ -325,7 +327,12 @@ p a {
 }
 
 a:hover {
-    @apply text-brand-lime;
+    @apply bg-brand-lime/20;
+}
+
+.bg-brand-gray-light a:hover,
+.bg-brand-gray a:hover {
+    @apply text-brand-lime bg-transparent;
 }
 
 svg {
@@ -380,14 +387,6 @@ svg {
 
 .slider-horizontal .slider-handle {
     right: calc(var(--slider-handle-width, 16px) / 2 * -1) !important;
-}
-
-:root {
-    --slider-height: 36px;
-    --slider-handle-width: 46px;
-    --slider-handle-height: 46px;
-    --slider-bg: #323b44;
-    --slider-connect-bg: #ccf74f;
 }
 
 input:checked[type="checkbox"] {

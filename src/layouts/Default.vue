@@ -1,16 +1,16 @@
 <template>
   <div class="w-full">
-    <header class="fixed top-0 bg-white w-full z-50">
+    <header class="fixed top-0 bg-white w-full z-50 border-b">
       <div class="container flex justify-between items-center py-2">
-        <g-link to="/" class="py-[13px]">
+        <g-link to="/" class="py-[13px] hover:bg-transparent">
           <g-image :src="$static.settings.logo" width="500" />
         </g-link>
         <nav class="hidden md:flex flex-col fixed w-full bg-white top-[77px] md:top-0 py-2 md:py-0 left-0 md:w-auto md:relative md:flex-row items-center justify-start">
-          <g-link class="px-4 py-5 mx-1 text-sm font-display text-brand-gray hover:text-brand-lime" to="/product">Product</g-link>
-          <g-link class="px-4 py-5 mx-1 text-sm font-display text-brand-gray hover:text-brand-lime" to="/resources">Resources</g-link>
-          <g-link class="px-4 py-5 mx-1 text-sm font-display text-brand-gray hover:text-brand-lime" to="/about">Our Team</g-link>
-          <g-link class="px-4 py-5 mx-1 text-sm font-display text-brand-gray hover:text-brand-lime" to="/careers">Careers</g-link>
-          <g-link class="px-9 py-3 mx-1 text-sm font-display text-white bg-brand-gray hover:bg-brand-lime hover:text-brand-gray" to="/pricing">Get started</g-link>
+          <g-link class="nav-item px-4 py-5 mx-1 text-sm font-display font-medium text-brand-gray relative hover:bg-transparent after:hidden after:bg-brand-lime after:w-full after:h-1 after:absolute after:-bottom-[11px] after:left-0 hover:after:block" to="/product">Product</g-link>
+          <g-link class="nav-item px-4 py-5 mx-1 text-sm font-display font-medium text-brand-gray relative hover:bg-transparent after:hidden after:bg-brand-lime after:w-full after:h-1 after:absolute after:-bottom-[11px] after:left-0 hover:after:block" to="/resources">Resources</g-link>
+          <g-link class="nav-item px-4 py-5 mx-1 text-sm font-display font-medium text-brand-gray relative hover:bg-transparent after:hidden after:bg-brand-lime after:w-full after:h-1 after:absolute after:-bottom-[11px] after:left-0 hover:after:block" to="/about">Our Team</g-link>
+          <g-link class="nav-item px-4 py-5 mx-1 text-sm font-display font-medium text-brand-gray relative hover:bg-transparent after:hidden after:bg-brand-lime after:w-full after:h-1 after:absolute after:-bottom-[11px] after:left-0 hover:after:block" to="/careers">Careers</g-link>
+          <g-link class="px-9 py-3 mx-1 text-sm font-display font-medium text-white bg-brand-gray hover:bg-brand-lime hover:text-brand-gray" to="/pricing">Get started</g-link>
         </nav>
       </div>
     </header>
@@ -79,3 +79,13 @@ query {
   }
 }
 </static-query>
+
+<style>
+header {
+  border-color: rgba(166, 175, 188, 0.5);
+}
+.nav-item::after {
+  animation-name: fadeInDown;
+  animation-duration: 0.5s;
+}
+</style>

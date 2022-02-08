@@ -48,8 +48,8 @@ const data = [
 	},
 	{ 
 		name: "Jane Wayne",
-		city: "LA",
-		state: "Los Angeles",
+		city: "Los Angeles",
+		state: "CA",
 		zip: "22102",
 		age: 30,
 		gender: "Female",
@@ -100,8 +100,8 @@ const treatData = [
 	},
 	{ 
 		name: "Jane Wayne",
-		city: "LA",
-		state: "Los Angeles",
+		city: "Los Angeles",
+		state: "CA",
 		zip: "22102",
 		age: 30,
 		gender: "Female"
