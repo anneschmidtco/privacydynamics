@@ -330,8 +330,8 @@ a:hover {
     @apply bg-brand-lime/20;
 }
 
-.bg-brand-gray-light a:hover,
-.bg-brand-gray a:hover {
+.bg-brand-gray-light a:not(.btn):hover,
+.bg-brand-gray a:not(.btn):hover {
     @apply text-brand-lime bg-transparent;
 }
 
@@ -379,12 +379,6 @@ svg {
     @apply mb-4;
 }
 
-@media (max-width: 640px) {
-    .title-has-highlight h3 strong {
-        font-size: 60px;
-    }
-}
-
 .slider-horizontal .slider-handle {
     right: calc(var(--slider-handle-width, 16px) / 2 * -1) !important;
 }
@@ -396,4 +390,15 @@ input:checked[type="checkbox"] {
 
 .vue-typer .custom.char.selected {
     @apply bg-brand-lime/20;
+}
+
+@media (max-width: 640px) {
+    .title-has-highlight h3 strong {
+        font-size: 50px;
+        letter-spacing: -2px;
+        line-height: 44px;
+    }
+    body {
+        padding-top: 67px;
+    }
 }

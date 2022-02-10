@@ -1,6 +1,6 @@
 <template>
   <div class="w-full hero" :class="page">
-    <div class="container px-4 md:px-8 flex flex-col md:flex-row items-center py-20 md:py-44">
+    <div class="container px-4 md:px-8 flex flex-col md:flex-row items-center py-14 md:py-44">
       <div class="w-full text-left pr-0 md:pr-6" :class="page === 'product' ? 'md:w-6/12' : 'md:w-7/12'">
         <div v-if="!animated || !section_data.animated_headings" class="text-4xl md:text-[60px] font-light text-brand-gray leading-[75px] tracking-[-1.3px]" v-html="parseMarkdown(section_data.header)"></div>
         <div class="" v-if="animated && section_data.animated_headings">
@@ -8,10 +8,10 @@
             {{ section_data.header }} <ClientOnly><vue-typer :text="parseAnimatedHeadings(section_data.animated_headings)"></vue-typer></ClientOnly>
           </h1>
         </div>
-        <p class="text-2xl text-brand-gray-light mt-8 mb-14 leading-[32px] tracking-[-0.5px] max-w-xl">{{ section_data.sub_header }}</p>
+        <p class="text-xl md:text-2xl text-brand-gray-light mt-8 mb-14 leading-[32px] tracking-[-0.5px] max-w-xl">{{ section_data.sub_header }}</p>
         <Button :link="'/'" :text="'Get Started'" :isButton="false" />
       </div>
-      <div class="w-full pl-0 md:pl-8 mt-10 md:mt-auto" :class="page === 'product' ? 'md:w-6/12' : 'md:w-5/12'">
+      <div class="w-full pl-0 md:pl-8 md:mt-auto" :class="page === 'product' ? 'md:w-6/12' : 'md:w-5/12'">
         <g-image :src="section_data.image" v-if="page !== 'home'" width="135" v-animate.repeat="'fade-in'" />
         <lottie-player v-if="page === 'home'" src="https://assets5.lottiefiles.com/packages/lf20_wxzr41wu.json" background="transparent" speed="1" loop autoplay></lottie-player>
       </div>

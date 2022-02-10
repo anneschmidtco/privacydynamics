@@ -11,7 +11,8 @@ module.exports = {
             DEFAULT: '#172330',
             light: '#454F59',
             lighter: '#CACFD7',
-            fade: '#E9ECEF'
+            fade: '#E9ECEF',
+            border: '#A6AFBC'
           },
           lime: '#CCF74F',
           teal: '#7BD6CB'

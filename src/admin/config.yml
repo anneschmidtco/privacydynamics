@@ -1,7 +1,7 @@
 backend:
   name: github
   repo: anneschmidtco/privacydynamics
-  branch: dev
+  branch: main
 
 media_folder: "static/uploads"
 public_folder: "/uploads"
