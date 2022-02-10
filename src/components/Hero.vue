@@ -1,7 +1,7 @@
 <template>
   <div class="w-full hero" :class="page">
     <div class="container px-4 md:px-8 flex flex-col md:flex-row items-center py-20 md:py-44">
-      <div class="w-full text-center md:text-left pr-0 md:pr-6" :class="page === 'product' ? 'md:w-6/12' : 'md:w-7/12'">
+      <div class="w-full text-left pr-0 md:pr-6" :class="page === 'product' ? 'md:w-6/12' : 'md:w-7/12'">
         <div v-if="!animated || !section_data.animated_headings" class="text-4xl md:text-[60px] font-light text-brand-gray leading-[75px] tracking-[-1.3px]" v-html="parseMarkdown(section_data.header)"></div>
         <div class="" v-if="animated && section_data.animated_headings">
           <h1 class="text-4xl md:text-[60px] font-light text-brand-gray md:leading-[75px] tracking-[-1.3px]">

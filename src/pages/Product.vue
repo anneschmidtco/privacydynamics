@@ -25,7 +25,7 @@
     </div>
     <div class="w-full bg-brand-gray border-b border-brand-gray-light">
       <div class="container flex flex-col md:flex-row">
-        <div class="w-full flex flex-col md:w-1/3 product-feature-item pt-16 pb-14 md:px-6" v-for="(feature, index) in get_top_features($page.pages.features)" :key="index">
+        <div class="w-full flex flex-col md:w-1/3 product-feature-item pt-16 pb-14 md:px-6" v-for="(feature, index) in get_top_features($page.pages.features)" :key="index" v-animate.repeat="'fade-in-up'">
           <div class="index-item relative w-[104px] h-[104px] text-center text-white flex justify-center items-center">
             <span>
               <svg xmlns="http://www.w3.org/2000/svg" width="8.218" height="12.361" viewBox="0 0 8.218 12.361">
@@ -43,7 +43,7 @@
     </div>
     <div class="w-full bg-brand-gray py-20">
       <div class="container flex flex-col">
-        <div class="w-full product-feature-item flex flex-col md:flex-row items-start">
+        <div class="w-full product-feature-item flex flex-col md:flex-row items-start" v-animate.repeat="'fade-in-down'">
           <div class="index-item relative w-[104px] h-[104px] text-center text-white flex justify-center items-center">
             <span>
               <svg xmlns="http://www.w3.org/2000/svg" width="8.218" height="12.361" viewBox="0 0 8.218 12.361">
@@ -70,11 +70,11 @@
       </div>
     </div>
     <div class="w-full hit-section py-52 relative">
-      <div class="absolute top-0 z-0" v-animate.repeat="'fade-in-up'">
+      <div class="absolute top-0 z-0" v-animate.repeat="'fade-in'">
         <g-image src="/uploads/hit-pattern-bg.png" height="191" />
       </div>
       <div class="container px-4 md:px-8 mb-8 z-10 relative">
-        <div class="w-full text-center">
+        <div class="w-full text-center" v-animate.repeat="'fade-in-down'">
           <h3 class="text-[50px] leading-[63px] tracking-[-1px]">
             {{ $page.pages.hiw.header }}
           </h3>
@@ -191,7 +191,7 @@
           </div>
         </div>
       </div>
-      <div class="absolute bottom-0 z-0" v-animate.repeat="'fade-in-down'">
+      <div class="absolute bottom-0 z-0" v-animate.repeat="'fade-in'">
         <g-image src="/uploads/hit-pattern-b-bg.png" height="191" />
       </div>
     </div>
