@@ -7,7 +7,7 @@ hero_section:
   button:
     text: "Get Started "
     link: /
-  animated_headings: Productivity, Insights, Progress, Collaboration
+  animated_headings: Productivity,Insights,Progress,Collaboration
 features:
   - tag: PRECISE
     title: 90% Reduced Data Distortion
