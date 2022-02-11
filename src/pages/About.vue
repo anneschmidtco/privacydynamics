@@ -83,7 +83,7 @@
     <div class="w-full bg-gradient-to-b from-white to-brand-gray-fade border-b border-brand-gray-lighter">
       <div class="container">
         <div class="w-full flex flex-col md:flex-row md:items-stretch relative">
-          <div class="w-full md:w-4/12 pt-14 pb-6 md:pt-[74px] flex flex-col">
+          <div class="w-full max-w-[424px] md:w-4/12 pt-14 pb-6 md:pt-[74px] flex flex-col">
             <h4 class="text-brand-gray font-display text-[14px] tracking-[2.1px]">
               {{ $page.pages.team_section.header }}
             </h4>
@@ -93,7 +93,7 @@
           </div>
           <div class="w-full md:w-8/12 flex flex-col md:pt-[74px] md:border-l border-brand-gray-lighter md:pl-[60px]">
             <div class="w-full flex justify-end">
-              <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="99.504" height="99.504" viewBox="0 0 99.504 99.504" class="max-w-[50px] md:max-w-full absolute top-6 right-0 md:relative">
+              <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="99.504" height="99.504" viewBox="0 0 99.504 99.504" class="max-w-[50px] md:max-w-full absolute top-6 md:top-1 right-0 md:relative">
                 <defs>
                   <clipPath id="clip-path">
                     <rect id="Rectangle_454" data-name="Rectangle 454" width="99.504" height="99.504" fill="#454f59" />
@@ -209,7 +209,7 @@
       <div class="container">
         <div class="w-full flex flex-col py-16 text-center px-8 md:px-[109px] bg-brand-gray-light rounded-2xl md:rounded-[20px]">
           <div class="title-has-highlight text-[36px] md:text-[50px] leading-[46px] md:leading-[50px] tracking-[-1.08px] md:tracking-[-1px] mb-3" v-html="parseMarkdown($page.pages.cta_section.header)"></div>
-          <div class="text-[35px] leading-[33px] tracking-[-0.7px]" v-html="parseMarkdown($page.pages.cta_section.sub_header)"></div>
+          <div class="text-[36px] md:text-[35px] leading-[46px] md:leading-[33px] tracking-[-1.08px] md:tracking-[-0.7px]" v-html="parseMarkdown($page.pages.cta_section.sub_header)"></div>
         </div>
       </div>
     </div>

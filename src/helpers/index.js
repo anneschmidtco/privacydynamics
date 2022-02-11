@@ -6,8 +6,10 @@ export const spread = (obj) => {
 }
 
 export const parseMarkdown = (value) => {
-	const md = new MarkdownIt();
-	return md.render(value);
+	const md = new MarkdownIt({
+		html: true
+	});
+	return md.render(value.replace('\\', '\\n' ));
 }
 
 export const parseDate = (date) => {

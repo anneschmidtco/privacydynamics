@@ -55,7 +55,7 @@
             <span class="ml-[2px] font-display text-[18px] leading-none"> 4. </span>
           </div>
           <div class="md:ml-12 mt-8 md:mt-0">
-            <div class="text-[38px] leading-[48px] tracking-[-0.76px] text-white mb-5" v-html="parseMarkdown($page.pages.features[3].title)"></div>
+            <div class="text-[32px] md:text-[38px] leading-[45px] md:leading-[48px] tracking-[-0.76px] text-white mb-5" v-html="parseMarkdown($page.pages.features[3].title)"></div>
             <p class="text-white text-[17px] leading-[28px] tracking-[-0.17px] max-w-[688px]">
               {{ $page.pages.features[3].description }}
             </p>
@@ -71,7 +71,7 @@
         </div>
       </div>
     </div>
-    <div class="w-full hit-section py-52 relative">
+    <div class="w-full hit-section py-24 md:py-52 relative">
       <div class="absolute top-0 z-0 hidden md:flex" v-animate.repeat="'fade-in'">
         <g-image src="/uploads/hit-pattern-bg.png" height="191" />
       </div>
