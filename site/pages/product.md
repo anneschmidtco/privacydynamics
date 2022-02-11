@@ -5,7 +5,7 @@ hero_section:
   header: "# Ready. Set. **Create.**"
   button:
     text: Get Started
-    link: /
+    link: /pricing
   image: /uploads/product-hero_v1.png
 experts_section:
   header: "We’ve become the privacy experts so that you don’t have to. "
