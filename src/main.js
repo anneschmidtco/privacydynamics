@@ -4,7 +4,7 @@ require('~/styles/global.css')
 
 import VueCompositionAPI from '@vue/composition-api';
 import DefaultLayout from '~/layouts/Default.vue';
-import VueAnimate from 'vue-animate-scroll'
+import VueAnimate from 'vue-animate-scroll';
 
 export default function (Vue, { router, head, isClient }) {
   head.link.push({

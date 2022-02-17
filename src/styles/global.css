@@ -402,3 +402,7 @@ input:checked[type="checkbox"] {
         padding-top: 67px;
     }
 }
+
+.lottie-player {
+    background-color: transparent;
+}

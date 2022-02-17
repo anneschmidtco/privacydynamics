@@ -6,7 +6,7 @@
       <li<g-link class="px-4 py-5 mx-1 text-sm font-display font-medium text-brand-gray relative hover:bg-transparent after:hidden after:bg-brand-lime after:w-full after:h-1 after:absolute after:-bottom-[11px] after:left-0 hover:after:block" to="/about">Our Team</g-link>
       <li<g-link class="px-4 py-5 mx-1 text-sm font-display font-medium text-brand-gray relative hover:bg-transparent after:hidden after:bg-brand-lime after:w-full after:h-1 after:absolute after:-bottom-[11px] after:left-0 hover:after:block" to="/careers">Careers</g-link>
       <div class="mt-6 md:mt-0">
-		  <g-link class="px-9 py-3 mx-1 ml-4 md:ml-1 text-sm font-display font-medium text-white bg-brand-gray hover:bg-brand-lime hover:text-brand-gray" to="/pricing">Get started</g-link>
+		  <g-link class="px-9 py-3 mx-1 ml-4 md:ml-1 text-sm font-display font-medium text-white bg-brand-gray hover:bg-brand-lime hover:text-brand-gray transition-colors duration-1000" to="/pricing">Get started</g-link>
 	  </div>
     </nav>
     <a href="#" class="menu-icon-toggle inline-block md:hidden hover:bg-transparent appearance-none" @click="handleMobileMenu"><span></span></a>

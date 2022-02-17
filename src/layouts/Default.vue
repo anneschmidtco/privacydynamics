@@ -5,7 +5,7 @@
         <g-link to="/" class="py-[13px] hover:bg-transparent max-w-[180px] md:max-w-none">
           <g-image :src="$static.settings.logo" width="500" />
         </g-link>
-        <mobile-menu />
+        <main-menu />
       </div>
     </header>
     <slot />
@@ -55,7 +55,7 @@
           </div>
         </div>
         <div class="w-full flex flex-row justify-start md:justify-between md:items-center pt-3 pb-10 md:pb-28">
-          <p class="text-sm leading-tight md:leading-[35px] tracking-normal pr-2 border-r border-white md:border-none">© Privacy Dynamics 2021</p>
+          <p class="text-sm leading-tight md:leading-[35px] tracking-normal pr-2 border-r border-white md:border-none">© Privacy Dynamics {{ getYear() }}</p>
           <g-link :to="'/terms'" class="text-sm leading-tight md:leading-[35px] tracking-normal pl-2 md:pl-0">Terms & Conditions</g-link>
         </div>
       </div>
@@ -75,10 +75,16 @@ query {
 </static-query>
 
 <script>
-import MobileMenu from "~/components/MobileMenu.vue";
+import MainMenu from "~/components/MainMenu.vue";
 export default {
   components: {
-    MobileMenu,
+    MainMenu,
+  },
+  methods: {
+    getYear: () => {
+      const date = new Date();
+      return date.getFullYear();
+    },
   },
 };
 </script>
