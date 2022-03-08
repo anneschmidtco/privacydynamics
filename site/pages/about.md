@@ -72,7 +72,7 @@ investors_section:
     - logo: /uploads/upside-logo.png
     - logo: /uploads/slack-logo.png
     - logo: /uploads/dcf-logo.png
-  other_header: other investors from
+  other_header: "BACKED BY INDUSTRY LEADERS FROM:"
   other_investors:
     - logo: /uploads/auth0-logo.png
     - logo: /uploads/flatiron-logo.png
