@@ -64,6 +64,14 @@ distortion_section:
   sub_title: Privacy Dynamics optimizes distortion applied to the data, both where
     it’s applied and how much —  helping you preserve privacy while maintaining
     valuable relationships. [Learn more](/)
+integration_section:
+  title: Seamless Integration
+  sub_title: >+
+    Privacy Dynamics doesn’t slow down your process at all. We seamless
+    integrate into your automations and tools and are a quick added step to
+    providing you with anonymized, privacy-safe, data for you to continue
+    working with.
+
 stats_section:
   cta_text: READY. SET. CREATE.
   title: "### **90% less** data distortion than industry benchmarks"
