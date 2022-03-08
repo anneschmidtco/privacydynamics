@@ -75,8 +75,8 @@ stats_section:
       description: records per second using single core
 in_action_section:
   button:
-    text: "Get Started "
+    text: Join Waitlist
     link: /
-  title: "#### See it in **action**"
+  title: "#### Currently in public **beta**"
   icon: /uploads/cta-icon.svg
 ---
