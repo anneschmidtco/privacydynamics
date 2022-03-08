@@ -168,7 +168,7 @@
         <div class="w-full md:w-8/12 flex flex-col">
           <div class="w-full flex flex-col py-9 border-b border-brand-gray-light" v-for="(item, index) in $page.pages.media_section.press_releases" :key="index">
             <div class="w-full flex justify-between items-center mb-5">
-              <h4 class="text-[20px] md:text-[25px] leading-[48px] tracking-[-0.5px]">
+              <h4 class="text-[20px] md:text-[25px] leading-snug tracking-[-0.5px]">
                 {{ item.title }}
               </h4>
               <span class="text-[13px] md:text-[15px] leading-[28px] tracking-[1.5px] font-display font-medium">{{ parseDate(item.date) }}</span>

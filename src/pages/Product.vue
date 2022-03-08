@@ -56,7 +56,7 @@
           </div>
           <div class="md:ml-12 mt-8 md:mt-0">
             <div class="text-[32px] md:text-[38px] leading-[45px] md:leading-[48px] tracking-[-0.76px] text-white mb-5" v-html="parseMarkdown($page.pages.features[3].title)"></div>
-            <p class="text-white text-[17px] leading-[28px] tracking-[-0.17px] max-w-[688px]">
+            <p class="text-white text-[17px] leading-[28px] tracking-[-0.17px] max-w-[900px]">
               {{ $page.pages.features[3].description }}
             </p>
           </div>

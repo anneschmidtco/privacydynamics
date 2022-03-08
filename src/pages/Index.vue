@@ -8,13 +8,20 @@
         </div>
       </div>
     </div>
-    <div class="container flex flex-col py-14 md:py-24">
-      <div class="w-full text-left md:text-center flex flex-col justify-center">
-        <h2 class="text-[32px] md:text-[50px] leading-[45px] md:leading-[63px] tracking-[-0.96px] md:tracking-[-1.5px] mb-6" v-animate.repeat="'fade-in-down'">{{ $page.pages.distortion_section.title }}</h2>
-        <div class="max-w-[622px] mx-auto text-[17px] leading-[28px] tracking-[-0.17px] content" v-animate.repeat="'fade-in-up'" v-html="parseMarkdown($page.pages.distortion_section.sub_title)"></div>
-      </div>
-      <div class="w-full mt-6 md:mt-0" v-animate.repeat="'fade-in'">
-        <g-image :src="$page.pages.distortion_section.chart_image" width="1199" />
+    <div class="w-full flex flex-col bg-brand-gray text-white md:border-b border-brand-gray-light">
+      <div class="container flex flex-col py-14 md:pt-24 md:pb-18">
+        <div class="w-full text-left md:text-center flex flex-col justify-center">
+          <h2 class="text-[32px] md:text-[50px] leading-[45px] md:leading-[63px] tracking-[-0.96px] md:tracking-[-1.5px] mb-6" v-animate.repeat="'fade-in-down'">{{ $page.pages.integration_section.title }}</h2>
+          <div class="max-w-[632px] mx-auto text-[17px] leading-[28px] tracking-[-0.17px] content" v-animate.repeat="'fade-in-up'" v-html="parseMarkdown($page.pages.integration_section.sub_title)"></div>
+        </div>
+        <div class="w-full px-4 mt-8 md:mt-0">
+          <div class="block md:hidden">
+            <lottie-player src="https://assets4.lottiefiles.com/packages/lf20_cnwbtzcp/Data Flow Mobile.json" background="transparent" speed="1" loop autoplay></lottie-player>
+          </div>
+          <div class="hidden md:block">
+            <lottie-player src="https://assets4.lottiefiles.com/packages/lf20_ioidqxga/data flow.json" background="transparent" speed="1" loop autoplay></lottie-player>
+          </div>
+        </div>
       </div>
     </div>
     <div class="w-full flex flex-col bg-brand-gray text-white md:border-b border-brand-gray-light">
@@ -77,10 +84,9 @@
         title,
         description
       },
-      distortion_section {
+      integration_section {
         title,
-        sub_title,
-        chart_image
+        sub_title
       },
       stats_section {
         cta_text,

@@ -9,7 +9,7 @@ export const parseMarkdown = (value) => {
 	const md = new MarkdownIt({
 		html: true
 	});
-	return md.render(value.replace('\\', '\\n' ));
+	return md.render(value.replace('\\', '\n' ));
 }
 
 export const parseDate = (date) => {
