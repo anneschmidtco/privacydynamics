@@ -85,30 +85,40 @@ media_section:
     header: "    For media inquiries, please contact us at"
     email: press@privacydynamics.com
   press_releases:
-    - date: 2021-12-10T10:52:43.706Z
-      title: Title of press release
-      excerpt: Excerpt from article, privacy Dynamics is able to more precisely
-        transform data to eliminate privacy risk while leaving safe records
-        alone
-      link: /
-    - date: 2021-12-10T10:53:30.895Z
-      title: Title of press release
-      excerpt: Excerpt from article, privacy Dynamics is able to more precisely
-        transform data to eliminate privacy risk while leaving safe records
-        alone
-      link: /
-    - date: 2022-01-22T10:53:56.857Z
-      title: Title of press release
-      excerpt: Excerpt from article, privacy Dynamics is able to more precisely
-        transform data to eliminate privacy risk while leaving safe records
-        alone
-      link: "1"
-    - date: 2022-01-22T10:54:08.166Z
-      excerpt: Excerpt from article, privacy Dynamics is able to more precisely
-        transform data to eliminate privacy risk while leaving safe records
-        alone
-      title: Title of press release
-      link: /
+    - date: 2021-12-02T10:52:43.706Z
+      title: Privacy Dynamics debuts app that lets developers rapidly anonymize data
+      excerpt: Privacy Dynamics today announced a new tool that is capable of
+        anonymizing thousands of records per second, along with $4 million in
+        funding.
+      link: https://venturebeat.com/2021/12/02/privacy-dynamics-debuts-app-that-lets-developers-rapidly-anonymize-data/
+    - date: 2021-12-02T10:53:30.895Z
+      title: DC_THURS on Privacy-Safe Data Engineering Workflows w/ Graham Thompson
+      excerpt: "Graham Thompson, founder and CEO of Privacy Dynamics, and Pete will
+        discuss the pain points around privacy-safe data engineering workflows
+        and why businesses should embrace the opportunity to improve them. "
+      link: https://www.youtube.com/watch?v=kRNtIZI9yjw
+    - date: 2021-12-02T10:53:56.857Z
+      title: Scalable Strategies For Protecting Data Privacy In Your Shared Data Sets
+        - Episode 261
+      excerpt: >+
+        In this episode Will Thompson explores the many ways that sensitive data
+        can be leaked, re-identified, or otherwise be at risk, as well as the
+        different strategies that can be employed to mitigate those attack
+        vectors. He also explains how he and his team at Privacy Dynamics are
+        working to make those strategies more accessible to organizations so
+        that you can focus on all of the other tasks required of you.
+
+      link: https://www.dataengineeringpodcast.com/privacy-dynamics-data-privacy-strategies-episode-261/
+    - date: 2021-12-02T10:54:08.166Z
+      excerpt: SEATTLE, Dec. 2, 2021 /PRNewswire/ -- Privacy Dynamics, a startup that
+        simplifies ethical and responsible use of data, launched today a SaaS
+        application that can anonymize thousands of records per second with the
+        click of a button. Privacy Dynamics saves data and analytics teams
+        valuable time while also ensuring organizations pull compliant, accurate
+        information from a central data warehouse.
+      title: Privacy Dynamics Launches One-Click De-Identification Tool, Eliminating
+        Data Privacy and Disclosure Risks Within Minutes
+      link: https://www.prnewswire.com/news-releases/privacy-dynamics-launches-one-click-de-identification-tool-eliminating-data-privacy-and-disclosure-risks-within-minutes-301436233.html
 cta_section:
   header: "#### Want to join our **growing team?**"
   sub_header: Discover [Privacy Dynamics careers](/careers)
