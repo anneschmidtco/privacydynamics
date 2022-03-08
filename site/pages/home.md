@@ -19,10 +19,10 @@ features:
     icon: /uploads/precise-icon.svg
     description: When anonymizing data, we use a scalpel, not a sledgehammer.
       Privacy Dynamics analyzes re-identification risk at the cell level,
-      allowing for precise treatment that minimizes data distortion. Privacy
-      Dynamics’ approach reduces data distortion by more than 90%, providing
-      engineers with highly accurate, actionable datasets they can depend on to
-      do their jobs.
+      allowing for precise treatment that minimizes data distortion. Our
+      approach reduces data distortion by more than 90%, providing engineers
+      with highly accurate, actionable datasets they can depend on to do their
+      jobs.
   - tag: EFFICIENT
     title: Work within your ecosystem
     decsription: >-
