@@ -9,7 +9,7 @@ hero_section:
   animated_headings: Productivity,Insights,Progress,Collaboration
 features:
   - tag: PRECISE
-    title: 90% Reduced Data Distortion
+    title: 90% Reduced data distortion
     decsription: When anonymizing data, we use a scalpel, not a sledgehammer.
       Privacy Dynamics analyzes re-identification risk at the cell level,
       allowing for precise treatment that minimizes data distortion. Privacy
