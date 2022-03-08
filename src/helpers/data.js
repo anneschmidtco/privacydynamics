@@ -20,7 +20,7 @@ const data = [
 		changed: []
 	},
 	{ 
-		name: "Steve Rogers",
+		name: "Peter Parker",
 		city: "Olive Branch",
 		state: "Mississippi",
 		zip: "38654",
@@ -29,7 +29,7 @@ const data = [
 		changed: []
 	},
 	{ 
-		name: "Tom Collins",
+		name: "Tony Stark",
 		city: "Lewiston",
 		state: "Maine",
 		zip: "04241",
@@ -47,7 +47,7 @@ const data = [
 		changed: []
 	},
 	{ 
-		name: "Jane Wayne",
+		name: "T'Challa",
 		city: "Los Angeles",
 		state: "CA",
 		zip: "22102",
@@ -59,7 +59,7 @@ const data = [
 
 const treatData = [
 	{ 
-		name: "Clark Kenter",
+		name: "Superman",
 		city: "Raleigh",
 		state: "South Carolina",
 		zip: "28106",
@@ -67,7 +67,7 @@ const treatData = [
 		gender: "Female"
 	},
 	{ 
-		name: "Diane Prince",
+		name: "Wonder Woman",
 		city: "Annapolis",
 		state: "Virginia",
 		zip: "20900",
@@ -75,7 +75,7 @@ const treatData = [
 		gender: "Male"
 	},
 	{ 
-		name: "Steven Rodgers",
+		name: "Spider Man",
 		city: "Biloxi",
 		state: "Alabama",
 		zip: "39654",
@@ -83,7 +83,7 @@ const treatData = [
 		gender: "Female"
 	},
 	{ 
-		name: "Ted Collins",
+		name: "Ironman",
 		city: "Portland",
 		state: "Vermont",
 		zip: "14242",
@@ -91,7 +91,7 @@ const treatData = [
 		gender: "Male"
 	},
 	{ 
-		name: "Brian Wayne",
+		name: "Batman",
 		city: "Arlington",
 		state: "Maryland",
 		zip: "22112",
@@ -99,7 +99,7 @@ const treatData = [
 		gender: "Male"
 	},
 	{ 
-		name: "Jane Wayne",
+		name: "Black Panther",
 		city: "Los Angeles",
 		state: "CA",
 		zip: "22102",

@@ -2,10 +2,10 @@
   <div class="w-full hero" :class="page">
     <div class="container px-4 md:px-8 flex flex-col md:flex-row items-center py-14 md:py-44">
       <div class="w-full text-left pr-0 md:pr-6" :class="page === 'product' ? 'md:w-6/12' : 'md:w-7/12'">
-        <div v-if="!animated || !section_data.animated_headings" class="relative">
-          <div class="text-4xl md:text-[60px] font-light text-brand-gray leading-[75px] tracking-[-1.3px]" v-html="parseMarkdown(section_data.header)"></div>
+        <div v-if="!animated || !section_data.animated_headings" class="relative inline-flex">
+          <div class="text-4xl md:text-[60px] font-light text-brand-gray leading-[75px] tracking-[-1.3px] inline" v-html="parseMarkdown(section_data.header)"></div>
           <span class="absolute bottom-0 right-0 lot-fig">
-            <lottie-player ref="loticon" src="https://assets1.lottiefiles.com/packages/lf20_xjkbcuyr.json" background="transparent" speed="1" style="width: 235px; height: 80px" autoplay></lottie-player>
+            <lottie-player ref="loticon" src="https://assets1.lottiefiles.com/packages/lf20_xjkbcuyr.json" background="transparent" speed="1" autoplay></lottie-player>
           </span>
         </div>
         <div class="" v-if="animated && section_data.animated_headings">
@@ -65,15 +65,15 @@ export default {
   @apply font-semibold relative text-brand-gray;
 }
 
+.hero h1 {
+  @apply inline;
+}
+
 @media (max-width: 640px) {
   .hero h1 strong::after {
     width: 207px;
     height: 63px;
     z-index: -1;
-  }
-
-  .hero h1 .vue-typer {
-    @apply block;
   }
 }
 </style>

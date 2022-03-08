@@ -2,7 +2,6 @@
   <div class="nav-wrapper" :class="isOpen ? 'open' : ''">
     <nav class="nav hidden md:flex flex-col fixed w-full bg-white top-[68px] md:top-0 py-2 md:py-0 left-0 md:w-auto md:relative md:flex-row md:items-center justify-start animated">
       <li<g-link class="px-4 py-5 mx-1 text-sm font-display font-medium text-brand-gray relative hover:bg-transparent after:hidden after:bg-brand-lime after:w-full after:h-1 after:absolute after:-bottom-[11px] after:left-0 hover:after:block" to="/product">Product</g-link>
-      <li<g-link class="px-4 py-5 mx-1 text-sm font-display font-medium text-brand-gray relative hover:bg-transparent after:hidden after:bg-brand-lime after:w-full after:h-1 after:absolute after:-bottom-[11px] after:left-0 hover:after:block" to="/resources">Resources</g-link>
       <li<g-link class="px-4 py-5 mx-1 text-sm font-display font-medium text-brand-gray relative hover:bg-transparent after:hidden after:bg-brand-lime after:w-full after:h-1 after:absolute after:-bottom-[11px] after:left-0 hover:after:block" to="/about">Our Team</g-link>
       <li<g-link class="px-4 py-5 mx-1 text-sm font-display font-medium text-brand-gray relative hover:bg-transparent after:hidden after:bg-brand-lime after:w-full after:h-1 after:absolute after:-bottom-[11px] after:left-0 hover:after:block" to="/careers">Careers</g-link>
       <div class="mt-6 md:mt-0">

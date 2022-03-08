@@ -1,7 +1,7 @@
 <template>
   <div class="w-full">
     <g-link v-if="link && !isButton" :to="link">
-      <span class="btn inline-flex items-center justify-center group px-8 py-4 mx-1 text-[1ppx] font-display font-medium text-brand-gray text-center bg-brand-lime w-auto hover:bg-brand-gray hover:text-white cursor-pointer hover:fill-brand-lime transition-colors duration-1000" :class="isFullWidth ? 'w-full' : ''" @mouseenter="handleMouseEnter" @mouseleave="handleMouseLeave">
+      <span class="btn inline-flex items-center justify-center group px-8 py-4 mx-1 text-[15px] font-display font-medium text-brand-gray text-center bg-brand-lime w-auto hover:bg-brand-gray hover:text-white cursor-pointer hover:fill-brand-lime transition-colors duration-1000" :class="isFullWidth ? 'w-full' : ''" @mouseenter="handleMouseEnter" @mouseleave="handleMouseLeave">
         <span v-if="icon && !download" class="flex justify-start items-center btn-icon">
           <lottie-player ref="loticon" src="https://assets7.lottiefiles.com/packages/lf20_kh3djzj3.json" background="transparent" speed="1" style="width: 20px; height: 20px"></lottie-player>
         </span>
@@ -19,7 +19,7 @@
         </span>
       </span>
     </g-link>
-    <button v-if="isButton" @click="onClick" class="btn appearance-none inline-flex items-center justify-center px-8 py-4 mx-1 text-[1ppx] font-display font-medium text-brand-gray text-center bg-brand-lime w-auto hover:bg-brand-gray hover:text-brand-lime cursor-pointer hover:fill-brand-lime" :class="isFullWidth ? 'w-full' : ''" @mouseenter="handleMouseEnter" @mouseleave="handleMouseLeave">
+    <button v-if="isButton" @click="onClick" class="btn appearance-none inline-flex items-center justify-center px-8 py-4 mx-1 text-[15px] font-display font-medium text-brand-gray text-center bg-brand-lime w-auto hover:bg-brand-gray hover:text-brand-lime cursor-pointer hover:fill-brand-lime" :class="isFullWidth ? 'w-full' : ''" @mouseenter="handleMouseEnter" @mouseleave="handleMouseLeave">
       <span v-if="icon">
         <lottie-player ref="loticon" src="https://assets7.lottiefiles.com/packages/lf20_yudfaucy.json" background="transparent" speed="1" style="width: 40px; height: 40px"></lottie-player>
       </span>

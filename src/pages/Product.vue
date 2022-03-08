@@ -2,7 +2,7 @@
   <Layout>
     <Hero :section_data="$page.pages.hero_section" :page="'product'"></Hero>
     <div
-      class="experts-section w-full bg-brand-lime bg-no-repeat bg-bottom md:bg-right pb-60 md:pb-0"
+      class="experts-section w-full bg-brand-lime bg-no-repeat bg-bottom md:bg-right pb-0"
       :style="{
         backgroundImage: 'url(' + $page.pages.experts_section.image + ')',
       }"
@@ -23,6 +23,9 @@
             </h2>
           </div>
         </div>
+      </div>
+      <div class="w-full flex md:hidden">
+        <g-image :src="$page.pages.experts_section.image" height="191" />
       </div>
     </div>
     <div class="w-full bg-brand-gray border-b border-brand-gray-light">
@@ -81,7 +84,7 @@
           <h3 class="text-[32px] md:text-[50px] leading-[45px] md:leading-[63px] tracking-[-0.96px] md:tracking-[-1px]">
             {{ $page.pages.hiw.header }}
           </h3>
-          <p class="text-xl md:text-[25px] leading-6 md:leading-[34px] tracking-[-0.25px] text-brand-gray-light mt-3 md:mt-7 mb-10 md:mb-16 max-w-[666px] mx-auto">
+          <p class="text-[17px] md:text-[25px] leading-6 md:leading-[34px] tracking-[-0.25px] text-brand-gray-light mt-3 md:mt-7 mb-10 md:mb-16 max-w-[666px] mx-auto">
             {{ $page.pages.hiw.sub_header }}
           </p>
         </div>
@@ -294,8 +297,9 @@ export default {
 <style>
 .hero.product .lot-fig {
   z-index: -1;
-  right: 46px;
+  right: 0;
   bottom: 4px;
+  max-width: 235px;
 }
 .product-feature-item:nth-child(2) {
   @apply border-x border-brand-gray-light;
@@ -336,9 +340,6 @@ export default {
   .sm-pattern-b-bg {
     background-image: url(/uploads/hit-pattern-b-bg.png);
   }
-  .experts-section {
-    background-size: 100%;
-  }
   .product-feature-item:nth-child(2) {
     @apply border-none;
   }
@@ -354,6 +355,17 @@ export default {
     font-size: 32px;
     line-height: 45px;
     letter-spacing: -0.96px;
+  }
+}
+@media (max-width: 768px) {
+  .experts-section {
+    background-image: none !important;
+  }
+
+  .hero.product .lot-fig {
+    right: 0;
+    bottom: 14px;
+    max-width: 134px;
   }
 }
 </style>

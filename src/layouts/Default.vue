@@ -20,7 +20,7 @@
             </h4>
           </div>
           <div class="w-full md:w-4/12 flex flex-col justify-start md:flex-row md:items-end mt-8 md:mt-auto">
-            <ul class="grid grid-cols-2 text-left">
+            <ul class="grid grid-cols-2 gap-x-8 text-left">
               <li class="flex justify-start">
                 <g-link :to="'/'" class="text-[17px] leading-tight tracking-normal py-2 text-left">Home</g-link>
               </li>
@@ -29,9 +29,6 @@
               </li>
               <li class="flex justify-start">
                 <g-link :to="'/careers'" class="text-[17px] leading-tight tracking-normal py-2 text-left">Careers</g-link>
-              </li>
-              <li class="flex justify-start">
-                <g-link :to="'/resources'" class="text-[17px] leading-tight tracking-normal py-2 text-left">Resources</g-link>
               </li>
               <li class="flex justify-start">
                 <g-link :to="'/pricing'" class="text-[17px] leading-tight tracking-normal py-2 text-left">Pricing</g-link>
