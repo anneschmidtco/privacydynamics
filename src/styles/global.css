@@ -327,12 +327,12 @@ p a {
 }
 
 a:hover {
-    @apply bg-brand-lime/20;
+    @apply bg-lime/20;
 }
 
-.bg-brand-gray-light a:not(.btn):hover,
-.bg-brand-gray a:not(.btn):hover {
-    @apply text-brand-lime bg-transparent;
+.bg-gray-light a:not(.btn):hover,
+.bg-gray a:not(.btn):hover {
+    @apply text-lime bg-transparent;
 }
 
 svg {
@@ -361,10 +361,10 @@ svg {
 .title-has-highlight h3 strong {
     font-size: 100px;
     letter-spacing: -4px;
-    @apply text-brand-lime font-light;
+    @apply text-lime font-light;
 }
 .title-has-highlight h4 strong {
-    @apply text-brand-lime font-normal;
+    @apply text-lime font-normal;
 }
 
 .content p,
@@ -388,11 +388,11 @@ input:checked[type="checkbox"] {
 }
 
 .vue-typer .custom.char.selected {
-    @apply bg-brand-lime/20;
+    @apply bg-lime/20;
 }
 
-.bg-brand-gray .btn:hover {
-    @apply ring-1 ring-inset ring-brand-lime;
+.bg-gray .btn:hover {
+    @apply ring-1 ring-inset ring-lime;
 }
 
 @media (max-width: 640px) {

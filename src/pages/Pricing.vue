@@ -1,17 +1,17 @@
 <template>
   <Layout>
-    <div class="w-full pricing-section bg-brand-gray text-white md:bg-contain bg-bottom bg-no-repeat pb-20 md:pb-36" :style="{ backgroundImage: 'url(' + $page.pages.pricing_section.background_image + ')' }">
+    <div class="w-full pricing-section bg-gray text-white md:bg-contain bg-bottom bg-no-repeat pb-20 md:pb-36" :style="{ backgroundImage: 'url(' + $page.pages.pricing_section.background_image + ')' }">
       <div class="container">
         <div class="w-full pt-20 md:pt-40 text-center">
-          <div v-html="parseMarkdown($page.pages.pricing_section.header)" class="text-4xl md:text-[65px] leading-[44px] md:leading-[75px] tracking-[-1.08px] md:tracking-[-1.3px]"></div>
-          <p class="text-xl md:text-[25px] leading-normal md:leading-[37px] tracking-normal mt-8">{{ $page.pages.pricing_section.sub_header }}</p>
+          <div v-html="parseMarkdown($page.pages.pricing_section.header)" class="text-4xl md:text-[65px] leading-44 md:leading-[75px] tracking-[-1.08px] md:tracking-[-1.3px]"></div>
+          <p class="text-xl md:text-25 leading-normal md:leading-37 tracking-normal mt-8">{{ $page.pages.pricing_section.sub_header }}</p>
         </div>
         <div class="w-full mt-8 md:mt-16 grid grid-cols-1 md:grid-cols-2 gap-4 max-w-[994px] mx-auto">
-          <div class="flex flex-col plan-col rounded-[20px] bg-brand-gray-light" v-for="(plan, index) in $page.pages.pricing_section.plans" :key="index">
+          <div class="flex flex-col plan-col rounded-[20px] bg-gray-light" v-for="(plan, index) in $page.pages.pricing_section.plans" :key="index">
             <div>
-              <h3 class="textbase md:text-[17px] leading-normal md:leading-[28px] tracking-[1.7px] font-display uppercase font-medium bg-[#747B83] inline py-1 px-4 rounded-[11px]">{{ plan.name }}</h3>
+              <h3 class="textbase md:text-17 leading-normal tracking-[1.7px] font-display uppercase font-medium bg-[#747B83] inline py-1 px-4 rounded-[11px]">{{ plan.name }}</h3>
             </div>
-            <p class="text-[32px] md:text-[40px] leading-normal md:leading-[50px] tracking-normal mt-6 md:mt-8 mb-5 md:mb-10">{{ plan.pricing }}</p>
+            <p class="text-32 md:text-[40px] leading-normal md:leading-50 tracking-normal mt-6 md:mt-8 mb-5 md:mb-10">{{ plan.pricing }}</p>
             <ul class="list-none p-0 m-0 border-t border-white pt-6 md:pt-12">
               <li v-for="(feature, index) in plan.plan_features" :key="index" class="flex items-center plan-feat-item mb-4 md:mb-8">
                 <span v-if="feature.icon == 'Yes'">
@@ -48,7 +48,7 @@
                     </g>
                   </svg>
                 </span>
-                <div v-html="parseMarkdown(feature.description)" class="text-[17px] leading-snug tracking-normal font-medium ml-3"></div>
+                <div v-html="parseMarkdown(feature.description)" class="text-17 leading-snug tracking-normal font-medium ml-3"></div>
               </li>
             </ul>
             <div class="mt-auto">
@@ -57,7 +57,7 @@
           </div>
         </div>
 
-        <div class="w-full max-w-[994px] mx-auto flex flex-col md:flex-row justify-between items-center bg-brand-gray rounded-t-2xl py-8 md:py-14 px-10 md:px-16 mt-12">
+        <div class="w-full max-w-[994px] mx-auto flex flex-col md:flex-row justify-between items-center bg-gray rounded-t-2xl py-8 md:py-14 px-10 md:px-16 mt-12">
           <div class="mx-auto md:mx-0">
             <svg id="Group_1049" class="rotate-90 md:rotate-0" data-name="Group 1049" xmlns="http://www.w3.org/2000/svg" width="34.013" height="22.741" viewBox="0 0 34.013 22.741">
               <path id="Path_2" data-name="Path 2" d="M175.539,443.179l-.95-.95,10.421-10.421L174.59,421.388l.95-.95,11.37,11.37Z" transform="translate(-152.897 -420.438)" fill="#ccf74f" />
@@ -65,7 +65,7 @@
             </svg>
           </div>
           <div class="mt-6 md:mt-0 text-center md:text-left">
-            <h3 class="text-[36px] md:text-[38px] leading-[40px] md:leading-[44px] tracking-[-0.1px] md:tracking-[-0.38px]">{{ $page.pages.pricing_section.footer_cta.title }}</h3>
+            <h3 class="text-36 md:text-38 leading-[40px] md:leading-44 tracking-[-0.1px] md:tracking-[-0.38px]">{{ $page.pages.pricing_section.footer_cta.title }}</h3>
           </div>
           <div class="mt-6 md:mt-0">
             <Button :link="$page.pages.pricing_section.footer_cta.cta_button.link" :text="$page.pages.pricing_section.footer_cta.cta_button.text" />
@@ -144,7 +144,7 @@ export default {
   padding: 60px 73px 65px;
 }
 .plan-feat-item p s {
-  @apply text-brand-gray-lighter font-normal;
+  @apply text-gray-lighter font-normal;
 }
 .plan-feat-item p br {
   height: 0;

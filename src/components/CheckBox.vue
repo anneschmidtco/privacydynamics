@@ -1,6 +1,6 @@
 <template>
   <div class="w-full">
-    <input class="appearance-none h-[21px] w-[21px] border border-brand-gray-lighter rounded-md bg-brand-gray-light checked:bg-brand-teal checked:border-brand-teal focus:outline-none transition duration-200 mt-1 align-top bg-no-repeat bg-center bg-contain float-left mr-2 cursor-pointer" :name="name" type="checkbox" :value="value" :checked="checked" :id="name" @input="onInput" />
+    <input class="appearance-none h-[21px] w-[21px] border border-gray-lighter rounded-md bg-gray-light checked:bg-teal checked:border-teal focus:outline-none transition duration-200 mt-1 align-top bg-no-repeat bg-center bg-contain float-left mr-2 cursor-pointer" :name="name" type="checkbox" :value="value" :checked="checked" :id="name" @input="onInput" />
     <label class="inline-block text-white" :for="name">{{ label }}</label>
   </div>
 </template>

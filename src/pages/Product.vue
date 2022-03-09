@@ -2,7 +2,7 @@
   <Layout>
     <Hero :section_data="$page.pages.hero_section" :page="'product'"></Hero>
     <div
-      class="experts-section w-full bg-brand-lime bg-no-repeat bg-bottom md:bg-right pb-0"
+      class="experts-section w-full bg-lime bg-no-repeat bg-bottom md:bg-right pb-0"
       :style="{
         backgroundImage: 'url(' + $page.pages.experts_section.image + ')',
       }"
@@ -18,7 +18,7 @@
             </svg>
           </div>
           <div class="w-full md:pr-4">
-            <h2 class="text-[32px] md:text-[50px] leading-[45px] md:leading-[60px] tracking-[-0.96px] md:tracking-[-1px] max-w-[525px] pb-14 md:pb-0" v-animate.repeat="'fade-in-up'">
+            <h2 class="text-32 md:text-50 leading-45 md:leading-60 tracking-[-0.96px] md:tracking-[-1px] max-w-[525px] pb-14 md:pb-0" v-animate.repeat="'fade-in-up'">
               {{ $page.pages.experts_section.header }}
             </h2>
           </div>
@@ -28,7 +28,7 @@
         <g-image :src="$page.pages.experts_section.image" height="191" />
       </div>
     </div>
-    <div class="w-full bg-brand-gray border-b border-brand-gray-light">
+    <div class="w-full bg-gray border-b border-gray-light">
       <div class="container flex flex-col md:flex-row">
         <div class="w-full flex flex-col md:w-1/3 product-feature-item pt-16 pb-14 md:px-6" v-for="(feature, index) in get_top_features($page.pages.features)" :key="index" v-animate.repeat="'fade-in-up'">
           <div class="index-item relative w-[104px] h-[104px] text-center text-white flex justify-center items-center">
@@ -37,16 +37,16 @@
                 <path id="Path_73" data-name="Path 73" d="M51.271,65.7c0-3.9,1.25-6.181,4.11-6.181s4.109,2.277,4.109,6.181-1.25,6.181-4.109,6.181S51.271,69.6,51.271,65.7Zm1.558,2.054,4.794-5.342a2.248,2.248,0,0,0-2.243-1.644c-1.866,0-2.6,1.644-2.6,3.954v1.952Q52.778,67.236,52.829,67.75Zm5.153-1.078V64.719a7.246,7.246,0,0,0-.068-1.078L53.12,69a2.289,2.289,0,0,0,2.261,1.626C57.247,70.626,57.982,68.983,57.982,66.672Z" transform="translate(-51.271 -59.515)" fill="#fff" />
               </svg>
             </span>
-            <span class="ml-[2px] font-display text-[18px] leading-none"> {{ index + 1 }}. </span>
+            <span class="ml-[2px] font-display text-18 leading-none"> {{ index + 1 }}. </span>
           </div>
           <div class="feat-title max-w-full bg-no-repeat bg-bottom text-white mb-12 md:mb-14 mt-12 md:mt-32" v-html="parseMarkdown(feature.title)"></div>
-          <p class="text-white text-[17px] leading-[28px] tracking-[-0.17px]">
+          <p class="text-white text-17 tracking-[-0.17px]">
             {{ feature.description }}
           </p>
         </div>
       </div>
     </div>
-    <div class="w-full bg-brand-gray py-20">
+    <div class="w-full bg-gray py-20">
       <div class="container flex flex-col">
         <div class="w-full product-feature-item flex flex-col md:flex-row items-start" v-animate.repeat="'fade-in-down'">
           <div class="index-item relative w-[104px] h-[104px] text-center text-white flex justify-center items-center">
@@ -55,11 +55,11 @@
                 <path id="Path_73" data-name="Path 73" d="M51.271,65.7c0-3.9,1.25-6.181,4.11-6.181s4.109,2.277,4.109,6.181-1.25,6.181-4.109,6.181S51.271,69.6,51.271,65.7Zm1.558,2.054,4.794-5.342a2.248,2.248,0,0,0-2.243-1.644c-1.866,0-2.6,1.644-2.6,3.954v1.952Q52.778,67.236,52.829,67.75Zm5.153-1.078V64.719a7.246,7.246,0,0,0-.068-1.078L53.12,69a2.289,2.289,0,0,0,2.261,1.626C57.247,70.626,57.982,68.983,57.982,66.672Z" transform="translate(-51.271 -59.515)" fill="#fff" />
               </svg>
             </span>
-            <span class="ml-[2px] font-display text-[18px] leading-none"> 4. </span>
+            <span class="ml-[2px] font-display text-18 leading-none"> 4. </span>
           </div>
           <div class="md:ml-12 mt-8 md:mt-0">
-            <div class="text-[32px] md:text-[38px] leading-[45px] md:leading-[48px] tracking-[-0.76px] text-white mb-5" v-html="parseMarkdown($page.pages.features[3].title)"></div>
-            <p class="text-white text-[17px] leading-[28px] tracking-[-0.17px] max-w-[900px]">
+            <div class="text-32 md:text-38 leading-45 md:leading-[48px] tracking-[-0.76px] text-white mb-5" v-html="parseMarkdown($page.pages.features[3].title)"></div>
+            <p class="text-white text-17 tracking-[-0.17px] max-w-[900px]">
               {{ $page.pages.features[3].description }}
             </p>
           </div>
@@ -81,20 +81,20 @@
       <div class="absolute top-0 z-0 md:hidden w-full h-24 sm-pattern-bg bg-cover" v-animate.repeat="'fade-in'"></div>
       <div class="container px-4 md:px-8 mb-8 z-10 relative">
         <div class="w-full md:text-center" v-animate.repeat="'fade-in-down'">
-          <h3 class="text-[32px] md:text-[50px] leading-[45px] md:leading-[63px] tracking-[-0.96px] md:tracking-[-1px]">
+          <h3 class="text-32 md:text-50 leading-45 md:leading-[63px] tracking-[-0.96px] md:tracking-[-1px]">
             {{ $page.pages.hiw.header }}
           </h3>
-          <p class="text-[17px] md:text-[25px] leading-6 md:leading-[34px] tracking-[-0.25px] text-brand-gray-light mt-3 md:mt-7 mb-10 md:mb-16 max-w-[666px] mx-auto">
+          <p class="text-17 md:text-25 leading-6 md:leading-[34px] tracking-[-0.25px] text-gray-light mt-3 md:mt-7 mb-10 md:mb-16 max-w-[666px] mx-auto">
             {{ $page.pages.hiw.sub_header }}
           </p>
         </div>
-        <div class="w-full mx-auto treat-data min-h-[619px] max-w-[1137px] bg-no-repeat bg-cover bg-right md:bg-center bg-brand-gray-fade md:bg-transparent rounded-xl md:rounded-none px-0 md:px-8 mb-3 md:pt-16 md:pb-8">
-          <div class="w-full bg-brand-gray rounded-t-md md:rounded-md py-7 px-8">
+        <div class="w-full mx-auto treat-data min-h-[619px] max-w-[1137px] bg-no-repeat bg-cover bg-right md:bg-center bg-gray-fade md:bg-transparent rounded-xl md:rounded-none px-0 md:px-8 mb-3 md:pt-16 md:pb-8">
+          <div class="w-full bg-gray rounded-t-md md:rounded-md py-7 px-8">
             <div class="w-full flex flex-col md:flex-row">
               <div class="w-full md:w-1/2 pr-6 flex flex-col">
                 <p class="text-white text-[19px]">Privacy Target:</p>
                 <div class="w-full mt-8 flex flex-col">
-                  <div class="w-full px-4 bg-[#323b44] rounded-full relative after:bg-brand-lime after:w-10 after:h-full after:absolute after:left-0 after:top-0 after:z-1 after:rounded-l-full">
+                  <div class="w-full px-4 bg-[#323b44] rounded-full relative after:bg-lime after:w-10 after:h-full after:absolute after:left-0 after:top-0 after:z-1 after:rounded-l-full">
                     <Slider
                       v-model="value"
                       :min="1"
@@ -149,45 +149,45 @@
           </div>
           <div class="w-full md:mt-8 overflow-x-scroll border md:border-none">
             <table class="table-auto w-[1100px] md:w-full border-collapse bg-white text-left">
-              <thead class="border-b-4 border-brand-gray-lighter w-full">
+              <thead class="border-b-4 border-gray-lighter w-full">
                 <tr class="table w-full">
-                  <th class="bg-transparent px-2 py-2 uppercase text-brand-light text-[18px] leading-[21px] font-semibold">Name</th>
-                  <th class="bg-transparent px-2 py-2 uppercase text-brand-light text-[18px] leading-[21px] font-semibold">Gender</th>
-                  <th class="bg-transparent px-2 py-2 uppercase text-brand-light text-[18px] leading-[21px] font-semibold">Age</th>
-                  <th class="bg-transparent px-2 py-2 uppercase text-brand-light text-[18px] leading-[21px] font-semibold">City</th>
-                  <th class="bg-transparent px-2 py-2 uppercase text-brand-light text-[18px] leading-[21px] font-semibold">State</th>
-                  <th class="bg-transparent px-2 py-2 uppercase text-brand-light text-[18px] leading-[21px] font-semibold">Zip</th>
+                  <th class="bg-transparent px-2 py-2 uppercase text-light text-18 font-semibold">Name</th>
+                  <th class="bg-transparent px-2 py-2 uppercase text-light text-18 font-semibold">Gender</th>
+                  <th class="bg-transparent px-2 py-2 uppercase text-light text-18 font-semibold">Age</th>
+                  <th class="bg-transparent px-2 py-2 uppercase text-light text-18 font-semibold">City</th>
+                  <th class="bg-transparent px-2 py-2 uppercase text-light text-18 font-semibold">State</th>
+                  <th class="bg-transparent px-2 py-2 uppercase text-light text-18 font-semibold">Zip</th>
                 </tr>
               </thead>
               <tbody class="block w-full md:h-[240px] overflow-scroll">
                 <tr v-for="(row, index) in parsedData" :key="index" class="w-full table table-fixed">
-                  <td class="border-4 bg-brand-gray-fade whitespace-nowrap">
-                    <div class="px-3 py-2 text-[21px] leading-[25px]" :class="isChanged(row, 'name') ? 'bg-brand-lime' : 'bg-white'">
+                  <td class="border-4 bg-gray-fade whitespace-nowrap">
+                    <div class="px-3 py-2 text-21" :class="isChanged(row, 'name') ? 'bg-lime' : 'bg-white'">
                       {{ row.name }}
                     </div>
                   </td>
-                  <td class="border-4 bg-brand-gray-fade">
-                    <div class="px-3 py-2 text-[21px] leading-[25px] whitespace-nowrap" :class="isChanged(row, 'gender') ? 'bg-brand-lime' : 'bg-white'">
+                  <td class="border-4 bg-gray-fade">
+                    <div class="px-3 py-2 text-21 whitespace-nowrap" :class="isChanged(row, 'gender') ? 'bg-lime' : 'bg-white'">
                       {{ row.gender }}
                     </div>
                   </td>
-                  <td class="border-4 bg-brand-gray-fade">
-                    <div class="px-3 py-2 text-[21px] leading-[25px] whitespace-nowrap" :class="isChanged(row, 'age') ? 'bg-brand-lime' : 'bg-white'">
+                  <td class="border-4 bg-gray-fade">
+                    <div class="px-3 py-2 text-21 whitespace-nowrap" :class="isChanged(row, 'age') ? 'bg-lime' : 'bg-white'">
                       {{ row.age }}
                     </div>
                   </td>
-                  <td class="border-4 bg-brand-gray-fade">
-                    <div class="px-3 py-2 text-[21px] leading-[25px] whitespace-nowrap" :class="isChanged(row, 'city') ? 'bg-brand-lime' : 'bg-white'">
+                  <td class="border-4 bg-gray-fade">
+                    <div class="px-3 py-2 text-21 whitespace-nowrap" :class="isChanged(row, 'city') ? 'bg-lime' : 'bg-white'">
                       {{ row.city }}
                     </div>
                   </td>
-                  <td class="border-4 bg-brand-gray-fade">
-                    <div class="px-3 py-2 text-[21px] leading-[25px] whitespace-nowrap" :class="isChanged(row, 'state') ? 'bg-brand-lime' : 'bg-white'">
+                  <td class="border-4 bg-gray-fade">
+                    <div class="px-3 py-2 text-21 whitespace-nowrap" :class="isChanged(row, 'state') ? 'bg-lime' : 'bg-white'">
                       {{ row.state }}
                     </div>
                   </td>
-                  <td class="border-4 bg-brand-gray-fade">
-                    <div class="px-3 py-2 text-[21px] leading-[25px] whitespace-nowrap" :class="isChanged(row, 'zip') ? 'bg-brand-lime' : 'bg-white'">
+                  <td class="border-4 bg-gray-fade">
+                    <div class="px-3 py-2 text-21 whitespace-nowrap" :class="isChanged(row, 'zip') ? 'bg-lime' : 'bg-white'">
                       {{ row.zip }}
                     </div>
                   </td>
@@ -302,7 +302,7 @@ export default {
   max-width: 235px;
 }
 .product-feature-item:nth-child(2) {
-  @apply border-x border-brand-gray-light;
+  @apply border-x border-gray-light;
 }
 .product-feature-item .feat-title {
   font-size: 38px;
@@ -357,6 +357,14 @@ export default {
     letter-spacing: -0.96px;
   }
 }
+@media (max-width: 1155px) {
+  .hero.product .lot-fig {
+    right: auto;
+    left: -5px;
+    bottom: 3px;
+    max-width: 220px;
+  }
+}
 @media (max-width: 768px) {
   .experts-section {
     background-image: none !important;
@@ -364,6 +372,7 @@ export default {
 
   .hero.product .lot-fig {
     right: 0;
+    left: auto;
     bottom: 14px;
     max-width: 134px;
   }
