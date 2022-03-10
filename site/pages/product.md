@@ -2,7 +2,7 @@
 hero_section:
   sub_header: Got four minutes? That’s all the time you need to anonymize a few
     million rows of data.
-  header: "# Ready. Set. **Create.**"
+  header: "# Analyze. Anonymize. **Review**"
   button:
     text: Get Started
     link: /pricing
