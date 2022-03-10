@@ -23,11 +23,11 @@ features:
   - title: "### Fast Setup & </br>Ongoing Results"
     description: Automations and tools that enable seamless integration into data
       stacks (speed)
-  - title: "### Seamless Integration"
-    description: Privacy Dynamics doesn’t slow down your process at all. We seamless
-      integrate into your automations and tools and are a quick added step to
-      providing you with anonymized, privacy-safe, data for you to continue
-      working with.
+  - title: |
+      ### Out-of-the-Box Integration
+    description: Privacy Dynamics integrates with your existing tech stack without
+      any custom setup required. Easily connect our system to your data and
+      begin running the tool in minutes.
     image: /uploads/integration.svg
 integrations:
   - image: /uploads/image-14.png
