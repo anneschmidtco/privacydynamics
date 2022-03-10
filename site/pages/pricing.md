@@ -4,9 +4,9 @@ pricing_section:
   sub_header: Sign up today & start anonymizing data in minutes.
   footer_cta:
     cta_button:
-      text: Contact Us
-      link: /contact
-    title: Interested in talking to us?
+      text: Join Waitlist
+      link: https://privacydynamics.typeform.com/public-beta
+    title: Currently in Public Beta
   background_image: /uploads/pricing-bg.png
   plans:
     - name: Cloud Plan
