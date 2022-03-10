@@ -25,21 +25,22 @@ openings_section:
     categories:
       - title: Non-technical
         jobs:
-          - title: "Business Development Representative "
-            link: /careers
-            location: Remote
           - title: Content Marketer
-            link: /careers
+            link: https://jobs.lever.co/privacydynamics/cbae15a0-61ea-4576-9280-060e30c7684a
             location: Remote
       - title: Technical
         jobs:
-          - title: Software Engineer
-            link: /careers
+          - title: Cloud Infrastructure Engineer
+            link: https://jobs.lever.co/privacydynamics/344b8d97-683d-40c5-a284-82bbbca4ee4c
             location: Remote
-      - title: Other
-        jobs:
-          - title: Lorem Ipsum
-            link: /careers
+          - title: Customer Engineer
+            link: https://jobs.lever.co/privacydynamics/37b4517a-16b7-4581-8f28-4d77b8f64b00
+            location: Remote
+          - title: Developer Advocate - Analytics Engineering
+            link: https://jobs.lever.co/privacydynamics/0841be0f-9658-4090-a250-6dc61a794862
+            location: Remote
+          - title: Senior Front-end Software Engineer
+            link: https://jobs.lever.co/privacydynamics/3d80f3e5-910d-48c4-8367-ad91eda68af0
             location: Remote
 benefits_section:
   header: BENEFITS
