@@ -8,7 +8,7 @@
       <g-image :src="feature.icon" />
     </div>
     <div class="mb-10 md:mb-12 md:min-h-[180px]">
-      <h3 class="text-32 md:text-[45px] leading-45 md:leading-60 font-normal tracking-[-0.96px] md:tracking-[-1px]" v-animate.repeat="'fade-in-down'">{{ feature.title }}</h3>
+      <h3 class="text-32 md:text-[45px] leading-45 md:leading-60 font-normal tracking-[-0.96px] md:tracking-[-1px] break-all" v-animate.repeat="'fade-in-down'">{{ feature.title }}</h3>
     </div>
     <div class="text-base md:text-17 leading-26 tracking-[-0.16px] md:tracking-[-0.17px] mt-auto content" v-animate.repeat="'fade-in-up'" v-html="parseMarkdown(feature.description)"></div>
   </div>

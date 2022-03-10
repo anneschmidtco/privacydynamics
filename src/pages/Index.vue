@@ -39,7 +39,7 @@
             <g-image :src="$page.pages.stats_section.icon" v-animate.repeat="'zoom-in'" />
           </div>
         </div>
-        <div class="w-full flex flex-col md:flex-row justify-between">
+        <div class="w-full flex flex-col lg:flex-row justify-between">
           <div class="flex justify-start items-end md:pr-[135px] feat-b-item pb-4 md:pb-7 mb-8 md:mb-0" v-for="(stat, index) in $page.pages.stats_section.stats" :key="index">
             <p class="text-6xl md:text-[100px] tracking-[-4px] leading-none font-light mr-4 md:mr-[68px] text-lime" v-animate.repeat="'fade-in-down'">{{ stat.stat }}</p>
             <p class="text-17 tracking-[-0.34px] max-w-[155px] md:mb-2" v-animate.repeat="'fade-in'">{{ stat.description }}</p>

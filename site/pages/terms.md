@@ -3,11 +3,11 @@ header: PRIVACY DYNAMICS TERMS OF SERVICE
 lead_content: >-
   
 
-  * [PRIVACY DYNAMICS TERMS OF SERVICE](https://pvcy.wpengine.com/terms/#terms-of-service)
+  * [PRIVACY DYNAMICS TERMS OF SERVICE](/terms/#terms-of-service)
 
-  * [PRIVACY DYNAMICS PRIVACY POLICY](https://pvcy.wpengine.com/terms/#privacy-policy)
+  * [PRIVACY DYNAMICS PRIVACY POLICY](/terms/#privacy-policy)
 
-  * [PRIVACY DYNAMICS SOFTWARE AS A SERVICE AGREEMENT](https://pvcy.wpengine.com/terms/#saas-agreement)
+  * [PRIVACY DYNAMICS SOFTWARE AS A SERVICE AGREEMENT](/terms/#saas-agreement)
 content: >-
   
 
@@ -291,7 +291,7 @@ content: >-
 
   * **Device and Usage Information:** We collect information about how you access our Site, including data about the device and network you use, such as your hardware model, operating system version, mobile network, IP address, unique device identifiers, browser type, and app version. We also collect information about your activity on our Site, such as access times, pages viewed, links clicked, and the page you visited before navigating to our Site.
 
-  * **Information Collected by Cookies and Similar Tracking Technologies:** We (and our service providers) use tracking technologies, such as cookies and web beacons, to collect information about you. Cookies are small data files stored on your hard drive or in device memory that help us improve our Site and your experience, see which areas and features of our Site are popular, and count visits. Web beacons (also known as “pixel tags” or “clear GIFs”) are electronic images that we use on our Site and in our emails to help deliver cookies, count visits, and understand usage and campaign effectiveness. For more information about cookies and how to disable them, see the [Your Choices](https://pvcy.wpengine.com/terms/#1t3h5sf) section below.
+  * **Information Collected by Cookies and Similar Tracking Technologies:** We (and our service providers) use tracking technologies, such as cookies and web beacons, to collect information about you. Cookies are small data files stored on your hard drive or in device memory that help us improve our Site and your experience, see which areas and features of our Site are popular, and count visits. Web beacons (also known as “pixel tags” or “clear GIFs”) are electronic images that we use on our Site and in our emails to help deliver cookies, count visits, and understand usage and campaign effectiveness. For more information about cookies and how to disable them, see the [Your Choices](/terms/#1t3h5sf) section below.
 
 
   **Information We Derive**
@@ -314,7 +314,7 @@ content: >-
 
   * Respond to your comments and questions and provide customer service;
 
-  * Communicate with you about products, services, and events offered by Privacy Dynamics and others and provide news and information that we think will interest you (see the [Your Choices](https://pvcy.wpengine.com/terms/#1t3h5sf) section below for information about how to opt out of these communications at any time);
+  * Communicate with you about products, services, and events offered by Privacy Dynamics and others and provide news and information that we think will interest you (see the [Your Choices](/terms/#1t3h5sf) section below for information about how to opt out of these communications at any time);
 
   * Monitor and analyze trends, usage, and activities in connection with our Site;
 
