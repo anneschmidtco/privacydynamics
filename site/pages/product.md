@@ -2,10 +2,10 @@
 hero_section:
   sub_header: Got four minutes? That’s all the time you need to anonymize a few
     million rows of data.
-  header: "# Analyze. Anonymize. **Review**"
+  header: "# Analyze. Anonymize. **Review.**"
   button:
     text: Get Started
-    link: /pricing
+    link: https://privacydynamics.typeform.com/public-beta
   image: /uploads/product-hero_v1.png
 experts_section:
   header: "We’ve become the privacy experts so that you don’t have to. "
