@@ -64,13 +64,14 @@
             </p>
           </div>
         </div>
-        <div class="w-full px-4 mt-8 md:mt-0">
-          <div class="block md:hidden">
-            <lottie-player src="https://assets4.lottiefiles.com/packages/lf20_cnwbtzcp/Data Flow Mobile.json" background="transparent" speed="1" loop autoplay></lottie-player>
-          </div>
-          <div class="hidden md:block">
-            <lottie-player src="https://assets4.lottiefiles.com/packages/lf20_ioidqxga/data flow.json" background="transparent" speed="1" loop autoplay></lottie-player>
-          </div>
+        <div class="w-full px-4 mt-8 md:pl-[152px] md:mt-16">
+          <ul class="flex flex-wrap">
+            <li class="flex justify-center items-center mr-3 mb-3" v-for="(integration, index) in $page.pages.integrations" :key="index">
+              <div class="border int-item flex justify-center items-center">
+                <g-image :src="integration.image" height="191" />
+              </div>
+            </li>
+          </ul>
         </div>
       </div>
     </div>
@@ -226,6 +227,9 @@
         description,
         image
       },
+      integrations {
+        image
+      },
       hiw {
         header,
         sub_header
@@ -297,8 +301,8 @@ export default {
 <style>
 .hero.product .lot-fig {
   z-index: -1;
-  right: 0;
-  bottom: 4px;
+  left: -5px;
+  bottom: -4px;
   max-width: 235px;
 }
 .product-feature-item:nth-child(2) {
@@ -333,6 +337,14 @@ export default {
   background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' xmlns:xlink='http://www.w3.org/1999/xlink' width='1137' height='618.63' viewBox='0 0 1137 618.63'%3E%3Cdefs%3E%3Cfilter id='Rectangle_1133' x='0' y='0' width='1137' height='618.63' filterUnits='userSpaceOnUse'%3E%3CfeOffset dx='8' dy='8' input='SourceAlpha'/%3E%3CfeGaussianBlur result='blur'/%3E%3CfeFlood flood-color='%23cacfd7'/%3E%3CfeComposite operator='in' in2='blur'/%3E%3CfeComposite in='SourceGraphic'/%3E%3C/filter%3E%3C/defs%3E%3Cg id='Group_512' data-name='Group 512' transform='translate(-123 -2861.486)'%3E%3Cg transform='matrix(1, 0, 0, 1, 123, 2861.49)' filter='url(%23Rectangle_1133)'%3E%3Crect id='Rectangle_1133-2' data-name='Rectangle 1133' width='1129' height='610.63' rx='12' fill='%23e9ecef'/%3E%3C/g%3E%3Ccircle id='Ellipse_45' data-name='Ellipse 45' cx='5.231' cy='5.231' r='5.231' transform='translate(1222.515 2884.314)' fill='%23a6afbc'/%3E%3Ccircle id='Ellipse_46' data-name='Ellipse 46' cx='5.231' cy='5.231' r='5.231' transform='translate(1201.59 2884.314)' fill='%23a6afbc'/%3E%3Ccircle id='Ellipse_47' data-name='Ellipse 47' cx='5.231' cy='5.231' r='5.231' transform='translate(1180.665 2884.314)' fill='%23a6afbc'/%3E%3C/g%3E%3C/svg%3E%0A");
 }
 
+.int-item {
+  width: 98px;
+  height: 88px;
+  border-radius: 21px;
+  background-color: #323b44;
+  border-color: #454f59;
+}
+
 @media (max-width: 640px) {
   .sm-pattern-bg {
     background-image: url(/uploads/hit-pattern-bg.png);
@@ -357,6 +369,14 @@ export default {
     letter-spacing: -0.96px;
   }
 }
+@media (min-width: 1166px) and (max-width: 1214px) {
+  .hero.product .lot-fig {
+    right: 0;
+    left: auto;
+    bottom: 3px;
+    max-width: 220px;
+  }
+}
 @media (max-width: 1155px) {
   .hero.product .lot-fig {
     right: auto;
@@ -371,9 +391,18 @@ export default {
   }
 
   .hero.product .lot-fig {
-    right: 0;
+    right: -4px;
     left: auto;
-    bottom: 14px;
+    bottom: 0;
+    max-width: 134px;
+  }
+}
+
+@media (max-width: 479px) {
+  .hero.product .lot-fig {
+    right: auto;
+    left: -4px;
+    bottom: 0px;
     max-width: 134px;
   }
 }
