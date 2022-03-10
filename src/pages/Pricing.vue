@@ -51,7 +51,7 @@
                 <div v-html="parseMarkdown(feature.description)" class="text-17 leading-snug tracking-normal font-medium ml-3"></div>
               </li>
             </ul>
-            <div class="mt-auto">
+            <div class="mt-auto hidden">
               <Button :link="plan.cta_button.link" :text="plan.cta_button.text" :isFullWidth="true" :icon="false" />
             </div>
           </div>
@@ -157,6 +157,8 @@ export default {
   .pricing-section {
     background-size: 300%;
   }
+}
+@media (max-width: 768px) {
   .pricing-section h1 strong::after {
     width: 130px;
     height: 40px;

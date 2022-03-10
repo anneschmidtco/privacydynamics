@@ -68,7 +68,7 @@
           <ul class="flex flex-wrap">
             <li class="flex justify-center items-center mr-3 mb-3" v-for="(integration, index) in $page.pages.integrations" :key="index">
               <div class="border int-item flex justify-center items-center">
-                <g-image :src="integration.image" height="191" />
+                <g-image :src="integration.image" />
               </div>
             </li>
           </ul>
@@ -343,6 +343,10 @@ export default {
   border-radius: 21px;
   background-color: #323b44;
   border-color: #454f59;
+}
+
+.int-item img {
+  max-height: 47px;
 }
 
 @media (max-width: 640px) {
