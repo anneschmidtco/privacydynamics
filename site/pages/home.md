@@ -9,7 +9,7 @@ hero_section:
   animated_headings: Productivity,Insights,Progress,Collaboration
 features:
   - tag: PRECISE
-    title: 90% Reduced data distortion
+    title: K-member Microaggregation
     decsription: When anonymizing data, we use a scalpel, not a sledgehammer.
       Privacy Dynamics analyzes re-identification risk at the cell level,
       allowing for precise treatment that minimizes data distortion. Privacy
@@ -24,7 +24,7 @@ features:
       with highly accurate, actionable datasets they can depend on to do their
       jobs.
   - tag: EFFICIENT
-    title: Work within your ecosystem
+    title: Intuitive analytics workflow
     decsription: >-
       Privacy Dynamics was designed and built to integrate closely with the
       modern data stack. Out of the box, Privacy Dynamics supports dbt,
@@ -73,14 +73,15 @@ integration_section:
     working with.
 
 stats_section:
-  cta_text: READY. SET. CREATE.
-  title: "### **90% less** data distortion than industry benchmarks"
+  cta_text: ANALYZE. ANONYMIZE. REVIEW
+  title: "### **87%** of the U.S. population have reported characteristics that
+    made them unique based only on: 5-digit zip, gender, date of birth."
   icon: /uploads/arrow.svg
   stats:
-    - stat: 50x
-      description: more accurate than synthetic modeling
-    - stat: 2k
-      description: records per second using single core
+    - stat: 44%
+      description: " of data breaches contain customer PII."
+    - stat: $180
+      description: per PII record is the average cost to businesses
 in_action_section:
   button:
     text: Join Waitlist
