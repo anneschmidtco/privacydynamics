@@ -29,6 +29,13 @@ features:
       providing you with anonymized, privacy-safe, data for you to continue
       working with.
     image: /uploads/integration.svg
+integrations:
+  - image: /uploads/image-14.png
+  - image: /uploads/image-15.png
+  - image: /uploads/google_bigquery_logo_icon_168150.png
+  - image: /uploads/seekpng.com_amazon-icon-png_1974942.png
+  - image: /uploads/image-16.png
+  - image: /uploads/image-17.png
 hiw:
   header: How it works
   sub_header: See how Privacy Dynamics targets each cell of your data to achieve
