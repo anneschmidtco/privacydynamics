@@ -85,7 +85,7 @@ stats_section:
 in_action_section:
   button:
     text: Join Waitlist
-    link: /
+    link: https://privacydynamics.typeform.com/public-beta
   title: "#### Currently in public **beta**"
   icon: /uploads/cta-icon.svg
 ---
