@@ -492,6 +492,20 @@ collections:
                     name: "name"
                     widget: "string"
 
+      - label: "Terms Page"
+        name: "Terms"
+        file: "site/pages/terms.md"
+        fields:
+          - label: "Header"
+            name: "header"
+            widget: "string"
+          - label: "Lead Content"
+            name: "lead_content"
+            widget: "markdown"
+          - label: "Content"
+            name: "content"
+            widget: "markdown"
+
   - name: "categories"
     label: "Categories"
     folder: "site/categories"
