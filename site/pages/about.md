@@ -67,7 +67,7 @@ investors_section:
     investors & 
     partners
   investors:
-    - logo: /uploads/root-logo.png
+    - logo: /uploads/root-ventures.png
     - logo: /uploads/crosscut-logo.png
     - logo: /uploads/upside-logo.png
     - logo: /uploads/slack-logo.png
