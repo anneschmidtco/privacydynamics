@@ -1,6 +1,6 @@
 ---
 pricing_section:
-  header: "# Ready. Set. **Create.**"
+  header: "# Analyze. Anonymize. **Review.**"
   sub_header: Sign up today & start anonymizing data in minutes.
   footer_cta:
     cta_button:
