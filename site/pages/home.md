@@ -5,7 +5,7 @@ hero_section:
   sub_header: "We make privacy our job so you don’t have to. "
   button:
     text: "Get Started "
-    link: /
+    link: https://privacydynamics.typeform.com/public-beta
   animated_headings: Productivity,Insights,Progress,Collaboration
 features:
   - tag: PRECISE
@@ -85,7 +85,7 @@ stats_section:
 in_action_section:
   button:
     text: Join Waitlist
-    link: /
+    link: https://privacydynamics.typeform.com/public-beta
   title: "#### Currently in public **beta**"
   icon: /uploads/cta-icon.svg
 ---
