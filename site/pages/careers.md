@@ -12,7 +12,7 @@ openings_section:
   header: Our job openings
   all_jobs_link:
     text: All jobs
-    link: /careers
+    link: https://jobs.lever.co/privacydynamics
   sub_header: People-centric Benefits
   body: Privacy Dynamics is committed to fostering a work environment that brings
     out the best in every one of our employees. We are passionate, driven,
