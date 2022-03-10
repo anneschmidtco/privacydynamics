@@ -12,7 +12,7 @@
       <div class="container flex flex-col py-14 md:pt-24 md:pb-18">
         <div class="w-full text-left md:text-center flex flex-col justify-center">
           <h2 class="text-32 md:text-50 leading-45 md:leading-[63px] tracking-[-0.96px] md:tracking-[-1.5px] mb-6" v-animate.repeat="'fade-in-down'">{{ $page.pages.integration_section.title }}</h2>
-          <div class="max-w-[632px] mx-auto text-17 tracking-[-0.17px] content" v-animate.repeat="'fade-in-up'" v-html="parseMarkdown($page.pages.integration_section.sub_title)"></div>
+          <div class="max-w-[632px] md:mx-auto text-17 tracking-[-0.17px] content" v-animate.repeat="'fade-in-up'" v-html="parseMarkdown($page.pages.integration_section.sub_title)"></div>
         </div>
         <div class="w-full px-4 mt-8 md:mt-0">
           <div class="block md:hidden">
@@ -25,24 +25,26 @@
       </div>
     </div>
     <div class="w-full flex flex-col bg-gray text-white md:border-b border-gray-light">
-      <div class="container pt-9 pb-14 md:pt-32 md:pb-36 flex flex-col md:border-l border-gray-light md:pl-24 relative md:items-center justify-center">
-        <p class="hidden md:flex text-left md:text-center md:absolute md:rotate-[-90deg] mb-8 md:mb-auto md:left-[-116px] tracking-[2.4px] font-display">{{ $page.pages.stats_section.cta_text }}</p>
-        <div class="w-full flex justify-between md:justify-center mb-4 md:mb-auto md:hidden">
-          <p class="text-left md:text-center md:absolute md:rotate-[-90deg] mb-8 md:mb-auto md:left-[-116px] tracking-[2.4px] font-display">{{ $page.pages.stats_section.cta_text }}</p>
-          <div class="inline-flex md:hidden max-w-[55px]">
-            <g-image :src="$page.pages.stats_section.icon" v-animate.repeat="'zoom-in'" />
+      <div class="container flex flex-col">
+        <div class="w-full flex flex-col relative md:items-center justify-center md:border-l border-gray-light md:pl-24 pt-9 pb-14 md:pt-32 md:pb-36">
+          <p class="hidden md:flex text-left md:text-center md:absolute md:rotate-[-90deg] mb-8 md:mb-auto md:left-[-116px] lg:left-[-150px] tracking-[2.4px] font-display">{{ $page.pages.stats_section.cta_text }}</p>
+          <div class="w-full flex justify-between md:justify-center mb-4 md:mb-auto md:hidden">
+            <p class="text-left md:text-center md:absolute md:rotate-[-90deg] mb-8 md:mb-auto md:left-[-116px] tracking-[2.4px] font-display">{{ $page.pages.stats_section.cta_text }}</p>
+            <div class="inline-flex md:hidden max-w-[55px]">
+              <g-image :src="$page.pages.stats_section.icon" v-animate.repeat="'zoom-in'" />
+            </div>
           </div>
-        </div>
-        <div class="w-full flex flex-col md:flex-row justify-between mb-12 md:mb-24">
-          <div class="stats-title-wrapper title-has-highlight text-4xl md:text-50 leading-44 md:leading-60 text-white font-light tracking-[-0.72px] md:tracking-[-2px] max-w-[710px]" v-animate.repeat="'fade-in'" v-html="parseMarkdown($page.pages.stats_section.title)"></div>
-          <div class="hidden md:inline-flex">
-            <g-image :src="$page.pages.stats_section.icon" v-animate.repeat="'zoom-in'" />
+          <div class="w-full flex flex-col md:flex-row justify-between mb-12 md:mb-24">
+            <div class="stats-title-wrapper title-has-highlight text-4xl md:text-50 leading-44 md:leading-60 text-white font-light tracking-[-0.72px] md:tracking-[-2px] max-w-[710px]" v-animate.repeat="'fade-in'" v-html="parseMarkdown($page.pages.stats_section.title)"></div>
+            <div class="hidden md:inline-flex">
+              <g-image :src="$page.pages.stats_section.icon" v-animate.repeat="'zoom-in'" />
+            </div>
           </div>
-        </div>
-        <div class="w-full flex flex-col lg:flex-row justify-between">
-          <div class="flex justify-start items-end md:pr-[135px] feat-b-item pb-4 md:pb-7 mb-8 md:mb-0" v-for="(stat, index) in $page.pages.stats_section.stats" :key="index">
-            <p class="text-6xl md:text-[100px] tracking-[-4px] leading-none font-light mr-4 md:mr-[68px] text-lime" v-animate.repeat="'fade-in-down'">{{ stat.stat }}</p>
-            <p class="text-17 tracking-[-0.34px] max-w-[155px] md:mb-2" v-animate.repeat="'fade-in'">{{ stat.description }}</p>
+          <div class="w-full flex flex-col lg:flex-row justify-between">
+            <div class="flex justify-start items-end md:pr-[80px] feat-b-item pb-4 md:pb-7 mb-8 md:mb-0 max-w-[500px]" v-for="(stat, index) in $page.pages.stats_section.stats" :key="index">
+              <p class="text-6xl md:text-[100px] tracking-[-4px] leading-none font-light mr-4 md:mr-[48px] text-lime" v-animate.repeat="'fade-in-down'">{{ stat.stat }}</p>
+              <p class="text-17 tracking-[-0.34px] max-w-[155px] md:mb-2" v-animate.repeat="'fade-in'">{{ stat.description }}</p>
+            </div>
           </div>
         </div>
       </div>

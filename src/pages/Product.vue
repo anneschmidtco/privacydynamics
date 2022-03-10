@@ -67,7 +67,7 @@
         <div class="w-full px-4 mt-8 md:pl-[152px] md:mt-16">
           <ul class="flex flex-wrap">
             <li class="flex justify-center items-center mr-3 mb-3" v-for="(integration, index) in $page.pages.integrations" :key="index">
-              <div class="border int-item flex justify-center items-center">
+              <div class="border int-item flex justify-center items-center" v-animate.repeat="'fade-in'">
                 <g-image :src="integration.image" />
               </div>
             </li>
