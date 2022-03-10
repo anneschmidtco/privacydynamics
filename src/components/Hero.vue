@@ -9,7 +9,7 @@
           </span>
         </div>
         <div class="" v-if="animated && section_data.animated_headings">
-          <h1 class="text-4xl md:text-[60px] font-light text-gray md:leading-[75px] tracking-[-1.3px]">
+          <h1 class="text-4xl md:text-[60px] font-light text-gray md:leading-[75px] tracking-[-1.3px] break-words">
             {{ section_data.header }} <ClientOnly><vue-typer :text="parseAnimatedHeadings(section_data.animated_headings)"></vue-typer></ClientOnly>
           </h1>
         </div>

@@ -34,7 +34,6 @@ export default {
   animation-duration: 0.5s;
 }
 .menu-icon-toggle {
-  display: block;
   width: 30px;
   height: 30px;
   position: relative;

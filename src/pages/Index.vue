@@ -16,10 +16,10 @@
         </div>
         <div class="w-full px-4 mt-8 md:mt-0">
           <div class="block md:hidden">
-            <lottie-player src="https://assets4.lottiefiles.com/packages/lf20_cnwbtzcp/Data Flow Mobile.json" background="transparent" speed="1" loop autoplay></lottie-player>
+            <lottie-player src="https://assets1.lottiefiles.com/packages/lf20_qxfzfztr/data flow mobile.json" background="transparent" speed="1" loop autoplay></lottie-player>
           </div>
           <div class="hidden md:block">
-            <lottie-player src="https://assets4.lottiefiles.com/packages/lf20_ioidqxga/data flow.json" background="transparent" speed="1" loop autoplay></lottie-player>
+            <lottie-player src="https://assets7.lottiefiles.com/packages/lf20_yisl9itq/Data flow.json" background="transparent" speed="1" loop autoplay></lottie-player>
           </div>
         </div>
       </div>
