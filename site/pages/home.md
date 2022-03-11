@@ -73,7 +73,7 @@ integration_section:
     working with.
 
 stats_section:
-  cta_text: ANALYZE. ANONYMIZE. REVIEW
+  cta_text: Analyze. Anonymize. Utilize.
   title: "### **87%** of the U.S. population have reported characteristics that
     made them unique based only on: 5-digit zip, gender, date of birth."
   icon: /uploads/arrow.svg
