@@ -301,9 +301,9 @@ export default {
 <style>
 .hero.product .lot-fig {
   z-index: -1;
-  left: -5px;
-  bottom: -4px;
-  max-width: 235px;
+  left: -14px;
+  bottom: 4px;
+  max-width: 225px;
 }
 .product-feature-item:nth-child(2) {
   @apply border-x border-gray-light;
@@ -373,22 +373,25 @@ export default {
     letter-spacing: -0.96px;
   }
 }
-@media (min-width: 1166px) and (max-width: 1214px) {
+
+@media (max-width: 1155px) {
   .hero.product .lot-fig {
-    right: 0;
+    right: auto;
+    left: -6px;
+    bottom: 3px;
+    max-width: 220px;
+  }
+}
+
+@media (min-width: 1142px) and (max-width: 1214px) {
+  .hero.product .lot-fig {
+    right: -4px;
     left: auto;
     bottom: 3px;
     max-width: 220px;
   }
 }
-@media (max-width: 1155px) {
-  .hero.product .lot-fig {
-    right: auto;
-    left: -5px;
-    bottom: 3px;
-    max-width: 220px;
-  }
-}
+
 @media (max-width: 768px) {
   .experts-section {
     background-image: none !important;
@@ -397,8 +400,8 @@ export default {
   .hero.product .lot-fig {
     right: -4px;
     left: auto;
-    bottom: 0;
-    max-width: 134px;
+    bottom: 4;
+    max-width: 128px;
   }
 }
 
@@ -406,8 +409,8 @@ export default {
   .hero.product .lot-fig {
     right: auto;
     left: -4px;
-    bottom: 0px;
-    max-width: 134px;
+    bottom: 4px;
+    max-width: 128px;
   }
 }
 </style>
