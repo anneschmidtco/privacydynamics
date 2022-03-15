@@ -11,18 +11,12 @@ experts_section:
   header: "We’ve become the privacy experts so that you don’t have to. "
   image: /uploads/experts.png
 features:
-  - title: "### Out-of-the-Box </br>Integration"
-    description: Privacy Dynamics integrates with your existing tech stack without
-      any custom setup required. Easily connect our system to your data and
-      begin running the tool in minutes.
-  - title: "### Precise </br>Records"
-    description: Privacy Dynamics is able to more precisely transform data to
-      eliminate privacy risk while leaving safe records alone. The result is
-      highly accurate, reliable datasets that meet even the most stringent
-      privacy standards such as HIPAA, GDPR, and CCPA.
-  - title: "### Fast Setup & </br>Ongoing Results"
-    description: Automations and tools that enable seamless integration into data
-      stacks (speed)
+  - title: "### Data Publishing <br> & Sharing"
+    description: Prevent identification disclosure by knowing which fields in a dataset are personal identifiers and applying anonymization methods before they are shared.
+  - title: "### Marketing & BI"
+    description: Precisely transform data to address privacy risk while leaving safe records alone. The result is highly accurate, reliable datasets that meet even the most stringent privacy standards, such as HIPAA and CCPA, while minimizing the use of personal information in order to satisfy GDPR requirements.
+  - title: "### Automation & Pipelines"
+    description: Improve data decisions with a unified solution that enables seamless integration, letting you smoothly copy production data to developer environments that can be used for user acceptance testing, AI training, and machine learning models.
   - title: |
       ### Out-of-the-Box Integration
     description: Privacy Dynamics integrates with your existing tech stack without

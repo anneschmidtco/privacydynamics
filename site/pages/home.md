@@ -10,51 +10,20 @@ hero_section:
 features:
   - tag: PRECISE
     title: K-member Microaggregation
-    decsription: When anonymizing data, we use a scalpel, not a sledgehammer.
-      Privacy Dynamics analyzes re-identification risk at the cell level,
-      allowing for precise treatment that minimizes data distortion. Privacy
-      Dynamics’ approach reduces data distortion by more than 90%, providing
-      engineers with highly accurate, actionable datasets they can depend on to
-      do their jobs.
     icon: /uploads/precise-icon.svg
-    description: When anonymizing data, we use a scalpel, not a sledgehammer.
-      Privacy Dynamics analyzes re-identification risk at the cell level,
-      allowing for precise treatment that minimizes data distortion. Our
-      approach reduces data distortion by more than 90%, providing engineers
-      with highly accurate, actionable datasets they can depend on to do their
-      jobs.
+    description: When anonymizing data, we use a scalpel, not a sledgehammer. Privacy Dynamics analyzes re-identification risk at the cell level, allowing for precise utility-preserving anonymization treatment that minimizes data distortion. 
   - tag: EFFICIENT
-    title: Intuitive analytics workflow
-    decsription: >-
-      Privacy Dynamics was designed and built to integrate closely with the
-      modern data stack. Out of the box, Privacy Dynamics supports dbt,
-      snowflake, big query, and redshift. 
-
-
-      Privacy Dynamics can be deployed to your native cloud environment, allowing you to maintain full control of your data.
+    title: Work within your ecosystem
     icon: /uploads/efficient-icon.svg
     description: >-
-      Privacy Dynamics was designed and built to integrate closely with the
-      modern data stack. Out of the box, Privacy Dynamics supports dbt,
-      snowflake, big query, and redshift. 
+      Privacy Dynamics was designed and built to integrate closely with the modern data stack. Out of the box, Privacy Dynamics supports dbt, Snowflake, BigQuery, Postgres, and Redshift. 
 
-
-      Privacy Dynamics can be deployed to your native cloud environment, allowing you to maintain full control of your data.
+      Privacy Dynamics’ web application can be re-deployed to your native cloud environment, allowing you to maintain full control of your data. 
   - tag: FAST
-    title: 160x faster than the leading competitor
-    decsription: >-
-      Privacy Dynamics doesn’t require a complicated setup or a time-consuming
-      integration process. Just sign up and start anonymizing. 
-
-
-      Our system is built using a linear algorithm so that you’re able to receive results in minutes, regardless of the size of your data set. Whether you have 10 million or 10 billion records, we can anonymize and treat your data within 3 minutes, 160x faster than the leading competitor.
+    title: Intuitive analytics workflow
     icon: /uploads/fast-icon.svg
     description: >-
-      Privacy Dynamics doesn’t require a complicated setup or a time-consuming
-      integration process. Just sign up and start anonymizing. 
-
-
-      Our system is built using a linear algorithm so that you’re able to receive results in minutes, regardless of the size of your data set. Whether you have 10 million or 10 billion records, we can anonymize and treat your data within 3 minutes, 160x faster than the leading competitor.
+      Privacy Dynamics doesn’t slow down your process at all. We seamlessly integrate into your automations and tools and are a quick added step to providing you with anonymized, privacy-safe, data for you to continue working with.
 distortion_section:
   title: Distortion Summary
   subtitle: Privacy Dynamics optimizes distortion applied to the data, both where
@@ -81,7 +50,7 @@ stats_section:
     - stat: 44%
       description: " of data breaches contain customer PII."
     - stat: $180
-      description: per PII record is the average cost to businesses
+      description: per PII record is the average cost to businesses.
 in_action_section:
   button:
     text: Join Waitlist
