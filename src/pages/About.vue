@@ -177,7 +177,7 @@
               <p class="textbase md:text-17 leading-26tracking-[-0.32px] md:tracking-[-0.34px] mb-4">
                 {{ item.excerpt }}
               </p>
-              <a class="text-[14px] md:text-15 md:leading-[28px] tracking-[-0.28px] md:tracking-[-0.3px] underline" :to="item.link">Read More</a>
+              <a class="text-[14px] md:text-15 md:leading-[28px] tracking-[-0.28px] md:tracking-[-0.3px] underline" :href="item.link" target="_blank">Read More</a>
             </div>
           </div>
           <div class="w-full flex flex-row items-start py-9 border-b border-gray-light">
@@ -198,7 +198,7 @@
                     <rect id="Rectangle_5" data-name="Rectangle 5" width="16.174" height="0.873" transform="translate(0 6.951)" fill="#172330" />
                   </svg>
                 </div>
-                <a class="text-15 md:text-17 tracking-[1.5px] md:tracking-[1.7px] font-display underline uppercase" :to="'mailto:' + $page.pages.media_section.contact.email">{{ $page.pages.media_section.contact.email }}</a>
+                <a class="text-15 md:text-17 tracking-[1.5px] md:tracking-[1.7px] font-display underline uppercase" :href="'mailto:' + $page.pages.media_section.contact.email">{{ $page.pages.media_section.contact.email }}</a>
               </div>
             </div>
           </div>
